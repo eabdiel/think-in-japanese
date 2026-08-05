@@ -42,4 +42,8 @@
 </nav>
 <div class="theme-panel" data-theme-panel role="dialog" aria-label="Theme selector"><div class="theme-title"><b>🎨 {{ 'Choose your style' if lang=='en' else 'Elige tu estilo' }}</b><button data-theme-close>×</button></div><button data-set-theme="pixel"><i class="swatch pixel"></i><span><b>Pixel Pastel</b><small>{{ 'Bright, playful, and soft' if lang=='en' else 'Brillante, divertido y suave' }}</small></span><em>✓</em></button><button data-set-theme="garden"><i class="swatch garden"></i><span><b>Garden Cream</b><small>{{ 'Warm, calm, and natural' if lang=='en' else 'Cálido, tranquilo y natural' }}</small></span><em>✓</em></button><button data-set-theme="night"><i class="swatch night"></i><span><b>Tokyo Night</b><small>{{ 'Focused, vivid, and dark' if lang=='en' else 'Enfocado, vivo y oscuro' }}</small></span><em>✓</em></button></div>
 <script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script>{% block scripts %}{% endblock %}
+{% if ai_companion_enabled and ai_companion_bot_id %}
+<!-- Shared hosted AI companion. Offline HTML exports intentionally omit it. -->
+<script defer src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="{{ ai_companion_bot_id }}" data-page="{{ current.slug if current else 'home' }}" data-language="{{ lang }}"></script>
+{% endif %}
 </body></html>

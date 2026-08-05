@@ -18,7 +18,7 @@ Purpose:
   useful arrangement without requiring user accounts.
   ========================================================================= */
   const workspace = root.querySelector('.kana-practice-grid');
-  const layoutKey = `tij-kana-workbench-layout-v218-${isEs ? 'es' : 'en'}`;
+  const layoutKey = `tij-kana-workbench-layout-v2261-${isEs ? 'es' : 'en'}`;
   const defaultOrder = ['controls', 'board', 'review'];
   let draggedTile = null;
 
@@ -28,7 +28,6 @@ Purpose:
     const layout = tiles.map((tile) => ({
       id: tile.dataset.kanaTile,
       width: Math.round(tile.getBoundingClientRect().width),
-      height: Math.round(tile.getBoundingClientRect().height),
     }));
     try { localStorage.setItem(layoutKey, JSON.stringify(layout)); } catch (error) { /* local storage is optional */ }
   }
@@ -43,8 +42,12 @@ Purpose:
       const tile = byId.get(item.id);
       if (!tile) return;
       workspace.appendChild(tile);
-      if (window.innerWidth > 850 && Number.isFinite(item.width)) tile.style.width = `${Math.max(240, item.width)}px`;
-      if (Number.isFinite(item.height)) tile.style.height = `${Math.max(360, item.height)}px`;
+      if (window.innerWidth > 850 && Number.isFinite(item.width)) {
+        const maxWidth = Math.max(240, workspace.clientWidth);
+        const width = Math.min(maxWidth, Math.max(240, item.width));
+        tile.style.width = `${width}px`;
+        tile.style.flexBasis = `${width}px`;
+      }
     });
   }
 
@@ -55,6 +58,7 @@ Purpose:
     [...workspace.querySelectorAll('[data-kana-tile]')].forEach((tile) => {
       tile.style.removeProperty('width');
       tile.style.removeProperty('height');
+      tile.style.removeProperty('flex-basis');
     });
     try { localStorage.removeItem(layoutKey); } catch (error) { /* local storage is optional */ }
   }
@@ -64,9 +68,11 @@ Purpose:
     applyWorkbenchLayout();
     workspace.querySelectorAll('[data-kana-tile]').forEach((tile) => {
       const handle = tile.querySelector('.kana-drag-handle');
+      const resizeHandle = tile.querySelector('.kana-resize-hint');
       tile.draggable = false;
       handle?.addEventListener('pointerdown', () => { tile.draggable = true; });
       handle?.addEventListener('pointerup', () => { tile.draggable = false; });
+      handle?.addEventListener('pointercancel', () => { tile.draggable = false; });
       tile.addEventListener('dragstart', (event) => {
         if (!tile.draggable) { event.preventDefault(); return; }
         draggedTile = tile;
@@ -97,12 +103,34 @@ Purpose:
         workspace.insertBefore(draggedTile, insertAfter ? tile.nextSibling : tile);
         saveWorkbenchLayout();
       });
+
+      resizeHandle?.addEventListener('pointerdown', (event) => {
+        if (window.innerWidth <= 850) return;
+        event.preventDefault();
+        event.stopPropagation();
+        const startX = event.clientX;
+        const startWidth = tile.getBoundingClientRect().width;
+        const workspaceWidth = workspace.getBoundingClientRect().width;
+        const minWidth = tile.dataset.kanaTile === 'board' ? Math.min(520, workspaceWidth) : 240;
+        tile.classList.add('is-resizing');
+        resizeHandle.setPointerCapture?.(event.pointerId);
+        const move = (moveEvent) => {
+          const width = Math.min(workspaceWidth, Math.max(minWidth, startWidth + moveEvent.clientX - startX));
+          tile.style.width = `${Math.round(width)}px`;
+          tile.style.flexBasis = `${Math.round(width)}px`;
+        };
+        const stop = () => {
+          tile.classList.remove('is-resizing');
+          resizeHandle.removeEventListener('pointermove', move);
+          resizeHandle.removeEventListener('pointerup', stop);
+          resizeHandle.removeEventListener('pointercancel', stop);
+          saveWorkbenchLayout();
+        };
+        resizeHandle.addEventListener('pointermove', move);
+        resizeHandle.addEventListener('pointerup', stop);
+        resizeHandle.addEventListener('pointercancel', stop);
+      });
     });
-    const observer = new ResizeObserver(() => {
-      window.clearTimeout(initializeWorkbenchTiles.resizeTimer);
-      initializeWorkbenchTiles.resizeTimer = window.setTimeout(saveWorkbenchLayout, 180);
-    });
-    workspace.querySelectorAll('[data-kana-tile]').forEach((tile) => observer.observe(tile));
     document.getElementById('kana-layout-reset')?.addEventListener('click', resetWorkbenchLayout);
   }
   const baseRows = [

@@ -1,54 +1,85 @@
-# Think in Japanese V2.25 — Michel Thomas & Furigana Games Parity
+# Think in Japanese V2.26 — Hosted Companion & Cloud Run Standardization
 
-**Release date:** August 4, 2026  
+**Release date:** August 5, 2026  
 **Author:** Edwin A. Rodriguez / ProgreTech
 
 ## Summary
 
-This release brings the native Flask Michel Thomas Companion and Furigana Games pages much closer to their standalone HTML counterparts while preserving the shared draggable, horizontally resizable, minimizable workbench framework.
+This release establishes the August 5 Cloud Run deployment as the new application baseline, restores the hosted AI companion across the shared Flask shell, masks decorative text embedded in the home-page hero artwork, and removes obsolete scaffold files from the distributable project.
 
-## Michel Thomas Companion
+## Home-page hero correction
 
-- Restored the unofficial-companion explanation and local-progress model.
-- Added a course-progress tile with completed-CD count, percentage, progress bar, and reset action.
-- Added the 6-week / 12-week calendar builder with configurable start date and pace.
-- Added the complete CD-by-CD syllabus with locally saved completion checkboxes.
-- Added the detailed Foundation and Advanced track reference with 134 source-derived track entries, search, expand-all, and collapse-all actions.
-- Added reading and phrase reinforcement cards with Japanese, romaji, meaning, shuffle, romaji visibility, and browser speech playback.
-- Added the kana writing lab with 16 source-derived writing prompts.
-- Added recall flashcards with flip, previous, and next controls.
-- Added the suggested weekly routine.
-- Applied English and Spanish labels and guidance while preserving the source course terminology.
+- Added a theme-aware glass title card behind the live **Think in Japanese** heading.
+- The card visually masks lettering embedded in the scenic source image instead of allowing two title treatments to overlap.
+- Added dedicated Pixel Pastel, Garden Cream, and Tokyo Night contrast treatments.
+- Preserved the scenic artwork, independent mascot cutout, responsive actions, and existing mobile behavior.
 
-## Furigana Games
+## AI companion
 
-- Replaced the generic card wall with the grouped system-by-system report layout used by the standalone HTML page.
-- Added collection metrics for displayed games, systems, and verified product IDs.
-- Added quick platform chips alongside search and system filtering.
-- Restored tables with English title, Japanese title, and Japanese product ID columns.
-- Added responsive mobile report cards that avoid horizontal scrolling.
-- Preserved the 114 source-derived game records and preferred platform order.
-- Added localized English and Spanish labels and instructions.
+- Restored the Aminos AI companion used by the legacy HTML site.
+- Loaded the companion once from `app/templates/base.html`, so it appears consistently across English and Spanish Flask routes.
+- Preserved the legacy bot identifier `59258` as the default.
+- Added environment-variable configuration:
+  - `TIJ_AI_COMPANION_ENABLED=true|false`
+  - `TIJ_AI_COMPANION_BOT_ID=<bot id>`
+- Included current page and language metadata on the loader element for future companion enhancements.
+- Offline HTML downloads intentionally remain independent and continue using their original standalone implementation.
 
-## Workbench behavior
+## Cloud Run and repository standardization
 
-- Every added section is a draggable, horizontally resizable, and minimizable tile.
-- Tile layout and tool state remain browser-local.
-- Pixel Pastel, Garden Cream, and Tokyo Night styling is supported.
-- Original standalone HTML files remain available through **Download offline version** only.
-- `main.py` remains the local PyCharm execution entry point.
+- Kept `main.py` as the only Python application entry point.
+- Added `Procfile` with the Cloud Run-compatible Gunicorn command.
+- Added `.gcloudignore` and `.dockerignore` to reduce uploaded build context and prevent local IDE, cache, archive, and virtual-environment files from entering builds.
+- Removed obsolete root-level `app.py`, `run.py`, duplicate `templates/`, and duplicate `static/` scaffold content.
+- Removed local `.git`, `.idea`, and Python cache material from the release archive.
+
+## Runtime command
+
+```text
+gunicorn --bind 0.0.0.0:$PORT main:app
+```
+
+## Added files
+
+- `.gcloudignore`
+- `.dockerignore`
+- `Procfile`
 
 ## Modified files
 
-- `app/data/tool_content.json`
-- `app/templates/native_tool.html`
-- `app/static/js/native_tools.js`
+- `app/__init__.py`
+- `app/config.py`
+- `app/templates/base.html`
 - `app/static/css/app.css`
 - `RELEASE.md`
 
-## Validation
+## Removed files and directories
 
-- Python source compilation completed successfully.
-- JavaScript syntax validation completed successfully with Node.js.
-- JSON content validation completed successfully.
-- ZIP integrity validation completed successfully.
+- `app.py`
+- `run.py`
+- `templates/`
+- `static/`
+- `.git/`
+- `.idea/`
+- Python `__pycache__/` directories
+
+## Deployment note
+
+The AI companion depends on its hosted JavaScript provider and therefore requires internet access. The rest of the Flask application and the downloadable standalone HTML companions retain their existing offline-friendly behavior.
+
+
+## V2.26.1 — Kana Dojo Canvas Hotfix
+
+- Replaced the non-functional decorative resize corners with explicit horizontal resize handles.
+- Removed the automatic `ResizeObserver` persistence that could save unintended widths and heights.
+- Kana Dojo tile layouts now persist only order and user-selected width.
+- Removed forced 720px tile heights so controls, board rows, review history, and bottom content remain visible.
+- Allowed the Kana workspace and parent container to grow vertically without clipping.
+- Added a new layout storage version so previously corrupted Kana layouts are ignored.
+- Applied to English and Spanish Kana Dojo pages and all three themes.
+
+### Modified files
+
+- `app/static/css/app.css`
+- `app/static/js/kana-dojo.js`
+- `RELEASE.md`

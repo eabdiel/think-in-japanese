@@ -19,4 +19,13 @@ def create_app(config_object: type[Config] = Config) -> Flask:
     application.config.from_object(config_object)
     application.register_blueprint(core_bp)
     application.register_blueprint(reports_bp)
+
+    @application.context_processor
+    def shared_runtime_settings() -> dict[str, object]:
+        """Expose shared hosted-service settings to every Jinja template."""
+        return {
+            "ai_companion_enabled": application.config.get("AI_COMPANION_ENABLED", False),
+            "ai_companion_bot_id": application.config.get("AI_COMPANION_BOT_ID", ""),
+        }
+
     return application

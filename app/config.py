@@ -7,6 +7,7 @@ Purpose:
 ============================================================================="""
 
 from pathlib import Path
+import os
 
 
 class Config:
@@ -17,3 +18,8 @@ class Config:
     LEGACY_DIR = APP_DIR / "static" / "legacy"
     TEMPLATES_AUTO_RELOAD = True
     JSON_SORT_KEYS = False
+
+    # Hosted AI companion. The default preserves the bot used by the legacy
+    # public HTML site. It can be overridden or disabled without code changes.
+    AI_COMPANION_ENABLED = os.getenv("TIJ_AI_COMPANION_ENABLED", "true").lower() in {"1", "true", "yes", "on"}
+    AI_COMPANION_BOT_ID = os.getenv("TIJ_AI_COMPANION_BOT_ID", "59258")

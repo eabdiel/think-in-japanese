@@ -134,24 +134,25 @@ Purpose:
   resize them within safe limits, and restore the default canvas at any time.
 ============================================================================= */
 .kana-native__actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
-.kana-practice-grid{display:flex!important;flex-wrap:wrap;align-items:flex-start;gap:16px;min-width:0}
-.kana-workbench-tile{position:relative;box-sizing:border-box;min-width:240px;max-width:100%;resize:none;overflow:visible;transition:box-shadow .16s ease,border-color .16s ease,opacity .16s ease;flex:1 1 280px}
-.kana-control-card{flex-basis:285px;width:285px;min-height:720px}
-.kana-board-card{flex-basis:620px;width:620px;min-width:min(520px,100%);min-height:720px}
-.kana-session-card{flex-basis:305px;width:305px;min-height:720px}
+.kana-native{overflow:visible}
+.kana-practice-grid{display:flex!important;flex-wrap:wrap;align-items:flex-start;align-content:flex-start;gap:16px;min-width:0;overflow:visible;padding-bottom:28px}
+.kana-workbench-tile{position:relative;box-sizing:border-box;min-width:240px;max-width:100%;height:auto!important;min-height:0;resize:none;overflow:visible;transition:box-shadow .16s ease,border-color .16s ease,opacity .16s ease;flex:0 0 auto}
+.kana-control-card{flex-basis:285px;width:285px}
+.kana-board-card{flex-basis:620px;width:620px;min-width:min(520px,100%)}
+.kana-session-card{flex-basis:305px;width:305px}
 .kana-workbench-tile.is-dragging{opacity:.55;border-style:dashed;box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 28%,transparent)}
 .kana-workbench-tile.is-drop-target{border-color:var(--primary);box-shadow:0 0 0 4px color-mix(in srgb,var(--primary) 18%,transparent),var(--shadow)}
 .kana-tile-toolbar{display:flex;align-items:center;gap:8px;min-height:34px;margin:-4px -4px 10px;padding:6px 8px;border-bottom:1px solid var(--line);color:var(--muted);font-size:.7rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em;user-select:none}
 .kana-drag-handle{display:grid;place-items:center;width:26px;height:24px;border:1px solid var(--line);border-radius:8px;background:var(--surface2);color:var(--primary);font-size:1rem;cursor:grab;touch-action:none}
-.kana-drag-handle:active{cursor:grabbing}.kana-resize-hint{margin-left:auto;color:var(--primary);opacity:.7}
+.kana-drag-handle:active{cursor:grabbing}.kana-resize-hint{margin-left:auto;display:grid;place-items:center;width:28px;height:26px;border:1px solid var(--line);border-radius:8px;background:var(--surface2);color:var(--primary);opacity:1;cursor:ew-resize;touch-action:none}.kana-workbench-tile.is-resizing{user-select:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 24%,transparent),var(--shadow)}
 .kana-workbench-tile::after{content:"";position:absolute;right:5px;bottom:5px;width:12px;height:12px;border-right:3px solid color-mix(in srgb,var(--primary) 72%,transparent);border-bottom:3px solid color-mix(in srgb,var(--primary) 72%,transparent);border-radius:0 0 3px 0;pointer-events:none}
 .kana-board-card .kana-board{min-width:0}.kana-session-card .kana-history-grid{max-height:none;overflow:visible}
 body.theme-pixel .kana-tile-toolbar{background:color-mix(in srgb,#fff 75%,var(--surface2));color:#5d4779}
 body.theme-garden .kana-tile-toolbar{background:color-mix(in srgb,#fffaf0 82%,var(--surface2));color:#526b59}
 body.theme-night .kana-tile-toolbar{background:color-mix(in srgb,#101a34 82%,var(--surface2));color:#b8c6ea}
-@media(max-width:1250px){.kana-control-card,.kana-board-card,.kana-session-card{min-height:auto}.kana-control-card{flex-basis:270px}.kana-board-card{flex-basis:calc(100% - 300px)}.kana-session-card{flex-basis:100%;width:100%}}
-@media(max-width:850px){.kana-practice-grid{display:grid!important;grid-template-columns:1fr}.kana-workbench-tile,.kana-control-card,.kana-board-card,.kana-session-card{width:100%!important;min-width:0;max-width:100%;resize:vertical;flex-basis:auto}.kana-tile-toolbar{position:sticky;top:0;z-index:3}.kana-native__actions{width:100%}.kana-native__actions .workbench-button{flex:1 1 180px}}
-@media(pointer:coarse){.kana-drag-handle{width:34px;height:30px}.kana-workbench-tile{resize:vertical}}
+@media(max-width:1250px){.kana-control-card{width:270px;flex-basis:270px}.kana-board-card{width:calc(100% - 300px);flex-basis:calc(100% - 300px)}.kana-session-card{width:100%;flex-basis:100%}}
+@media(max-width:850px){.kana-practice-grid{display:grid!important;grid-template-columns:1fr}.kana-workbench-tile,.kana-control-card,.kana-board-card,.kana-session-card{width:100%!important;min-width:0;max-width:100%;flex-basis:auto}.kana-resize-hint{display:none}.kana-tile-toolbar{position:sticky;top:0;z-index:3}.kana-native__actions{width:100%}.kana-native__actions .workbench-button{flex:1 1 180px}}
+@media(pointer:coarse){.kana-drag-handle{width:34px;height:30px}}
 
 /* =============================================================================
 90-Day Tracker V2.19 — native flexible workbench
@@ -264,3 +265,65 @@ V2.25 Michel Thomas Companion and Furigana Games visual parity
 .games-summary-head{grid-template-columns:repeat(3,minmax(0,1fr))}.games-system-chips{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0}.games-system-chips button{padding:.45rem .65rem;border:1px solid var(--border);border-radius:999px;background:var(--field);color:var(--ink);font-weight:800;cursor:pointer}.games-system-chips button.active{background:linear-gradient(135deg,var(--primary),var(--secondary));color:#fff;border-color:transparent}.games-system-chips small{opacity:.75}.games-intro{padding:1rem;border-radius:16px;background:var(--field)}.games-system-section{margin-bottom:1rem;padding:1rem;border:1px solid var(--border);border-radius:18px;background:var(--surface)}.games-system-section h2{display:flex;justify-content:space-between;gap:1rem;align-items:center;margin:.1rem 0 1rem}.games-system-section h2 small{font-size:.8rem;color:var(--muted)}.games-report-table .jp{font-family:"Noto Sans JP","Yu Gothic",sans-serif;font-size:1.03rem}.games-report-table .product-id{font-family:ui-monospace,Consolas,monospace;white-space:nowrap}.unverified{color:var(--muted);font-style:italic}.native-empty{padding:2rem;text-align:center;color:var(--muted)}
 html[data-theme=pixel] .mt-unit,html[data-theme=pixel] .mt-practice-card,html[data-theme=pixel] .games-system-section{background:#fffafd}html[data-theme=garden] .mt-unit,html[data-theme=garden] .mt-practice-card,html[data-theme=garden] .games-system-section{background:#fffaf0}html[data-theme=night] .mt-unit,html[data-theme=night] .mt-practice-card,html[data-theme=night] .games-system-section{background:#12192d;box-shadow:0 10px 24px rgba(0,0,0,.22)}
 @media(max-width:760px){.mt-progress-head,.games-summary-head{grid-template-columns:1fr}.mt-calendar-controls,.mt-reference-tools,.mt-flash-controls{align-items:stretch;flex-direction:column}.mt-calendar-controls label{min-width:0;width:100%}.mt-unit-grid,.mt-practice-grid,.mt-writing-grid,.mt-routine-grid{grid-template-columns:1fr}.mt-table-scroll,.games-table-scroll{overflow:visible;border:0}.mt-calendar-table,.games-report-table{min-width:0;display:block}.mt-calendar-table thead,.games-report-table thead{display:none}.mt-calendar-table tbody,.mt-calendar-table tr,.mt-calendar-table td,.games-report-table tbody,.games-report-table tr,.games-report-table td{display:block;width:100%}.mt-calendar-table tr,.games-report-table tr{margin-bottom:.8rem;padding:.75rem;border:1px solid var(--border);border-radius:14px;background:var(--field)}.mt-calendar-table td,.games-report-table td{padding:.35rem;border:0}.games-report-table td::before{content:attr(data-label);display:block;color:var(--accent);font-size:.68rem;font-weight:900;text-transform:uppercase}.mt-progress-tile,.mt-calendar-tile,.mt-syllabus-tile,.mt-reference-tile,.mt-writing-tile,.mt-flashcard-tile,.mt-routine-tile,.games-summary-tile,.games-table-tile{flex-basis:100%!important}}
+
+/* ============================================================================
+   V2.26 — HOME HERO TITLE LEGIBILITY
+   ----------------------------------------------------------------------------
+   The scenic source artwork includes decorative lettering. This glass-backed
+   title card masks that lettering so the live page title remains visually
+   clean and readable in every application theme.
+   ============================================================================ */
+.hero-v210 .hero-copy{
+  max-width:min(610px,92%);
+  padding:clamp(22px,3vw,36px);
+  border:1px solid color-mix(in srgb,var(--line) 78%,transparent);
+  border-radius:24px;
+  background:color-mix(in srgb,var(--surface) 91%,transparent);
+  box-shadow:0 18px 44px color-mix(in srgb,var(--ink) 16%,transparent);
+  -webkit-backdrop-filter:blur(13px) saturate(1.05);
+  backdrop-filter:blur(13px) saturate(1.05);
+}
+html[data-theme=pixel] .hero-v210 .hero-copy{
+  background:rgba(255,248,252,.92);
+}
+html[data-theme=garden] .hero-v210 .hero-copy{
+  background:rgba(255,250,240,.93);
+}
+html[data-theme=night] .hero-v210 .hero-copy{
+  background:rgba(10,18,43,.91);
+  border-color:rgba(130,150,205,.35);
+  box-shadow:0 20px 48px rgba(0,0,0,.42);
+}
+.hero-v210 .hero-copy h1,
+.hero-v210 .hero-copy .jp-tagline,
+.hero-v210 .hero-copy .hero-subtitle{
+  position:relative;
+  z-index:1;
+}
+@media(max-width:600px){
+  .hero-v210 .hero-copy{
+    max-width:100%;
+    padding:20px 16px;
+    border-radius:19px;
+  }
+}
+
+/* ============================================================================
+   V2.26 — SHARED AI COMPANION SAFETY LAYER
+   ----------------------------------------------------------------------------
+   Keeps the hosted companion above the workbench without interfering with the
+   fixed navigation or mobile tab bar. The external widget owns its own visual
+   presentation; these rules only provide safe page-level positioning.
+   ============================================================================ */
+iframe[src*="aminos.ai"],
+[id*="aminos-chat"],
+[class*="aminos-chat"]{
+  z-index:1400!important;
+}
+@media(max-width:720px){
+  iframe[src*="aminos.ai"],
+  [id*="aminos-chat"],
+  [class*="aminos-chat"]{
+    margin-bottom:68px!important;
+  }
+}
