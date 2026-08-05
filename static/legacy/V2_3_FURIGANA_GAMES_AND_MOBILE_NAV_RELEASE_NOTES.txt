@@ -1,0 +1,22 @@
+Think in Japanese v2.3 — Furigana Games + Mobile Navigation
+Date: 2026-08-04
+
+Changes
+- Added a themed, searchable Games with Furigana report.
+- Added the report under a new Tools/Herramientas navigation menu on all HTML pages.
+- Enabled Pixel Pastel, Garden Cream, and Tokyo Night theme switching on the report.
+- Corrected table header overlap by removing sticky table-header positioning.
+- Added a mobile card layout for the game table.
+- Standardized mobile navigation across all pages: two-column controls, full-width expanded menus, sibling-menu closing, outside-click closing, and narrow-phone fallback.
+- Added the new report to sitemap.xml.
+
+Files and directories modified
+- public_html/*.html (site navigation links and shared mobile behavior include)
+- public_html/games_with_furigana_by_system.html (new themed report)
+- public_html/site-navigation-v23.css (new shared navigation/mobile stylesheet)
+- public_html/site-navigation-v23.js (new shared theme/navigation behavior)
+- public_html/sitemap.xml
+- public_html/V2_3_FURIGANA_GAMES_AND_MOBILE_NAV_RELEASE_NOTES.txt
+
+Infrastructure changes
+- None. No hosting, deployment, server, manifest, package, or authentication files were changed.

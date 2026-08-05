@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}{{ deck.title }} — Think in Japanese{% endblock %}
+{% block content %}
+<section class="kana-heading phrase-heading"><div><span class="section-kicker">{{ current.icon }} {{ deck.kicker }}</span><h1>{{ deck.title }}</h1><p>{{ deck.subtitle }}</p></div></section>
+<section class="modes-card phrase-modes">
+  <div class="modes-card__intro"><span class="section-kicker">🧭 {{ 'MODES AVAILABLE' if lang=='en' else 'MODOS DISPONIBLES' }}</span><h2>{{ 'Use the web workbench or keep an offline copy' if lang=='en' else 'Usa el entorno web o conserva una copia sin conexión' }}</h2><p>{{ deck.overview }}</p></div>
+  <article class="mode-option"><span class="mode-option__icon">🌐</span><div><h3>{{ 'Flask workbench' if lang=='en' else 'Entorno Flask' }}</h3><p>{{ 'Search, filter, shuffle, resize panels, and store memorized phrases in this browser.' if lang=='en' else 'Busca, filtra, mezcla, ajusta paneles y guarda frases memorizadas en este navegador.' }}</p></div></article>
+  <article class="mode-option mode-option--download"><span class="mode-option__icon">📦</span><div><h3>{{ 'Offline HTML' if lang=='en' else 'HTML sin conexión' }}</h3><p>{{ 'Download the approved standalone page and open it directly in a desktop or mobile browser.' if lang=='en' else 'Descarga la página independiente aprobada y ábrela directamente en un navegador de escritorio o móvil.' }}</p><a class="primary-button offline-download" data-report-download href="{{ url_for('reports.download_page',lang=lang,slug=current.slug,theme='pixel') }}">⬇ {{ 'Download offline version' if lang=='en' else 'Descargar versión sin conexión' }}</a></div></article>
+</section>
+<section class="phrase-guide"><span class="section-kicker">💡 {{ 'HOW TO USE THIS DECK' if lang=='en' else 'CÓMO USAR ESTE MAZO' }}</span><ol>{% for step in deck.usage %}<li><b>{{ loop.index }}</b><span>{{ step }}</span></li>{% endfor %}</ol></section>
+<section class="phrase-native" data-language="{{ lang }}" data-deck="{{ deck.slug }}">
+  <header class="phrase-native__header"><div><span class="status-dot"></span><strong>{{ 'Interactive phrase workspace' if lang=='en' else 'Área interactiva de frases' }}</strong><small>{{ 'Move, resize, or minimize any tile. Your layout and memorized items stay in this browser.' if lang=='en' else 'Mueve, ajusta o minimiza cualquier panel. El diseño y las frases memorizadas se guardan en este navegador.' }}</small></div><div class="phrase-native__actions"><button class="workbench-button workbench-button--quiet" id="phrase-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button><button class="workbench-button workbench-button--quiet" id="phrase-progress-reset" type="button">↻ {{ 'Reset memorized' if lang=='en' else 'Reiniciar memorizadas' }}</button></div></header>
+  <div class="phrase-canvas" id="phrase-canvas">
+    <article class="phrase-workbench-tile phrase-controls-tile" data-phrase-tile="controls">
+      <div class="phrase-tile-toolbar"><span class="phrase-drag-handle">⠿</span><span>{{ 'Study controls' if lang=='en' else 'Controles de estudio' }}</span><button class="phrase-minimize" type="button">−</button><span class="phrase-resize-hint">↘</span></div>
+      <div class="phrase-tile-body">
+        <label class="phrase-search-label">{{ 'Search phrases' if lang=='en' else 'Buscar frases' }}<input id="phrase-search" type="search" placeholder="{{ 'Japanese, romaji, translation…' if lang=='en' else 'Japonés, romaji, traducción…' }}"></label>
+        <label>{{ 'Category' if lang=='en' else 'Categoría' }}<select id="phrase-category"><option value="">{{ 'All categories' if lang=='en' else 'Todas las categorías' }}</option></select></label>
+        <div class="phrase-control-stack"><button class="workbench-button workbench-button--primary" id="phrase-shuffle" type="button">🔀 {{ 'Shuffle deck' if lang=='en' else 'Mezclar mazo' }}</button><button class="workbench-button" id="phrase-focus" type="button">🎯 {{ 'Focus mode' if lang=='en' else 'Modo enfoque' }}</button><button class="workbench-button" id="phrase-memorized-only" type="button">✓ {{ 'Memorized only' if lang=='en' else 'Solo memorizadas' }}</button></div>
+        <div class="phrase-metrics"><div><small>{{ 'Visible' if lang=='en' else 'Visibles' }}</small><strong id="phrase-visible">100</strong></div><div><small>{{ 'Memorized' if lang=='en' else 'Memorizadas' }}</small><strong id="phrase-memorized">0</strong></div></div>
+      </div>
+    </article>
+    <article class="phrase-workbench-tile phrase-deck-tile" data-phrase-tile="deck">
+      <div class="phrase-tile-toolbar"><span class="phrase-drag-handle">⠿</span><span>{{ 'Phrase deck' if lang=='en' else 'Mazo de frases' }}</span><button class="phrase-minimize" type="button">−</button><span class="phrase-resize-hint">↘</span></div>
+      <div class="phrase-tile-body"><div class="phrase-list" id="phrase-list"></div><div class="phrase-empty" id="phrase-empty" hidden>{{ 'No phrases match the current filters.' if lang=='en' else 'Ninguna frase coincide con los filtros actuales.' }}</div></div>
+    </article>
+    <article class="phrase-workbench-tile phrase-notes-tile" data-phrase-tile="notes">
+      <div class="phrase-tile-toolbar"><span class="phrase-drag-handle">⠿</span><span>{{ 'Study guidance & notes' if lang=='en' else 'Guía y notas de estudio' }}</span><button class="phrase-minimize" type="button">−</button><span class="phrase-resize-hint">↘</span></div>
+      <div class="phrase-tile-body"><div class="phrase-guidance"><h3>{{ 'Practice deliberately' if lang=='en' else 'Practica con intención' }}</h3><p>{{ deck.notes }}</p><ul><li>{{ 'Say the Japanese before reading the translation.' if lang=='en' else 'Di el japonés antes de leer la traducción.' }}</li><li>{{ 'Use the literal field to understand Japanese word order.' if lang=='en' else 'Usa el campo literal para entender el orden japonés.' }}</li><li>{{ 'Review a small set repeatedly instead of scrolling all 100 at once.' if lang=='en' else 'Repasa un grupo pequeño varias veces en vez de recorrer las 100 de una vez.' }}</li></ul></div><label class="phrase-notes-label">{{ 'Personal notes' if lang=='en' else 'Notas personales' }}<textarea id="phrase-notes" placeholder="{{ 'Add usage reminders or phrases to practice aloud.' if lang=='en' else 'Añade recordatorios de uso o frases para practicar en voz alta.' }}"></textarea></label></div>
+    </article>
+  </div>
+</section>
+<script id="phrase-data" type="application/json">{{ deck["items"]|tojson }}</script>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/phrases.js') }}"></script>{% endblock %}

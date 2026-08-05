@@ -1,0 +1,18 @@
+Think in Japanese v2.5 — Collapsible Frequency Deck Sections
+
+Summary
+- Added minimize/expand controls to the three major Part 5 Frequency Deck sections:
+  - Top 25
+  - Top 50
+  - Top 100
+- Added the same behavior to both English and Spanish versions.
+- Each section remembers its minimized/open state in the browser.
+- Added mobile-friendly full-width minimize/expand controls.
+- Preserved the existing memorization tracking, theme selection, and responsive card behavior.
+
+Modified files
+- public_html/think_in_japanese_part5_frequency_deck.html
+- public_html/think_in_japanese_part5_frequency_deck_es.html
+
+Added files
+- public_html/V2_5_COLLAPSIBLE_FREQUENCY_DECK_RELEASE_NOTES.txt

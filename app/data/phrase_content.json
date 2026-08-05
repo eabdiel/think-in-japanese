@@ -1,0 +1,4820 @@
+{
+  "phrases-1": {
+    "en": [
+      {
+        "id": 1,
+        "jp": "眠い…",
+        "romaji": "Nemui...",
+        "natural": "I'm sleepy...",
+        "literal": "Sleepy...",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 2,
+        "jp": "まだ起きたくない。",
+        "romaji": "Mada okitakunai.",
+        "natural": "I don't want to get up yet.",
+        "literal": "Still get-up-want-not.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 3,
+        "jp": "今日は忙しそう。",
+        "romaji": "Kyou wa isogashisou.",
+        "natural": "Today looks busy.",
+        "literal": "Today, busy-seems.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 4,
+        "jp": "コーヒーが必要。",
+        "romaji": "Koohii ga hitsuyou.",
+        "natural": "I need coffee.",
+        "literal": "Coffee is necessary.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 5,
+        "jp": "よし、始めよう。",
+        "romaji": "Yoshi, hajimeyou.",
+        "natural": "Alright, let's start.",
+        "literal": "Good, start-let's.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 6,
+        "jp": "今日はゆっくり行こう。",
+        "romaji": "Kyou wa yukkuri ikou.",
+        "natural": "Let's take it slow today.",
+        "literal": "Today, slowly go-let's.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 7,
+        "jp": "時間がない。",
+        "romaji": "Jikan ga nai.",
+        "natural": "I don't have time.",
+        "literal": "Time does not exist.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 8,
+        "jp": "準備できた。",
+        "romaji": "Junbi dekita.",
+        "natural": "I'm ready.",
+        "literal": "Preparation was possible/done.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 9,
+        "jp": "忘れ物ないかな。",
+        "romaji": "Wasuremono nai kana.",
+        "natural": "I wonder if I forgot anything.",
+        "literal": "Forgotten thing, none I wonder.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 10,
+        "jp": "今日も頑張ろう。",
+        "romaji": "Kyou mo ganbarou.",
+        "natural": "Let's do our best today too.",
+        "literal": "Today also, endure/do-best-let's.",
+        "category": "Morning / Starting the Day"
+      },
+      {
+        "id": 11,
+        "jp": "まず何をする？",
+        "romaji": "Mazu nani o suru?",
+        "natural": "What should I do first?",
+        "literal": "First, what do?",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 12,
+        "jp": "これを先に終わらせよう。",
+        "romaji": "Kore o saki ni owaraseyou.",
+        "natural": "Let me finish this first.",
+        "literal": "This, first, finish-make-let's.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 13,
+        "jp": "ちょっと集中しよう。",
+        "romaji": "Chotto shuuchuu shiyou.",
+        "natural": "Let me focus for a bit.",
+        "literal": "A little concentration do-let's.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 14,
+        "jp": "これは大事。",
+        "romaji": "Kore wa daiji.",
+        "natural": "This is important.",
+        "literal": "This, important.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 15,
+        "jp": "あとで確認しよう。",
+        "romaji": "Ato de kakunin shiyou.",
+        "natural": "I'll check later.",
+        "literal": "Later, confirmation do-let's.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 16,
+        "jp": "ちょっと待って。",
+        "romaji": "Chotto matte.",
+        "natural": "Wait a second.",
+        "literal": "A little wait.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 17,
+        "jp": "意味が分からない。",
+        "romaji": "Imi ga wakaranai.",
+        "natural": "I don't understand what it means.",
+        "literal": "Meaning is not understood.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 18,
+        "jp": "これは後回しでいい。",
+        "romaji": "Kore wa atomawashi de ii.",
+        "natural": "This can wait.",
+        "literal": "This, later-turn is good.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 19,
+        "jp": "一つずつやろう。",
+        "romaji": "Hitotsu zutsu yarou.",
+        "natural": "Let's do it one by one.",
+        "literal": "One each do-let's.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 20,
+        "jp": "やっと終わった。",
+        "romaji": "Yatto owatta.",
+        "natural": "Finally done.",
+        "literal": "At last, ended.",
+        "category": "Work / Focus Mode"
+      },
+      {
+        "id": 21,
+        "jp": "すごく疲れた。",
+        "romaji": "Sugoku tsukareta.",
+        "natural": "I'm really tired.",
+        "literal": "Amazingly tired.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 22,
+        "jp": "もう無理。",
+        "romaji": "Mou muri.",
+        "natural": "I can't anymore.",
+        "literal": "Already impossible.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 23,
+        "jp": "休みたい。",
+        "romaji": "Yasumitai.",
+        "natural": "I want to rest.",
+        "literal": "Rest-want.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 24,
+        "jp": "頭がいっぱい。",
+        "romaji": "Atama ga ippai.",
+        "natural": "My head is full.",
+        "literal": "Head is full.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 25,
+        "jp": "ちょっと休憩しよう。",
+        "romaji": "Chotto kyuukei shiyou.",
+        "natural": "Let's take a short break.",
+        "literal": "A little break do-let's.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 26,
+        "jp": "今日は長い日だ。",
+        "romaji": "Kyou wa nagai hi da.",
+        "natural": "Today is a long day.",
+        "literal": "Today, long day is.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 27,
+        "jp": "体が重い。",
+        "romaji": "Karada ga omoi.",
+        "natural": "My body feels heavy.",
+        "literal": "Body is heavy.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 28,
+        "jp": "眠くなってきた。",
+        "romaji": "Nemuku natte kita.",
+        "natural": "I'm starting to get sleepy.",
+        "literal": "Sleepy becoming came.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 29,
+        "jp": "もう少しだけ。",
+        "romaji": "Mou sukoshi dake.",
+        "natural": "Just a little more.",
+        "literal": "Already/now little only.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 30,
+        "jp": "今日は早く寝よう。",
+        "romaji": "Kyou wa hayaku neyou.",
+        "natural": "I'll sleep early today.",
+        "literal": "Today, early sleep-let's.",
+        "category": "Tired / Overwhelmed"
+      },
+      {
+        "id": 31,
+        "jp": "なんでだろう。",
+        "romaji": "Nande darou.",
+        "natural": "I wonder why.",
+        "literal": "Why, I wonder.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 32,
+        "jp": "どうすればいい？",
+        "romaji": "Dou sureba ii?",
+        "natural": "What should I do?",
+        "literal": "How if-do good?",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 33,
+        "jp": "ちょっと変だな。",
+        "romaji": "Chotto hen da na.",
+        "natural": "That's kind of strange.",
+        "literal": "A little strange, huh.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 34,
+        "jp": "何か違う。",
+        "romaji": "Nanika chigau.",
+        "natural": "Something is off.",
+        "literal": "Something different.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 35,
+        "jp": "もう一回考えよう。",
+        "romaji": "Mou ikkai kangaeyou.",
+        "natural": "Let's think about it again.",
+        "literal": "One more time think-let's.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 36,
+        "jp": "たぶんこれだ。",
+        "romaji": "Tabun kore da.",
+        "natural": "It's probably this.",
+        "literal": "Probably this is.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 37,
+        "jp": "違った。",
+        "romaji": "Chigatta.",
+        "natural": "That was wrong.",
+        "literal": "Was different.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 38,
+        "jp": "なるほど。",
+        "romaji": "Naruhodo.",
+        "natural": "I see.",
+        "literal": "As it becomes / makes sense.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 39,
+        "jp": "分かってきた。",
+        "romaji": "Wakatte kita.",
+        "natural": "I'm starting to understand.",
+        "literal": "Understanding came.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 40,
+        "jp": "まだ分からない。",
+        "romaji": "Mada wakaranai.",
+        "natural": "I still don't understand.",
+        "literal": "Still not understood.",
+        "category": "Confused / Thinking Through Problems"
+      },
+      {
+        "id": 41,
+        "jp": "お腹すいた。",
+        "romaji": "Onaka suita.",
+        "natural": "I'm hungry.",
+        "literal": "Stomach emptied.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 42,
+        "jp": "何を食べよう？",
+        "romaji": "Nani o tabeyou?",
+        "natural": "What should I eat?",
+        "literal": "What eat-let's?",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 43,
+        "jp": "これ美味しそう。",
+        "romaji": "Kore oishisou.",
+        "natural": "This looks tasty.",
+        "literal": "This delicious-seems.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 44,
+        "jp": "いただきます。",
+        "romaji": "Itadakimasu.",
+        "natural": "Let's eat / I gratefully receive.",
+        "literal": "I humbly receive.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 45,
+        "jp": "ごちそうさま。",
+        "romaji": "Gochisousama.",
+        "natural": "Thanks for the meal.",
+        "literal": "Feast honorable-state.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 46,
+        "jp": "水が飲みたい。",
+        "romaji": "Mizu ga nomitai.",
+        "natural": "I want to drink water.",
+        "literal": "Water drink-want.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 47,
+        "jp": "部屋を片付けよう。",
+        "romaji": "Heya o katazukeyou.",
+        "natural": "Let's clean up the room.",
+        "literal": "Room tidy-up-let's.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 48,
+        "jp": "洗濯しなきゃ。",
+        "romaji": "Sentaku shinakya.",
+        "natural": "I have to do laundry.",
+        "literal": "Laundry must-do.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 49,
+        "jp": "これはあとでやる。",
+        "romaji": "Kore wa ato de yaru.",
+        "natural": "I'll do this later.",
+        "literal": "This, later do.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 50,
+        "jp": "家に帰りたい。",
+        "romaji": "Ie ni kaeritai.",
+        "natural": "I want to go home.",
+        "literal": "Home to return-want.",
+        "category": "Food / Home / Daily Life"
+      },
+      {
+        "id": 51,
+        "jp": "ここはどこ？",
+        "romaji": "Koko wa doko?",
+        "natural": "Where am I?",
+        "literal": "Here is where?",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 52,
+        "jp": "駅はどっち？",
+        "romaji": "Eki wa dotchi?",
+        "natural": "Which way is the station?",
+        "literal": "Station is which?",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 53,
+        "jp": "道に迷った。",
+        "romaji": "Michi ni mayotta.",
+        "natural": "I got lost.",
+        "literal": "In road got confused.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 54,
+        "jp": "この場所、いいね。",
+        "romaji": "Kono basho, ii ne.",
+        "natural": "This place is nice.",
+        "literal": "This place, good, right?",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 55,
+        "jp": "写真を撮りたい。",
+        "romaji": "Shashin o toritai.",
+        "natural": "I want to take a picture.",
+        "literal": "Photo take-want.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 56,
+        "jp": "人が多い。",
+        "romaji": "Hito ga ooi.",
+        "natural": "There are a lot of people.",
+        "literal": "People are many.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 57,
+        "jp": "静かでいい。",
+        "romaji": "Shizuka de ii.",
+        "natural": "It's nice and quiet.",
+        "literal": "Quiet and good.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 58,
+        "jp": "次はどこに行く？",
+        "romaji": "Tsugi wa doko ni iku?",
+        "natural": "Where do we go next?",
+        "literal": "Next, where to go?",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 59,
+        "jp": "ちょっと歩こう。",
+        "romaji": "Chotto arukou.",
+        "natural": "Let's walk a little.",
+        "literal": "A little walk-let's.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 60,
+        "jp": "ここで休もう。",
+        "romaji": "Koko de yasumou.",
+        "natural": "Let's rest here.",
+        "literal": "Here at rest-let's.",
+        "category": "Travel / Outside"
+      },
+      {
+        "id": 61,
+        "jp": "嬉しい。",
+        "romaji": "Ureshii.",
+        "natural": "I'm happy.",
+        "literal": "Happy.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 62,
+        "jp": "楽しい。",
+        "romaji": "Tanoshii.",
+        "natural": "This is fun.",
+        "literal": "Fun.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 63,
+        "jp": "ちょっと不安。",
+        "romaji": "Chotto fuan.",
+        "natural": "I'm a little nervous.",
+        "literal": "A little uneasy.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 64,
+        "jp": "イライラする。",
+        "romaji": "Iraira suru.",
+        "natural": "I'm annoyed.",
+        "literal": "Irritation do.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 65,
+        "jp": "びっくりした。",
+        "romaji": "Bikkuri shita.",
+        "natural": "That surprised me.",
+        "literal": "Surprise did.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 66,
+        "jp": "ちょっと怖い。",
+        "romaji": "Chotto kowai.",
+        "natural": "That's a little scary.",
+        "literal": "A little scary.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 67,
+        "jp": "安心した。",
+        "romaji": "Anshin shita.",
+        "natural": "I'm relieved.",
+        "literal": "Peace-of-mind did.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 68,
+        "jp": "まあ、いいか。",
+        "romaji": "Maa, ii ka.",
+        "natural": "Well, it's fine I guess.",
+        "literal": "Well, good maybe.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 69,
+        "jp": "最高。",
+        "romaji": "Saikou.",
+        "natural": "Awesome / the best.",
+        "literal": "Highest.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 70,
+        "jp": "最悪。",
+        "romaji": "Saiaku.",
+        "natural": "This sucks / the worst.",
+        "literal": "Most bad.",
+        "category": "Emotions / Reactions"
+      },
+      {
+        "id": 71,
+        "jp": "おはよう。",
+        "romaji": "Ohayou.",
+        "natural": "Morning.",
+        "literal": "Early.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 72,
+        "jp": "お疲れさま。",
+        "romaji": "Otsukaresama.",
+        "natural": "Good work / thanks for your effort.",
+        "literal": "Honorable tired-state.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 73,
+        "jp": "大丈夫？",
+        "romaji": "Daijoubu?",
+        "natural": "Are you okay?",
+        "literal": "All right?",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 74,
+        "jp": "大丈夫。",
+        "romaji": "Daijoubu.",
+        "natural": "I'm okay.",
+        "literal": "All right.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 75,
+        "jp": "ありがとう。",
+        "romaji": "Arigatou.",
+        "natural": "Thank you.",
+        "literal": "Difficult to exist / appreciated.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 76,
+        "jp": "ごめん。",
+        "romaji": "Gomen.",
+        "natural": "Sorry.",
+        "literal": "Forgiveness.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 77,
+        "jp": "いいよ。",
+        "romaji": "Ii yo.",
+        "natural": "It's okay / sure.",
+        "literal": "Good, you know.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 78,
+        "jp": "またね。",
+        "romaji": "Mata ne.",
+        "natural": "See you later.",
+        "literal": "Again, okay?",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 79,
+        "jp": "久しぶり。",
+        "romaji": "Hisashiburi.",
+        "natural": "Long time no see.",
+        "literal": "After a long while.",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 80,
+        "jp": "元気？",
+        "romaji": "Genki?",
+        "natural": "How are you?",
+        "literal": "Energy?",
+        "category": "Social / Small Talk"
+      },
+      {
+        "id": 81,
+        "jp": "やってみよう。",
+        "romaji": "Yatte miyou.",
+        "natural": "Let's try it.",
+        "literal": "Do and see-let's.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 82,
+        "jp": "無理しないで。",
+        "romaji": "Muri shinaide.",
+        "natural": "Don't overdo it.",
+        "literal": "Impossible don't do.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 83,
+        "jp": "少しずつでいい。",
+        "romaji": "Sukoshi zutsu de ii.",
+        "natural": "Little by little is fine.",
+        "literal": "Little each is good.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 84,
+        "jp": "今やろう。",
+        "romaji": "Ima yarou.",
+        "natural": "Let's do it now.",
+        "literal": "Now do-let's.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 85,
+        "jp": "あとでいい。",
+        "romaji": "Ato de ii.",
+        "natural": "Later is fine.",
+        "literal": "Later is good.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 86,
+        "jp": "これはやめよう。",
+        "romaji": "Kore wa yameyou.",
+        "natural": "Let's stop this.",
+        "literal": "This stop-let's.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 87,
+        "jp": "もう決めた。",
+        "romaji": "Mou kimeta.",
+        "natural": "I've already decided.",
+        "literal": "Already decided.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 88,
+        "jp": "まだ迷ってる。",
+        "romaji": "Mada mayotteru.",
+        "natural": "I'm still unsure.",
+        "literal": "Still lost/hesitating.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 89,
+        "jp": "できるかも。",
+        "romaji": "Dekiru kamo.",
+        "natural": "Maybe I can do it.",
+        "literal": "Can maybe.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 90,
+        "jp": "なんとかなる。",
+        "romaji": "Nantoka naru.",
+        "natural": "It'll work out somehow.",
+        "literal": "Somehow becomes.",
+        "category": "Decision / Motivation"
+      },
+      {
+        "id": 91,
+        "jp": "今日はもう終わり。",
+        "romaji": "Kyou wa mou owari.",
+        "natural": "That's enough for today.",
+        "literal": "Today, already end.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 92,
+        "jp": "いい一日だった。",
+        "romaji": "Ii ichinichi datta.",
+        "natural": "It was a good day.",
+        "literal": "Good one-day was.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 93,
+        "jp": "疲れたけど楽しかった。",
+        "romaji": "Tsukareta kedo tanoshikatta.",
+        "natural": "I was tired, but it was fun.",
+        "literal": "Tired but fun-was.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 94,
+        "jp": "明日またやろう。",
+        "romaji": "Ashita mata yarou.",
+        "natural": "Let's do it again tomorrow.",
+        "literal": "Tomorrow again do-let's.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 95,
+        "jp": "早く寝なきゃ。",
+        "romaji": "Hayaku nenakya.",
+        "natural": "I need to sleep early.",
+        "literal": "Early sleep-must.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 96,
+        "jp": "もう寝る。",
+        "romaji": "Mou neru.",
+        "natural": "I'm going to sleep now.",
+        "literal": "Already/now sleep.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 97,
+        "jp": "電気を消そう。",
+        "romaji": "Denki o kesou.",
+        "natural": "Let's turn off the light.",
+        "literal": "Electricity/light erase-let's.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 98,
+        "jp": "明日は忙しい。",
+        "romaji": "Ashita wa isogashii.",
+        "natural": "Tomorrow will be busy.",
+        "literal": "Tomorrow busy.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 99,
+        "jp": "ちょっとだけ見よう。",
+        "romaji": "Chotto dake miyou.",
+        "natural": "I'll watch just a little.",
+        "literal": "A little only see-let's.",
+        "category": "Night / Ending the Day"
+      },
+      {
+        "id": 100,
+        "jp": "おやすみ。",
+        "romaji": "Oyasumi.",
+        "natural": "Good night.",
+        "literal": "Rest.",
+        "category": "Night / Ending the Day"
+      }
+    ],
+    "es": [
+      {
+        "id": 1,
+        "jp": "眠い…",
+        "romaji": "Nemui...",
+        "natural": "Tengo sueño…",
+        "literal": "Sueño…",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 2,
+        "jp": "まだ起きたくない。",
+        "romaji": "Mada okitakunai.",
+        "natural": "Todavía no me quiero levantar.",
+        "literal": "Todavía levantarme-querer-no.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 3,
+        "jp": "今日は忙しそう。",
+        "romaji": "Kyou wa isogashisou.",
+        "natural": "Parece que hoy va a ser un día ocupado.",
+        "literal": "Hoy, ocupado-parece.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 4,
+        "jp": "コーヒーが必要。",
+        "romaji": "Koohii ga hitsuyou.",
+        "natural": "Necesito café.",
+        "literal": "Café es necesario.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 5,
+        "jp": "よし、始めよう。",
+        "romaji": "Yoshi, hajimeyou.",
+        "natural": "Bueno, vamos a empezar.",
+        "literal": "Bien, empezar-vamos.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 6,
+        "jp": "今日はゆっくり行こう。",
+        "romaji": "Kyou wa yukkuri ikou.",
+        "natural": "Vamos con calma hoy.",
+        "literal": "Hoy, despacio ir-vamos.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 7,
+        "jp": "時間がない。",
+        "romaji": "Jikan ga nai.",
+        "natural": "No tengo tiempo.",
+        "literal": "Tiempo no existe.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 8,
+        "jp": "準備できた。",
+        "romaji": "Junbi dekita.",
+        "natural": "Ya estoy listo.",
+        "literal": "Preparación hecha / fue posible.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 9,
+        "jp": "忘れ物ないかな。",
+        "romaji": "Wasuremono nai kana.",
+        "natural": "Me pregunto si se me olvidó algo.",
+        "literal": "Cosa olvidada, no hay, me pregunto.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 10,
+        "jp": "今日も頑張ろう。",
+        "romaji": "Kyou mo ganbarou.",
+        "natural": "Vamos a dar lo mejor hoy también.",
+        "literal": "Hoy también, esforzarnos-vamos.",
+        "category": "Mañana / Empezar el día"
+      },
+      {
+        "id": 11,
+        "jp": "まず何をする？",
+        "romaji": "Mazu nani o suru?",
+        "natural": "¿Qué hago primero?",
+        "literal": "Primero, ¿qué hacer?",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 12,
+        "jp": "これを先に終わらせよう。",
+        "romaji": "Kore o saki ni owaraseyou.",
+        "natural": "Voy a terminar esto primero.",
+        "literal": "Esto, primero, terminar-hacer-vamos.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 13,
+        "jp": "ちょっと集中しよう。",
+        "romaji": "Chotto shuuchuu shiyou.",
+        "natural": "Déjame concentrarme un rato.",
+        "literal": "Un poco concentración hacer-vamos.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 14,
+        "jp": "これは大事。",
+        "romaji": "Kore wa daiji.",
+        "natural": "Esto es importante.",
+        "literal": "Esto, importante.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 15,
+        "jp": "あとで確認しよう。",
+        "romaji": "Ato de kakunin shiyou.",
+        "natural": "Lo reviso después.",
+        "literal": "Después, confirmación hacer-vamos.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 16,
+        "jp": "ちょっと待って。",
+        "romaji": "Chotto matte.",
+        "natural": "Espera un segundo.",
+        "literal": "Un poco espera.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 17,
+        "jp": "意味が分からない。",
+        "romaji": "Imi ga wakaranai.",
+        "natural": "No entiendo qué significa.",
+        "literal": "Significado no se entiende.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 18,
+        "jp": "これは後回しでいい。",
+        "romaji": "Kore wa atomawashi de ii.",
+        "natural": "Esto puede esperar.",
+        "literal": "Esto, para después está bien.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 19,
+        "jp": "一つずつやろう。",
+        "romaji": "Hitotsu zutsu yarou.",
+        "natural": "Vamos uno por uno.",
+        "literal": "Uno cada vez hacer-vamos.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 20,
+        "jp": "やっと終わった。",
+        "romaji": "Yatto owatta.",
+        "natural": "Por fin terminé.",
+        "literal": "Por fin, terminó.",
+        "category": "Trabajo / Modo enfoque"
+      },
+      {
+        "id": 21,
+        "jp": "すごく疲れた。",
+        "romaji": "Sugoku tsukareta.",
+        "natural": "Estoy bien cansado.",
+        "literal": "Increíblemente cansado.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 22,
+        "jp": "もう無理。",
+        "romaji": "Mou muri.",
+        "natural": "Ya no puedo más.",
+        "literal": "Ya imposible.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 23,
+        "jp": "休みたい。",
+        "romaji": "Yasumitai.",
+        "natural": "Quiero descansar.",
+        "literal": "Descansar-quiero.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 24,
+        "jp": "頭がいっぱい。",
+        "romaji": "Atama ga ippai.",
+        "natural": "Tengo la cabeza llena.",
+        "literal": "Cabeza está llena.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 25,
+        "jp": "ちょっと休憩しよう。",
+        "romaji": "Chotto kyuukei shiyou.",
+        "natural": "Tomemos un descansito.",
+        "literal": "Un poco descanso hacer-vamos.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 26,
+        "jp": "今日は長い日だ。",
+        "romaji": "Kyou wa nagai hi da.",
+        "natural": "Hoy ha sido un día largo.",
+        "literal": "Hoy, día largo es.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 27,
+        "jp": "体が重い。",
+        "romaji": "Karada ga omoi.",
+        "natural": "Siento el cuerpo pesado.",
+        "literal": "Cuerpo es pesado.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 28,
+        "jp": "眠くなってきた。",
+        "romaji": "Nemuku natte kita.",
+        "natural": "Me está dando sueño.",
+        "literal": "Sueño convirtiéndose vino.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 29,
+        "jp": "もう少しだけ。",
+        "romaji": "Mou sukoshi dake.",
+        "natural": "Solo un poquito más.",
+        "literal": "Ya/ahora poquito solamente.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 30,
+        "jp": "今日は早く寝よう。",
+        "romaji": "Kyou wa hayaku neyou.",
+        "natural": "Hoy me voy a dormir temprano.",
+        "literal": "Hoy, temprano dormir-vamos.",
+        "category": "Cansancio / Abrumado"
+      },
+      {
+        "id": 31,
+        "jp": "なんでだろう。",
+        "romaji": "Nande darou.",
+        "natural": "Me pregunto por qué.",
+        "literal": "Por qué, me pregunto.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 32,
+        "jp": "どうすればいい？",
+        "romaji": "Dou sureba ii?",
+        "natural": "¿Qué debería hacer?",
+        "literal": "Cómo si-hago bueno?",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 33,
+        "jp": "ちょっと変だな。",
+        "romaji": "Chotto hen da na.",
+        "natural": "Eso está medio raro.",
+        "literal": "Un poco raro, ¿no?",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 34,
+        "jp": "何か違う。",
+        "romaji": "Nanika chigau.",
+        "natural": "Algo no cuadra.",
+        "literal": "Algo diferente.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 35,
+        "jp": "もう一回考えよう。",
+        "romaji": "Mou ikkai kangaeyou.",
+        "natural": "Vamos a pensarlo otra vez.",
+        "literal": "Una vez más pensar-vamos.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 36,
+        "jp": "たぶんこれだ。",
+        "romaji": "Tabun kore da.",
+        "natural": "Probablemente es esto.",
+        "literal": "Probablemente esto es.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 37,
+        "jp": "違った。",
+        "romaji": "Chigatta.",
+        "natural": "Me equivoqué.",
+        "literal": "Fue diferente.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 38,
+        "jp": "なるほど。",
+        "romaji": "Naruhodo.",
+        "natural": "Ah, ya veo.",
+        "literal": "Así se vuelve / tiene sentido.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 39,
+        "jp": "分かってきた。",
+        "romaji": "Wakatte kita.",
+        "natural": "Estoy empezando a entender.",
+        "literal": "Entendimiento vino.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 40,
+        "jp": "まだ分からない。",
+        "romaji": "Mada wakaranai.",
+        "natural": "Todavía no entiendo.",
+        "literal": "Todavía no entendido.",
+        "category": "Confusión / Pensar problemas"
+      },
+      {
+        "id": 41,
+        "jp": "お腹すいた。",
+        "romaji": "Onaka suita.",
+        "natural": "Tengo hambre.",
+        "literal": "Estómago se vació.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 42,
+        "jp": "何を食べよう？",
+        "romaji": "Nani o tabeyou?",
+        "natural": "¿Qué debería comer?",
+        "literal": "Qué comer-vamos?",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 43,
+        "jp": "これ美味しそう。",
+        "romaji": "Kore oishisou.",
+        "natural": "Esto se ve rico.",
+        "literal": "Esto delicioso-parece.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 44,
+        "jp": "いただきます。",
+        "romaji": "Itadakimasu.",
+        "natural": "Buen provecho / gracias por la comida.",
+        "literal": "Humildemente recibo.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 45,
+        "jp": "ごちそうさま。",
+        "romaji": "Gochisousama.",
+        "natural": "Gracias por la comida.",
+        "literal": "Banquete estado-honorable.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 46,
+        "jp": "水が飲みたい。",
+        "romaji": "Mizu ga nomitai.",
+        "natural": "Quiero tomar agua.",
+        "literal": "Agua beber-quiero.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 47,
+        "jp": "部屋を片付けよう。",
+        "romaji": "Heya o katazukeyou.",
+        "natural": "Vamos a recoger el cuarto.",
+        "literal": "Cuarto ordenar-vamos.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 48,
+        "jp": "洗濯しなきゃ。",
+        "romaji": "Sentaku shinakya.",
+        "natural": "Tengo que lavar ropa.",
+        "literal": "Lavandería debe-hacer.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 49,
+        "jp": "これはあとでやる。",
+        "romaji": "Kore wa ato de yaru.",
+        "natural": "Esto lo hago después.",
+        "literal": "Esto, después hacer.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 50,
+        "jp": "家に帰りたい。",
+        "romaji": "Ie ni kaeritai.",
+        "natural": "Quiero volver a casa.",
+        "literal": "Casa a regresar-quiero.",
+        "category": "Comida / Casa / Vida diaria"
+      },
+      {
+        "id": 51,
+        "jp": "ここはどこ？",
+        "romaji": "Koko wa doko?",
+        "natural": "¿Dónde estoy?",
+        "literal": "Aquí es dónde?",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 52,
+        "jp": "駅はどっち？",
+        "romaji": "Eki wa dotchi?",
+        "natural": "¿Por dónde queda la estación?",
+        "literal": "Estación es cuál?",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 53,
+        "jp": "道に迷った。",
+        "romaji": "Michi ni mayotta.",
+        "natural": "Me perdí.",
+        "literal": "En camino me confundí.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 54,
+        "jp": "この場所、いいね。",
+        "romaji": "Kono basho, ii ne.",
+        "natural": "Este lugar está lindo.",
+        "literal": "Este lugar, bueno, ¿verdad?",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 55,
+        "jp": "写真を撮りたい。",
+        "romaji": "Shashin o toritai.",
+        "natural": "Quiero tomar una foto.",
+        "literal": "Foto tomar-quiero.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 56,
+        "jp": "人が多い。",
+        "romaji": "Hito ga ooi.",
+        "natural": "Hay mucha gente.",
+        "literal": "Personas son muchas.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 57,
+        "jp": "静かでいい。",
+        "romaji": "Shizuka de ii.",
+        "natural": "Está tranquilo y agradable.",
+        "literal": "Tranquilo y bueno.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 58,
+        "jp": "次はどこに行く？",
+        "romaji": "Tsugi wa doko ni iku?",
+        "natural": "¿A dónde vamos después?",
+        "literal": "Siguiente, a dónde ir?",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 59,
+        "jp": "ちょっと歩こう。",
+        "romaji": "Chotto arukou.",
+        "natural": "Vamos a caminar un poco.",
+        "literal": "Un poco caminar-vamos.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 60,
+        "jp": "ここで休もう。",
+        "romaji": "Koko de yasumou.",
+        "natural": "Descansemos aquí.",
+        "literal": "Aquí en descansar-vamos.",
+        "category": "Viaje / Afuera"
+      },
+      {
+        "id": 61,
+        "jp": "嬉しい。",
+        "romaji": "Ureshii.",
+        "natural": "Estoy feliz.",
+        "literal": "Feliz.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 62,
+        "jp": "楽しい。",
+        "romaji": "Tanoshii.",
+        "natural": "Esto está divertido.",
+        "literal": "Divertido.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 63,
+        "jp": "ちょっと不安。",
+        "romaji": "Chotto fuan.",
+        "natural": "Estoy un poco nervioso.",
+        "literal": "Un poco inquieto.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 64,
+        "jp": "イライラする。",
+        "romaji": "Iraira suru.",
+        "natural": "Estoy irritado.",
+        "literal": "Irritación hacer.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 65,
+        "jp": "びっくりした。",
+        "romaji": "Bikkuri shita.",
+        "natural": "Eso me sorprendió.",
+        "literal": "Sorpresa hizo.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 66,
+        "jp": "ちょっと怖い。",
+        "romaji": "Chotto kowai.",
+        "natural": "Eso da un poco de miedo.",
+        "literal": "Un poco miedo.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 67,
+        "jp": "安心した。",
+        "romaji": "Anshin shita.",
+        "natural": "Qué alivio.",
+        "literal": "Tranquilidad hizo.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 68,
+        "jp": "まあ、いいか。",
+        "romaji": "Maa, ii ka.",
+        "natural": "Bueno, está bien supongo.",
+        "literal": "Bueno, bien quizás.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 69,
+        "jp": "最高。",
+        "romaji": "Saikou.",
+        "natural": "Brutal / lo máximo.",
+        "literal": "Lo más alto.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 70,
+        "jp": "最悪。",
+        "romaji": "Saiaku.",
+        "natural": "Qué mal / lo peor.",
+        "literal": "Lo más malo.",
+        "category": "Emociones / Reacciones"
+      },
+      {
+        "id": 71,
+        "jp": "おはよう。",
+        "romaji": "Ohayou.",
+        "natural": "Buenos días.",
+        "literal": "Temprano.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 72,
+        "jp": "お疲れさま。",
+        "romaji": "Otsukaresama.",
+        "natural": "Buen trabajo / gracias por el esfuerzo.",
+        "literal": "Honorable estado-cansado.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 73,
+        "jp": "大丈夫？",
+        "romaji": "Daijoubu?",
+        "natural": "¿Estás bien?",
+        "literal": "Todo bien?",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 74,
+        "jp": "大丈夫。",
+        "romaji": "Daijoubu.",
+        "natural": "Estoy bien.",
+        "literal": "Todo bien.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 75,
+        "jp": "ありがとう。",
+        "romaji": "Arigatou.",
+        "natural": "Gracias.",
+        "literal": "Difícil de existir / apreciado.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 76,
+        "jp": "ごめん。",
+        "romaji": "Gomen.",
+        "natural": "Perdón.",
+        "literal": "Perdón.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 77,
+        "jp": "いいよ。",
+        "romaji": "Ii yo.",
+        "natural": "Está bien / claro.",
+        "literal": "Bueno, ¿sabes?",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 78,
+        "jp": "またね。",
+        "romaji": "Mata ne.",
+        "natural": "Nos vemos.",
+        "literal": "Otra vez, ¿sí?",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 79,
+        "jp": "久しぶり。",
+        "romaji": "Hisashiburi.",
+        "natural": "Tanto tiempo.",
+        "literal": "Después de mucho tiempo.",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 80,
+        "jp": "元気？",
+        "romaji": "Genki?",
+        "natural": "¿Cómo estás?",
+        "literal": "Energía?",
+        "category": "Social / Conversación ligera"
+      },
+      {
+        "id": 81,
+        "jp": "やってみよう。",
+        "romaji": "Yatte miyou.",
+        "natural": "Vamos a intentarlo.",
+        "literal": "Hacer y ver-vamos.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 82,
+        "jp": "無理しないで。",
+        "romaji": "Muri shinaide.",
+        "natural": "No te excedas.",
+        "literal": "Imposible no hagas.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 83,
+        "jp": "少しずつでいい。",
+        "romaji": "Sukoshi zutsu de ii.",
+        "natural": "Poco a poco está bien.",
+        "literal": "Poquito cada vez está bien.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 84,
+        "jp": "今やろう。",
+        "romaji": "Ima yarou.",
+        "natural": "Vamos a hacerlo ahora.",
+        "literal": "Ahora hacer-vamos.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 85,
+        "jp": "あとでいい。",
+        "romaji": "Ato de ii.",
+        "natural": "Después está bien.",
+        "literal": "Después está bien.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 86,
+        "jp": "これはやめよう。",
+        "romaji": "Kore wa yameyou.",
+        "natural": "Vamos a dejar esto.",
+        "literal": "Esto parar-vamos.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 87,
+        "jp": "もう決めた。",
+        "romaji": "Mou kimeta.",
+        "natural": "Ya decidí.",
+        "literal": "Ya decidido.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 88,
+        "jp": "まだ迷ってる。",
+        "romaji": "Mada mayotteru.",
+        "natural": "Todavía estoy dudando.",
+        "literal": "Todavía perdido/dudando.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 89,
+        "jp": "できるかも。",
+        "romaji": "Dekiru kamo.",
+        "natural": "Quizás puedo hacerlo.",
+        "literal": "Poder quizás.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 90,
+        "jp": "なんとかなる。",
+        "romaji": "Nantoka naru.",
+        "natural": "De alguna manera se resuelve.",
+        "literal": "De alguna forma se vuelve.",
+        "category": "Decisión / Motivación"
+      },
+      {
+        "id": 91,
+        "jp": "今日はもう終わり。",
+        "romaji": "Kyou wa mou owari.",
+        "natural": "Por hoy ya es suficiente.",
+        "literal": "Hoy, ya final.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 92,
+        "jp": "いい一日だった。",
+        "romaji": "Ii ichinichi datta.",
+        "natural": "Fue un buen día.",
+        "literal": "Buen un-día fue.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 93,
+        "jp": "疲れたけど楽しかった。",
+        "romaji": "Tsukareta kedo tanoshikatta.",
+        "natural": "Estaba cansado, pero fue divertido.",
+        "literal": "Cansado pero divertido-fue.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 94,
+        "jp": "明日またやろう。",
+        "romaji": "Ashita mata yarou.",
+        "natural": "Mañana lo hacemos otra vez.",
+        "literal": "Mañana otra vez hacer-vamos.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 95,
+        "jp": "早く寝なきゃ。",
+        "romaji": "Hayaku nenakya.",
+        "natural": "Tengo que dormir temprano.",
+        "literal": "Temprano dormir-debo.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 96,
+        "jp": "もう寝る。",
+        "romaji": "Mou neru.",
+        "natural": "Ya me voy a dormir.",
+        "literal": "Ya/ahora dormir.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 97,
+        "jp": "電気を消そう。",
+        "romaji": "Denki o kesou.",
+        "natural": "Apaguemos la luz.",
+        "literal": "Electricidad/luz borrar-vamos.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 98,
+        "jp": "明日は忙しい。",
+        "romaji": "Ashita wa isogashii.",
+        "natural": "Mañana va a ser ocupado.",
+        "literal": "Mañana ocupado.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 99,
+        "jp": "ちょっとだけ見よう。",
+        "romaji": "Chotto dake miyou.",
+        "natural": "Voy a ver solo un poquito.",
+        "literal": "Un poco solamente ver-vamos.",
+        "category": "Noche / Cerrar el día"
+      },
+      {
+        "id": 100,
+        "jp": "おやすみ。",
+        "romaji": "Oyasumi.",
+        "natural": "Buenas noches.",
+        "literal": "Descanso.",
+        "category": "Noche / Cerrar el día"
+      }
+    ]
+  },
+  "phrases-2": {
+    "en": [
+      {
+        "id": 1,
+        "jp": "これは何て言うの？",
+        "romaji": "Kore wa nan te iu no?",
+        "natural": "How do you say this?",
+        "literal": "This — what called?",
+        "category": "Casual"
+      },
+      {
+        "id": 2,
+        "jp": "英語で何て言うの？",
+        "romaji": "Eigo de nan te iu no?",
+        "natural": "How do you say it in English?",
+        "literal": "In English — what called?",
+        "category": "Casual"
+      },
+      {
+        "id": 3,
+        "jp": "日本語で何て言うんだっけ？",
+        "romaji": "Nihongo de nan te iun dakke?",
+        "natural": "How do you say it in Japanese again?",
+        "literal": "In Japanese — what was it called again?",
+        "category": "Casual"
+      },
+      {
+        "id": 4,
+        "jp": "これ、何だろう？",
+        "romaji": "Kore, nan darou?",
+        "natural": "Hmm, I wonder what this is.",
+        "literal": "This — what, I wonder?",
+        "category": "Curious"
+      },
+      {
+        "id": 5,
+        "jp": "あれ、何だろう？",
+        "romaji": "Are, nan darou?",
+        "natural": "I wonder what that is.",
+        "literal": "That — what, I wonder?",
+        "category": "Curious"
+      },
+      {
+        "id": 6,
+        "jp": "これって何？",
+        "romaji": "Kore tte nani?",
+        "natural": "What is this thing?",
+        "literal": "This thing — what?",
+        "category": "Casual"
+      },
+      {
+        "id": 7,
+        "jp": "どういう意味？",
+        "romaji": "Dou iu imi?",
+        "natural": "What does that mean?",
+        "literal": "What kind of meaning?",
+        "category": "Casual"
+      },
+      {
+        "id": 8,
+        "jp": "これ、どう使うの？",
+        "romaji": "Kore, dou tsukau no?",
+        "natural": "How do I use this?",
+        "literal": "This — how use?",
+        "category": "Useful"
+      },
+      {
+        "id": 9,
+        "jp": "これで合ってる？",
+        "romaji": "Kore de atteru?",
+        "natural": "Is this right?",
+        "literal": "With this — matching/right?",
+        "category": "Self-check"
+      },
+      {
+        "id": 10,
+        "jp": "これでいいかな？",
+        "romaji": "Kore de ii kana?",
+        "natural": "I wonder if this is okay.",
+        "literal": "With this — good, I wonder?",
+        "category": "Self-check"
+      },
+      {
+        "id": 11,
+        "jp": "何か違う気がする。",
+        "romaji": "Nanka chigau ki ga suru.",
+        "natural": "Something feels off.",
+        "literal": "Somehow different feeling does.",
+        "category": "Self-check"
+      },
+      {
+        "id": 12,
+        "jp": "たぶんこれかな。",
+        "romaji": "Tabun kore kana.",
+        "natural": "Maybe this one.",
+        "literal": "Probably this, I wonder.",
+        "category": "Self-check"
+      },
+      {
+        "id": 13,
+        "jp": "あ、これか。",
+        "romaji": "A, kore ka.",
+        "natural": "Oh, this is it.",
+        "literal": "Ah, this, huh.",
+        "category": "Realization"
+      },
+      {
+        "id": 14,
+        "jp": "なるほど、そういうことか。",
+        "romaji": "Naruhodo, sou iu koto ka.",
+        "natural": "Ah, I see, that's what it means.",
+        "literal": "I see — that kind of thing, huh.",
+        "category": "Realization"
+      },
+      {
+        "id": 15,
+        "jp": "今わかった。",
+        "romaji": "Ima wakatta.",
+        "natural": "I get it now.",
+        "literal": "Now understood.",
+        "category": "Realization"
+      },
+      {
+        "id": 16,
+        "jp": "今日は頭が回らない。",
+        "romaji": "Kyou wa atama ga mawaranai.",
+        "natural": "My brain isn't working today.",
+        "literal": "Today — head not spinning.",
+        "category": "Inner thought"
+      },
+      {
+        "id": 17,
+        "jp": "ちょっと考えよう。",
+        "romaji": "Chotto kangaeyou.",
+        "natural": "Let me think for a second.",
+        "literal": "A little — let's think.",
+        "category": "Inner thought"
+      },
+      {
+        "id": 18,
+        "jp": "焦らなくていい。",
+        "romaji": "Aseranakute ii.",
+        "natural": "No need to rush.",
+        "literal": "Not rushing is good.",
+        "category": "Calming"
+      },
+      {
+        "id": 19,
+        "jp": "ゆっくりでいい。",
+        "romaji": "Yukkuri de ii.",
+        "natural": "Slow is fine.",
+        "literal": "Slowly is good.",
+        "category": "Calming"
+      },
+      {
+        "id": 20,
+        "jp": "まあ、なんとかなる。",
+        "romaji": "Maa, nantoka naru.",
+        "natural": "Eh, I'll figure it out.",
+        "literal": "Well, somehow it becomes.",
+        "category": "Calming"
+      },
+      {
+        "id": 21,
+        "jp": "まずはこれから。",
+        "romaji": "Mazu wa kore kara.",
+        "natural": "First, let's start with this.",
+        "literal": "First — from this.",
+        "category": "Focus"
+      },
+      {
+        "id": 22,
+        "jp": "一個ずつやろう。",
+        "romaji": "Ikko zutsu yarou.",
+        "natural": "Let's do it one at a time.",
+        "literal": "One by one — let's do.",
+        "category": "Focus"
+      },
+      {
+        "id": 23,
+        "jp": "今はこれに集中。",
+        "romaji": "Ima wa kore ni shuuchuu.",
+        "natural": "Focus on this for now.",
+        "literal": "Now — on this focus.",
+        "category": "Focus"
+      },
+      {
+        "id": 24,
+        "jp": "あとで考えよう。",
+        "romaji": "Ato de kangaeyou.",
+        "natural": "I'll think about it later.",
+        "literal": "Later — let's think.",
+        "category": "Focus"
+      },
+      {
+        "id": 25,
+        "jp": "忘れないようにしよう。",
+        "romaji": "Wasurenai you ni shiyou.",
+        "natural": "Let me make sure I don't forget.",
+        "literal": "So as not forget — let's do.",
+        "category": "Reminder"
+      },
+      {
+        "id": 26,
+        "jp": "メモしとこう。",
+        "romaji": "Memo shitokou.",
+        "natural": "Let me write that down.",
+        "literal": "Memo — do in advance.",
+        "category": "Reminder"
+      },
+      {
+        "id": 27,
+        "jp": "これは覚えたい。",
+        "romaji": "Kore wa oboetai.",
+        "natural": "I want to remember this.",
+        "literal": "This — want to memorize.",
+        "category": "Learning"
+      },
+      {
+        "id": 28,
+        "jp": "これは使えそう。",
+        "romaji": "Kore wa tsukaesou.",
+        "natural": "This seems useful.",
+        "literal": "This — seems usable.",
+        "category": "Learning"
+      },
+      {
+        "id": 29,
+        "jp": "自然に言えるようになりたい。",
+        "romaji": "Shizen ni ieru you ni naritai.",
+        "natural": "I want to be able to say it naturally.",
+        "literal": "Naturally say-able — want to become.",
+        "category": "Learning"
+      },
+      {
+        "id": 30,
+        "jp": "今の言い方、いいね。",
+        "romaji": "Ima no iikata, ii ne.",
+        "natural": "That way of saying it was nice.",
+        "literal": "Now's way of saying — good, right?",
+        "category": "Learning"
+      },
+      {
+        "id": 31,
+        "jp": "へえ、そうなんだ。",
+        "romaji": "Hee, sou nan da.",
+        "natural": "Ohh, really?",
+        "literal": "Oh — so it is.",
+        "category": "Reaction"
+      },
+      {
+        "id": 32,
+        "jp": "まじで？",
+        "romaji": "Maji de?",
+        "natural": "Seriously?",
+        "literal": "For real?",
+        "category": "Reaction"
+      },
+      {
+        "id": 33,
+        "jp": "うそでしょ。",
+        "romaji": "Uso desho.",
+        "natural": "No way.",
+        "literal": "Lie, right?",
+        "category": "Reaction"
+      },
+      {
+        "id": 34,
+        "jp": "やっぱりね。",
+        "romaji": "Yappari ne.",
+        "natural": "I knew it.",
+        "literal": "As expected, right.",
+        "category": "Reaction"
+      },
+      {
+        "id": 35,
+        "jp": "そうかもしれない。",
+        "romaji": "Sou kamo shirenai.",
+        "natural": "That might be true.",
+        "literal": "So may-not-know.",
+        "category": "Reaction"
+      },
+      {
+        "id": 36,
+        "jp": "たしかに。",
+        "romaji": "Tashika ni.",
+        "natural": "True.",
+        "literal": "Certainly.",
+        "category": "Reaction"
+      },
+      {
+        "id": 37,
+        "jp": "それはあるね。",
+        "romaji": "Sore wa aru ne.",
+        "natural": "Yeah, that's a thing.",
+        "literal": "That — exists, right.",
+        "category": "Reaction"
+      },
+      {
+        "id": 38,
+        "jp": "わかる。",
+        "romaji": "Wakaru.",
+        "natural": "I get it.",
+        "literal": "Understand.",
+        "category": "Reaction"
+      },
+      {
+        "id": 39,
+        "jp": "わかる気がする。",
+        "romaji": "Wakaru ki ga suru.",
+        "natural": "I feel like I get it.",
+        "literal": "Understand feeling does.",
+        "category": "Reaction"
+      },
+      {
+        "id": 40,
+        "jp": "ちょっと微妙。",
+        "romaji": "Chotto bimyou.",
+        "natural": "It's kind of iffy.",
+        "literal": "A little subtle/awkward.",
+        "category": "Reaction"
+      },
+      {
+        "id": 41,
+        "jp": "なんかいい感じ。",
+        "romaji": "Nanka ii kanji.",
+        "natural": "It feels pretty good.",
+        "literal": "Somehow good feeling.",
+        "category": "Reaction"
+      },
+      {
+        "id": 42,
+        "jp": "思ったよりいい。",
+        "romaji": "Omotta yori ii.",
+        "natural": "Better than I expected.",
+        "literal": "Than thought — good.",
+        "category": "Reaction"
+      },
+      {
+        "id": 43,
+        "jp": "思ったより難しい。",
+        "romaji": "Omotta yori muzukashii.",
+        "natural": "Harder than I expected.",
+        "literal": "Than thought — difficult.",
+        "category": "Reaction"
+      },
+      {
+        "id": 44,
+        "jp": "意外と簡単。",
+        "romaji": "Igai to kantan.",
+        "natural": "Surprisingly easy.",
+        "literal": "Unexpectedly easy.",
+        "category": "Reaction"
+      },
+      {
+        "id": 45,
+        "jp": "これは助かる。",
+        "romaji": "Kore wa tasukaru.",
+        "natural": "This helps a lot.",
+        "literal": "This — is saved/helped.",
+        "category": "Reaction"
+      },
+      {
+        "id": 46,
+        "jp": "お腹すいた。",
+        "romaji": "Onaka suita.",
+        "natural": "I'm hungry.",
+        "literal": "Stomach became empty.",
+        "category": "Daily"
+      },
+      {
+        "id": 47,
+        "jp": "喉かわいた。",
+        "romaji": "Nodo kawaita.",
+        "natural": "I'm thirsty.",
+        "literal": "Throat dried.",
+        "category": "Daily"
+      },
+      {
+        "id": 48,
+        "jp": "眠すぎる。",
+        "romaji": "Nemusugiru.",
+        "natural": "I'm way too sleepy.",
+        "literal": "Sleepy too much.",
+        "category": "Daily"
+      },
+      {
+        "id": 49,
+        "jp": "今日は無理かも。",
+        "romaji": "Kyou wa muri kamo.",
+        "natural": "Today might be impossible.",
+        "literal": "Today — impossible maybe.",
+        "category": "Daily"
+      },
+      {
+        "id": 50,
+        "jp": "ちょっと休憩しよう。",
+        "romaji": "Chotto kyuukei shiyou.",
+        "natural": "Let's take a quick break.",
+        "literal": "A little break — let's do.",
+        "category": "Daily"
+      },
+      {
+        "id": 51,
+        "jp": "もう少しだけ。",
+        "romaji": "Mou sukoshi dake.",
+        "natural": "Just a little more.",
+        "literal": "More little only.",
+        "category": "Daily"
+      },
+      {
+        "id": 52,
+        "jp": "そろそろ行こう。",
+        "romaji": "Sorosoro ikou.",
+        "natural": "Let's get going soon.",
+        "literal": "Soon-ish go.",
+        "category": "Daily"
+      },
+      {
+        "id": 53,
+        "jp": "間に合うかな？",
+        "romaji": "Maniau kana?",
+        "natural": "I wonder if I'll make it in time.",
+        "literal": "Be in time, I wonder?",
+        "category": "Daily"
+      },
+      {
+        "id": 54,
+        "jp": "間に合った。",
+        "romaji": "Maniatta.",
+        "natural": "I made it in time.",
+        "literal": "Was in time.",
+        "category": "Daily"
+      },
+      {
+        "id": 55,
+        "jp": "間に合わなかった。",
+        "romaji": "Maniawanakatta.",
+        "natural": "I didn't make it in time.",
+        "literal": "Was not in time.",
+        "category": "Daily"
+      },
+      {
+        "id": 56,
+        "jp": "ちょっと聞いてもいい？",
+        "romaji": "Chotto kiite mo ii?",
+        "natural": "Can I ask something?",
+        "literal": "A little ask — okay?",
+        "category": "Conversation"
+      },
+      {
+        "id": 57,
+        "jp": "今ちょっといい？",
+        "romaji": "Ima chotto ii?",
+        "natural": "Do you have a second?",
+        "literal": "Now a little okay?",
+        "category": "Conversation"
+      },
+      {
+        "id": 58,
+        "jp": "これ、どう思う？",
+        "romaji": "Kore, dou omou?",
+        "natural": "What do you think about this?",
+        "literal": "This — how think?",
+        "category": "Conversation"
+      },
+      {
+        "id": 59,
+        "jp": "それ、いいと思う。",
+        "romaji": "Sore, ii to omou.",
+        "natural": "I think that's good.",
+        "literal": "That — good I think.",
+        "category": "Conversation"
+      },
+      {
+        "id": 60,
+        "jp": "それはちょっと違うかも。",
+        "romaji": "Sore wa chotto chigau kamo.",
+        "natural": "That might be a little off.",
+        "literal": "That — little different maybe.",
+        "category": "Conversation"
+      },
+      {
+        "id": 61,
+        "jp": "もう一回言ってくれる？",
+        "romaji": "Mou ikkai itte kureru?",
+        "natural": "Can you say that again?",
+        "literal": "One more time say — give me?",
+        "category": "Conversation"
+      },
+      {
+        "id": 62,
+        "jp": "ゆっくり言ってくれる？",
+        "romaji": "Yukkuri itte kureru?",
+        "natural": "Can you say it slowly?",
+        "literal": "Slowly say — give me?",
+        "category": "Conversation"
+      },
+      {
+        "id": 63,
+        "jp": "今の、聞き取れなかった。",
+        "romaji": "Ima no, kikitorenakatta.",
+        "natural": "I couldn't catch that.",
+        "literal": "That just now — couldn't hear-catch.",
+        "category": "Conversation"
+      },
+      {
+        "id": 64,
+        "jp": "なるべく簡単に言って。",
+        "romaji": "Narubeku kantan ni itte.",
+        "natural": "Say it as simply as possible.",
+        "literal": "As much as possible simply say.",
+        "category": "Conversation"
+      },
+      {
+        "id": 65,
+        "jp": "たとえば？",
+        "romaji": "Tatoeba?",
+        "natural": "For example?",
+        "literal": "For example?",
+        "category": "Conversation"
+      },
+      {
+        "id": 66,
+        "jp": "ここで降りるの？",
+        "romaji": "Koko de oriru no?",
+        "natural": "Do I get off here?",
+        "literal": "Here — get off?",
+        "category": "Travel"
+      },
+      {
+        "id": 67,
+        "jp": "ここで合ってるかな？",
+        "romaji": "Koko de atteru kana?",
+        "natural": "I wonder if this is the right place.",
+        "literal": "Here — correct, I wonder?",
+        "category": "Travel"
+      },
+      {
+        "id": 68,
+        "jp": "こっちでいいのかな？",
+        "romaji": "Kocchi de ii no kana?",
+        "natural": "I wonder if this way is okay.",
+        "literal": "This way — good, I wonder?",
+        "category": "Travel"
+      },
+      {
+        "id": 69,
+        "jp": "あっちっぽい。",
+        "romaji": "Acchi ppoi.",
+        "natural": "It seems like it's that way.",
+        "literal": "That way-ish.",
+        "category": "Travel"
+      },
+      {
+        "id": 70,
+        "jp": "迷ったかも。",
+        "romaji": "Mayotta kamo.",
+        "natural": "I might be lost.",
+        "literal": "Got lost maybe.",
+        "category": "Travel"
+      },
+      {
+        "id": 71,
+        "jp": "駅はどっち？",
+        "romaji": "Eki wa docchi?",
+        "natural": "Which way is the station?",
+        "literal": "Station — which way?",
+        "category": "Travel"
+      },
+      {
+        "id": 72,
+        "jp": "これ、いくら？",
+        "romaji": "Kore, ikura?",
+        "natural": "How much is this?",
+        "literal": "This — how much?",
+        "category": "Shopping"
+      },
+      {
+        "id": 73,
+        "jp": "高っ。",
+        "romaji": "Takaa.",
+        "natural": "Whoa, expensive.",
+        "literal": "Expensive!",
+        "category": "Shopping"
+      },
+      {
+        "id": 74,
+        "jp": "安っ。",
+        "romaji": "Yasuu.",
+        "natural": "Whoa, cheap.",
+        "literal": "Cheap!",
+        "category": "Shopping"
+      },
+      {
+        "id": 75,
+        "jp": "これにしよう。",
+        "romaji": "Kore ni shiyou.",
+        "natural": "I'll go with this.",
+        "literal": "Into this — let's do.",
+        "category": "Shopping"
+      },
+      {
+        "id": 76,
+        "jp": "やっぱりやめとこう。",
+        "romaji": "Yappari yametokou.",
+        "natural": "Actually, let's skip it.",
+        "literal": "As expected — stop in advance.",
+        "category": "Shopping"
+      },
+      {
+        "id": 77,
+        "jp": "これ、おいしそう。",
+        "romaji": "Kore, oishisou.",
+        "natural": "This looks good.",
+        "literal": "This — looks delicious.",
+        "category": "Food"
+      },
+      {
+        "id": 78,
+        "jp": "何がおすすめ？",
+        "romaji": "Nani ga osusume?",
+        "natural": "What do you recommend?",
+        "literal": "What — recommendation?",
+        "category": "Food"
+      },
+      {
+        "id": 79,
+        "jp": "これ食べてみたい。",
+        "romaji": "Kore tabete mitai.",
+        "natural": "I want to try eating this.",
+        "literal": "This eat and see want.",
+        "category": "Food"
+      },
+      {
+        "id": 80,
+        "jp": "めっちゃうまい。",
+        "romaji": "Meccha umai.",
+        "natural": "This is super good.",
+        "literal": "Very delicious.",
+        "category": "Casual food"
+      },
+      {
+        "id": 81,
+        "jp": "お腹いっぱい。",
+        "romaji": "Onaka ippai.",
+        "natural": "I'm full.",
+        "literal": "Stomach full.",
+        "category": "Food"
+      },
+      {
+        "id": 82,
+        "jp": "このエラー、何だろう？",
+        "romaji": "Kono eraa, nan darou?",
+        "natural": "I wonder what this error is.",
+        "literal": "This error — what, I wonder?",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 83,
+        "jp": "原因はこれかも。",
+        "romaji": "Gen'in wa kore kamo.",
+        "natural": "This might be the cause.",
+        "literal": "Cause — this maybe.",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 84,
+        "jp": "ログ見てみよう。",
+        "romaji": "Rogu mite miyou.",
+        "natural": "Let's check the log.",
+        "literal": "Log see-and-try.",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 85,
+        "jp": "一回試してみよう。",
+        "romaji": "Ikkai tameshite miyou.",
+        "natural": "Let's try it once.",
+        "literal": "Once try-and-see.",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 86,
+        "jp": "これで直るかな？",
+        "romaji": "Kore de naoru kana?",
+        "natural": "I wonder if this will fix it.",
+        "literal": "With this — gets fixed, I wonder?",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 87,
+        "jp": "まだダメか。",
+        "romaji": "Mada dame ka.",
+        "natural": "Still no good, huh.",
+        "literal": "Still bad, huh.",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 88,
+        "jp": "やっと動いた。",
+        "romaji": "Yatto ugoita.",
+        "natural": "It finally worked.",
+        "literal": "Finally moved/worked.",
+        "category": "Work/Tech"
+      },
+      {
+        "id": 89,
+        "jp": "なんでやねん。",
+        "romaji": "Nande yanen.",
+        "natural": "Why the heck? / Come on, man.",
+        "literal": "Why is-it-like-that?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 90,
+        "jp": "ほんま？",
+        "romaji": "Honma?",
+        "natural": "Really?",
+        "literal": "Truth?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 91,
+        "jp": "めっちゃええやん。",
+        "romaji": "Meccha ee yan.",
+        "natural": "That's really good.",
+        "literal": "Super good, isn't it.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 92,
+        "jp": "あかん。",
+        "romaji": "Akan.",
+        "natural": "No good. / That's bad.",
+        "literal": "Won't do.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 93,
+        "jp": "いけるやん。",
+        "romaji": "Ikeru yan.",
+        "natural": "That works.",
+        "literal": "Can go, isn't it.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 94,
+        "jp": "知らんけど。",
+        "romaji": "Shiran kedo.",
+        "natural": "I don't know though.",
+        "literal": "Don't know, but.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 95,
+        "jp": "ちゃうちゃう。",
+        "romaji": "Chau chau.",
+        "natural": "No, no, that's not it.",
+        "literal": "Different, different.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 96,
+        "jp": "どないしたん？",
+        "romaji": "Donai shitan?",
+        "natural": "What happened?",
+        "literal": "How did?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 97,
+        "jp": "しゃあないな。",
+        "romaji": "Shaa nai na.",
+        "natural": "It can't be helped.",
+        "literal": "No way/option, huh.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 98,
+        "jp": "おおきに。",
+        "romaji": "Ookini.",
+        "natural": "Thanks.",
+        "literal": "Thanks much.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 99,
+        "jp": "ほな行こか。",
+        "romaji": "Hona iko ka.",
+        "natural": "Alright, let's go.",
+        "literal": "Well then, go?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 100,
+        "jp": "ええ感じやん。",
+        "romaji": "Ee kanji yan.",
+        "natural": "It's a good vibe.",
+        "literal": "Good feeling, isn't it.",
+        "category": "Osaka/Kansai"
+      }
+    ],
+    "es": [
+      {
+        "id": 1,
+        "jp": "これは何て言うの？",
+        "romaji": "Kore wa nan te iu no?",
+        "natural": "¿Cómo se dice esto?",
+        "literal": "Esto — ¿cómo se llama?",
+        "category": "Casual"
+      },
+      {
+        "id": 2,
+        "jp": "英語で何て言うの？",
+        "romaji": "Eigo de nan te iu no?",
+        "natural": "¿Cómo se dice en inglés?",
+        "literal": "En inglés — ¿cómo se llama?",
+        "category": "Casual"
+      },
+      {
+        "id": 3,
+        "jp": "日本語で何て言うんだっけ？",
+        "romaji": "Nihongo de nan te iun dakke?",
+        "natural": "¿Cómo se decía en japonés?",
+        "literal": "En japonés — ¿cómo era que se decía?",
+        "category": "Casual"
+      },
+      {
+        "id": 4,
+        "jp": "これ、何だろう？",
+        "romaji": "Kore, nan darou?",
+        "natural": "Mmm, me pregunto qué será esto.",
+        "literal": "Esto — ¿qué será?",
+        "category": "Curiosidad"
+      },
+      {
+        "id": 5,
+        "jp": "あれ、何だろう？",
+        "romaji": "Are, nan darou?",
+        "natural": "Me pregunto qué será eso.",
+        "literal": "Eso — ¿qué será?",
+        "category": "Curiosidad"
+      },
+      {
+        "id": 6,
+        "jp": "これって何？",
+        "romaji": "Kore tte nani?",
+        "natural": "¿Qué es esto?",
+        "literal": "Esto — ¿qué?",
+        "category": "Casual"
+      },
+      {
+        "id": 7,
+        "jp": "どういう意味？",
+        "romaji": "Dou iu imi?",
+        "natural": "¿Qué significa eso?",
+        "literal": "¿Qué tipo de significado?",
+        "category": "Casual"
+      },
+      {
+        "id": 8,
+        "jp": "これ、どう使うの？",
+        "romaji": "Kore, dou tsukau no?",
+        "natural": "¿Cómo uso esto?",
+        "literal": "Esto — ¿cómo se usa?",
+        "category": "Útil"
+      },
+      {
+        "id": 9,
+        "jp": "これで合ってる？",
+        "romaji": "Kore de atteru?",
+        "natural": "¿Esto está bien?",
+        "literal": "Con esto — ¿cuadra / está correcto?",
+        "category": "Autochequeo"
+      },
+      {
+        "id": 10,
+        "jp": "これでいいかな？",
+        "romaji": "Kore de ii kana?",
+        "natural": "Me pregunto si con esto está bien.",
+        "literal": "Con esto — bien, ¿me pregunto?",
+        "category": "Autochequeo"
+      },
+      {
+        "id": 11,
+        "jp": "何か違う気がする。",
+        "romaji": "Nanka chigau ki ga suru.",
+        "natural": "Siento que algo está raro.",
+        "literal": "De alguna forma — sensación de diferente.",
+        "category": "Autochequeo"
+      },
+      {
+        "id": 12,
+        "jp": "たぶんこれかな。",
+        "romaji": "Tabun kore kana.",
+        "natural": "Tal vez sea este.",
+        "literal": "Probablemente esto, ¿será?",
+        "category": "Autochequeo"
+      },
+      {
+        "id": 13,
+        "jp": "あ、これか。",
+        "romaji": "A, kore ka.",
+        "natural": "Ah, era esto.",
+        "literal": "Ah, esto, ¿eh?",
+        "category": "Comprensión"
+      },
+      {
+        "id": 14,
+        "jp": "なるほど、そういうことか。",
+        "romaji": "Naruhodo, sou iu koto ka.",
+        "natural": "Ah, ya entiendo, era eso.",
+        "literal": "Ya veo — ese tipo de cosa, ¿eh?",
+        "category": "Comprensión"
+      },
+      {
+        "id": 15,
+        "jp": "今わかった。",
+        "romaji": "Ima wakatta.",
+        "natural": "Ahora entendí.",
+        "literal": "Ahora — entendí.",
+        "category": "Comprensión"
+      },
+      {
+        "id": 16,
+        "jp": "今日は頭が回らない。",
+        "romaji": "Kyou wa atama ga mawaranai.",
+        "natural": "Hoy mi cerebro no arranca.",
+        "literal": "Hoy — la cabeza no gira.",
+        "category": "Pensamiento interno"
+      },
+      {
+        "id": 17,
+        "jp": "ちょっと考えよう。",
+        "romaji": "Chotto kangaeyou.",
+        "natural": "Déjame pensar un segundo.",
+        "literal": "Un poco — pensemos.",
+        "category": "Pensamiento interno"
+      },
+      {
+        "id": 18,
+        "jp": "焦らなくていい。",
+        "romaji": "Aseranakute ii.",
+        "natural": "No hace falta apurarse.",
+        "literal": "No apresurarse está bien.",
+        "category": "Calma"
+      },
+      {
+        "id": 19,
+        "jp": "ゆっくりでいい。",
+        "romaji": "Yukkuri de ii.",
+        "natural": "Despacio está bien.",
+        "literal": "Lentamente está bien.",
+        "category": "Calma"
+      },
+      {
+        "id": 20,
+        "jp": "まあ、なんとかなる。",
+        "romaji": "Maa, nantoka naru.",
+        "natural": "Bueno, de alguna forma se resuelve.",
+        "literal": "Bueno — de alguna manera se vuelve/arregla.",
+        "category": "Calma"
+      },
+      {
+        "id": 21,
+        "jp": "まずはこれから。",
+        "romaji": "Mazu wa kore kara.",
+        "natural": "Primero, empecemos por esto.",
+        "literal": "Primero — desde esto.",
+        "category": "Enfoque"
+      },
+      {
+        "id": 22,
+        "jp": "一個ずつやろう。",
+        "romaji": "Ikko zutsu yarou.",
+        "natural": "Hagámoslo uno por uno.",
+        "literal": "Uno por uno — hagamos.",
+        "category": "Enfoque"
+      },
+      {
+        "id": 23,
+        "jp": "今はこれに集中。",
+        "romaji": "Ima wa kore ni shuuchuu.",
+        "natural": "Por ahora, enfoque en esto.",
+        "literal": "Ahora — en esto concentración.",
+        "category": "Enfoque"
+      },
+      {
+        "id": 24,
+        "jp": "あとで考えよう。",
+        "romaji": "Ato de kangaeyou.",
+        "natural": "Lo pensaré después.",
+        "literal": "Después — pensemos.",
+        "category": "Enfoque"
+      },
+      {
+        "id": 25,
+        "jp": "忘れないようにしよう。",
+        "romaji": "Wasurenai you ni shiyou.",
+        "natural": "Voy a asegurarme de no olvidarlo.",
+        "literal": "Para no olvidar — hagamos.",
+        "category": "Recordatorio"
+      },
+      {
+        "id": 26,
+        "jp": "メモしとこう。",
+        "romaji": "Memo shitokou.",
+        "natural": "Voy a anotarlo.",
+        "literal": "Memo — hacerlo de antemano.",
+        "category": "Recordatorio"
+      },
+      {
+        "id": 27,
+        "jp": "これは覚えたい。",
+        "romaji": "Kore wa oboetai.",
+        "natural": "Quiero recordar esto.",
+        "literal": "Esto — quiero memorizar.",
+        "category": "Aprendizaje"
+      },
+      {
+        "id": 28,
+        "jp": "これは使えそう。",
+        "romaji": "Kore wa tsukaesou.",
+        "natural": "Esto parece útil.",
+        "literal": "Esto — parece usable.",
+        "category": "Aprendizaje"
+      },
+      {
+        "id": 29,
+        "jp": "自然に言えるようになりたい。",
+        "romaji": "Shizen ni ieru you ni naritai.",
+        "natural": "Quiero poder decirlo de forma natural.",
+        "literal": "Poder decir naturalmente — quiero llegar a ser.",
+        "category": "Aprendizaje"
+      },
+      {
+        "id": 30,
+        "jp": "今の言い方、いいね。",
+        "romaji": "Ima no iikata, ii ne.",
+        "natural": "Esa forma de decirlo está buena.",
+        "literal": "La forma de decir de ahora — buena, ¿verdad?",
+        "category": "Aprendizaje"
+      },
+      {
+        "id": 31,
+        "jp": "へえ、そうなんだ。",
+        "romaji": "Hee, sou nan da.",
+        "natural": "Ah, ¿de verdad?",
+        "literal": "Oh — así es.",
+        "category": "Reacción"
+      },
+      {
+        "id": 32,
+        "jp": "まじで？",
+        "romaji": "Maji de?",
+        "natural": "¿En serio?",
+        "literal": "¿De verdad?",
+        "category": "Reacción"
+      },
+      {
+        "id": 33,
+        "jp": "うそでしょ。",
+        "romaji": "Uso desho.",
+        "natural": "No puede ser.",
+        "literal": "Mentira, ¿verdad?",
+        "category": "Reacción"
+      },
+      {
+        "id": 34,
+        "jp": "やっぱりね。",
+        "romaji": "Yappari ne.",
+        "natural": "Lo sabía.",
+        "literal": "Como esperaba, ¿verdad?",
+        "category": "Reacción"
+      },
+      {
+        "id": 35,
+        "jp": "そうかもしれない。",
+        "romaji": "Sou kamo shirenai.",
+        "natural": "Puede que sea cierto.",
+        "literal": "Así quizá no se sabe.",
+        "category": "Reacción"
+      },
+      {
+        "id": 36,
+        "jp": "たしかに。",
+        "romaji": "Tashika ni.",
+        "natural": "Cierto.",
+        "literal": "Ciertamente.",
+        "category": "Reacción"
+      },
+      {
+        "id": 37,
+        "jp": "それはあるね。",
+        "romaji": "Sore wa aru ne.",
+        "natural": "Sí, eso pasa / eso existe.",
+        "literal": "Eso — existe, ¿verdad?",
+        "category": "Reacción"
+      },
+      {
+        "id": 38,
+        "jp": "わかる。",
+        "romaji": "Wakaru.",
+        "natural": "Entiendo.",
+        "literal": "Entender.",
+        "category": "Reacción"
+      },
+      {
+        "id": 39,
+        "jp": "わかる気がする。",
+        "romaji": "Wakaru ki ga suru.",
+        "natural": "Siento que lo entiendo.",
+        "literal": "Sensación de entender — hace.",
+        "category": "Reacción"
+      },
+      {
+        "id": 40,
+        "jp": "ちょっと微妙。",
+        "romaji": "Chotto bimyou.",
+        "natural": "Está un poco dudoso / raro.",
+        "literal": "Un poco sutil / incómodo.",
+        "category": "Reacción"
+      },
+      {
+        "id": 41,
+        "jp": "なんかいい感じ。",
+        "romaji": "Nanka ii kanji.",
+        "natural": "Se siente bastante bien.",
+        "literal": "De alguna forma — buena sensación.",
+        "category": "Reacción"
+      },
+      {
+        "id": 42,
+        "jp": "思ったよりいい。",
+        "romaji": "Omotta yori ii.",
+        "natural": "Mejor de lo que esperaba.",
+        "literal": "Más que pensé — bueno.",
+        "category": "Reacción"
+      },
+      {
+        "id": 43,
+        "jp": "思ったより難しい。",
+        "romaji": "Omotta yori muzukashii.",
+        "natural": "Más difícil de lo que esperaba.",
+        "literal": "Más que pensé — difícil.",
+        "category": "Reacción"
+      },
+      {
+        "id": 44,
+        "jp": "意外と簡単。",
+        "romaji": "Igai to kantan.",
+        "natural": "Sorprendentemente fácil.",
+        "literal": "Inesperadamente fácil.",
+        "category": "Reacción"
+      },
+      {
+        "id": 45,
+        "jp": "これは助かる。",
+        "romaji": "Kore wa tasukaru.",
+        "natural": "Esto ayuda muchísimo.",
+        "literal": "Esto — me salva / ayuda.",
+        "category": "Reacción"
+      },
+      {
+        "id": 46,
+        "jp": "お腹すいた。",
+        "romaji": "Onaka suita.",
+        "natural": "Tengo hambre.",
+        "literal": "Estómago — se vació.",
+        "category": "Diario"
+      },
+      {
+        "id": 47,
+        "jp": "喉かわいた。",
+        "romaji": "Nodo kawaita.",
+        "natural": "Tengo sed.",
+        "literal": "Garganta — se secó.",
+        "category": "Diario"
+      },
+      {
+        "id": 48,
+        "jp": "眠すぎる。",
+        "romaji": "Nemusugiru.",
+        "natural": "Tengo demasiado sueño.",
+        "literal": "Sueño — demasiado.",
+        "category": "Diario"
+      },
+      {
+        "id": 49,
+        "jp": "今日は無理かも。",
+        "romaji": "Kyou wa muri kamo.",
+        "natural": "Quizás hoy no se pueda.",
+        "literal": "Hoy — imposible quizás.",
+        "category": "Diario"
+      },
+      {
+        "id": 50,
+        "jp": "ちょっと休憩しよう。",
+        "romaji": "Chotto kyuukei shiyou.",
+        "natural": "Tomemos un descansito.",
+        "literal": "Un poco descanso — hagamos.",
+        "category": "Diario"
+      },
+      {
+        "id": 51,
+        "jp": "もう少しだけ。",
+        "romaji": "Mou sukoshi dake.",
+        "natural": "Solo un poquito más.",
+        "literal": "Más — un poco solamente.",
+        "category": "Diario"
+      },
+      {
+        "id": 52,
+        "jp": "そろそろ行こう。",
+        "romaji": "Sorosoro ikou.",
+        "natural": "Ya casi vámonos.",
+        "literal": "Ya es hora — vamos.",
+        "category": "Diario"
+      },
+      {
+        "id": 53,
+        "jp": "間に合うかな？",
+        "romaji": "Maniau kana?",
+        "natural": "¿Llegaré a tiempo?",
+        "literal": "Llegar a tiempo, ¿será?",
+        "category": "Diario"
+      },
+      {
+        "id": 54,
+        "jp": "間に合った。",
+        "romaji": "Maniatta.",
+        "natural": "Llegué a tiempo.",
+        "literal": "Estuve a tiempo.",
+        "category": "Diario"
+      },
+      {
+        "id": 55,
+        "jp": "間に合わなかった。",
+        "romaji": "Maniawanakatta.",
+        "natural": "No llegué a tiempo.",
+        "literal": "No estuve a tiempo.",
+        "category": "Diario"
+      },
+      {
+        "id": 56,
+        "jp": "ちょっと聞いてもいい？",
+        "romaji": "Chotto kiite mo ii?",
+        "natural": "¿Puedo preguntar algo?",
+        "literal": "Un poco preguntar — ¿está bien?",
+        "category": "Conversación"
+      },
+      {
+        "id": 57,
+        "jp": "今ちょっといい？",
+        "romaji": "Ima chotto ii?",
+        "natural": "¿Tienes un segundo ahora?",
+        "literal": "Ahora un poco — ¿bien?",
+        "category": "Conversación"
+      },
+      {
+        "id": 58,
+        "jp": "これ、どう思う？",
+        "romaji": "Kore, dou omou?",
+        "natural": "¿Qué piensas de esto?",
+        "literal": "Esto — ¿cómo piensas?",
+        "category": "Conversación"
+      },
+      {
+        "id": 59,
+        "jp": "それ、いいと思う。",
+        "romaji": "Sore, ii to omou.",
+        "natural": "Creo que eso está bien.",
+        "literal": "Eso — bueno creo.",
+        "category": "Conversación"
+      },
+      {
+        "id": 60,
+        "jp": "それはちょっと違うかも。",
+        "romaji": "Sore wa chotto chigau kamo.",
+        "natural": "Eso quizás está un poco mal / distinto.",
+        "literal": "Eso — un poco diferente quizás.",
+        "category": "Conversación"
+      },
+      {
+        "id": 61,
+        "jp": "もう一回言ってくれる？",
+        "romaji": "Mou ikkai itte kureru?",
+        "natural": "¿Puedes decirlo otra vez?",
+        "literal": "Una vez más decir — ¿me das?",
+        "category": "Conversación"
+      },
+      {
+        "id": 62,
+        "jp": "ゆっくり言ってくれる？",
+        "romaji": "Yukkuri itte kureru?",
+        "natural": "¿Puedes decirlo despacio?",
+        "literal": "Despacio decir — ¿me das?",
+        "category": "Conversación"
+      },
+      {
+        "id": 63,
+        "jp": "今の、聞き取れなかった。",
+        "romaji": "Ima no, kikitorenakatta.",
+        "natural": "No pude captar lo que dijiste.",
+        "literal": "Lo de ahora — no pude escuchar-captar.",
+        "category": "Conversación"
+      },
+      {
+        "id": 64,
+        "jp": "なるべく簡単に言って。",
+        "romaji": "Narubeku kantan ni itte.",
+        "natural": "Dilo lo más sencillo posible.",
+        "literal": "Lo más posible simple decir.",
+        "category": "Conversación"
+      },
+      {
+        "id": 65,
+        "jp": "たとえば？",
+        "romaji": "Tatoeba?",
+        "natural": "¿Por ejemplo?",
+        "literal": "¿Por ejemplo?",
+        "category": "Conversación"
+      },
+      {
+        "id": 66,
+        "jp": "ここで降りるの？",
+        "romaji": "Koko de oriru no?",
+        "natural": "¿Me bajo aquí?",
+        "literal": "Aquí — ¿bajarse?",
+        "category": "Viaje"
+      },
+      {
+        "id": 67,
+        "jp": "ここで合ってるかな？",
+        "romaji": "Koko de atteru kana?",
+        "natural": "¿Será este el lugar correcto?",
+        "literal": "Aquí — correcto, ¿será?",
+        "category": "Viaje"
+      },
+      {
+        "id": 68,
+        "jp": "こっちでいいのかな？",
+        "romaji": "Kocchi de ii no kana?",
+        "natural": "¿Será por aquí?",
+        "literal": "Este camino — bien, ¿será?",
+        "category": "Viaje"
+      },
+      {
+        "id": 69,
+        "jp": "あっちっぽい。",
+        "romaji": "Acchi ppoi.",
+        "natural": "Parece que es por allá.",
+        "literal": "Por allá-ish.",
+        "category": "Viaje"
+      },
+      {
+        "id": 70,
+        "jp": "迷ったかも。",
+        "romaji": "Mayotta kamo.",
+        "natural": "Creo que me perdí.",
+        "literal": "Me perdí quizás.",
+        "category": "Viaje"
+      },
+      {
+        "id": 71,
+        "jp": "駅はどっち？",
+        "romaji": "Eki wa docchi?",
+        "natural": "¿Por dónde queda la estación?",
+        "literal": "Estación — ¿cuál camino?",
+        "category": "Viaje"
+      },
+      {
+        "id": 72,
+        "jp": "これ、いくら？",
+        "romaji": "Kore, ikura?",
+        "natural": "¿Cuánto cuesta esto?",
+        "literal": "Esto — ¿cuánto?",
+        "category": "Compras"
+      },
+      {
+        "id": 73,
+        "jp": "高っ。",
+        "romaji": "Takaa.",
+        "natural": "¡Uff, caro!",
+        "literal": "¡Caro!",
+        "category": "Compras"
+      },
+      {
+        "id": 74,
+        "jp": "安っ。",
+        "romaji": "Yasuu.",
+        "natural": "¡Uff, barato!",
+        "literal": "¡Barato!",
+        "category": "Compras"
+      },
+      {
+        "id": 75,
+        "jp": "これにしよう。",
+        "romaji": "Kore ni shiyou.",
+        "natural": "Me quedo con este.",
+        "literal": "A esto — hagamos.",
+        "category": "Compras"
+      },
+      {
+        "id": 76,
+        "jp": "やっぱりやめとこう。",
+        "romaji": "Yappari yametokou.",
+        "natural": "Mejor no, lo dejo.",
+        "literal": "Como esperaba — dejar de antemano.",
+        "category": "Compras"
+      },
+      {
+        "id": 77,
+        "jp": "これ、おいしそう。",
+        "romaji": "Kore, oishisou.",
+        "natural": "Esto se ve rico.",
+        "literal": "Esto — parece delicioso.",
+        "category": "Comida"
+      },
+      {
+        "id": 78,
+        "jp": "何がおすすめ？",
+        "romaji": "Nani ga osusume?",
+        "natural": "¿Qué recomiendas?",
+        "literal": "¿Qué — recomendación?",
+        "category": "Comida"
+      },
+      {
+        "id": 79,
+        "jp": "これ食べてみたい。",
+        "romaji": "Kore tabete mitai.",
+        "natural": "Quiero probar esto.",
+        "literal": "Esto comer y ver — quiero.",
+        "category": "Comida"
+      },
+      {
+        "id": 80,
+        "jp": "めっちゃうまい。",
+        "romaji": "Meccha umai.",
+        "natural": "Esto está buenísimo.",
+        "literal": "Muy delicioso.",
+        "category": "Comida casual"
+      },
+      {
+        "id": 81,
+        "jp": "お腹いっぱい。",
+        "romaji": "Onaka ippai.",
+        "natural": "Estoy lleno.",
+        "literal": "Estómago lleno.",
+        "category": "Comida"
+      },
+      {
+        "id": 82,
+        "jp": "このエラー、何だろう？",
+        "romaji": "Kono eraa, nan darou?",
+        "natural": "Me pregunto qué será este error.",
+        "literal": "Este error — ¿qué será?",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 83,
+        "jp": "原因はこれかも。",
+        "romaji": "Gen'in wa kore kamo.",
+        "natural": "Esta podría ser la causa.",
+        "literal": "Causa — esto quizás.",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 84,
+        "jp": "ログ見てみよう。",
+        "romaji": "Rogu mite miyou.",
+        "natural": "Vamos a revisar el log.",
+        "literal": "Log ver-y-probar.",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 85,
+        "jp": "一回試してみよう。",
+        "romaji": "Ikkai tameshite miyou.",
+        "natural": "Probemos una vez.",
+        "literal": "Una vez probar-y-ver.",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 86,
+        "jp": "これで直るかな？",
+        "romaji": "Kore de naoru kana?",
+        "natural": "¿Será que con esto se arregla?",
+        "literal": "Con esto — se arregla, ¿será?",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 87,
+        "jp": "まだダメか。",
+        "romaji": "Mada dame ka.",
+        "natural": "Todavía no sirve, ¿eh?",
+        "literal": "Todavía malo, ¿eh?",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 88,
+        "jp": "やっと動いた。",
+        "romaji": "Yatto ugoita.",
+        "natural": "Por fin funcionó.",
+        "literal": "Por fin se movió / funcionó.",
+        "category": "Trabajo/Tecnología"
+      },
+      {
+        "id": 89,
+        "jp": "なんでやねん。",
+        "romaji": "Nande yanen.",
+        "natural": "¿Pero qué rayos? / ¡Dale, hombre!",
+        "literal": "¿Por qué es así?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 90,
+        "jp": "ほんま？",
+        "romaji": "Honma?",
+        "natural": "¿De verdad?",
+        "literal": "¿Verdad?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 91,
+        "jp": "めっちゃええやん。",
+        "romaji": "Meccha ee yan.",
+        "natural": "Eso está súper bien.",
+        "literal": "Súper bueno, ¿no?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 92,
+        "jp": "あかん。",
+        "romaji": "Akan.",
+        "natural": "No sirve. / Eso está mal.",
+        "literal": "No va / no se puede.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 93,
+        "jp": "いけるやん。",
+        "romaji": "Ikeru yan.",
+        "natural": "Eso funciona.",
+        "literal": "Puede ir, ¿no?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 94,
+        "jp": "知らんけど。",
+        "romaji": "Shiran kedo.",
+        "natural": "Aunque no sé.",
+        "literal": "No sé, pero.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 95,
+        "jp": "ちゃうちゃう。",
+        "romaji": "Chau chau.",
+        "natural": "No, no, no es eso.",
+        "literal": "Diferente, diferente.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 96,
+        "jp": "どないしたん？",
+        "romaji": "Donai shitan?",
+        "natural": "¿Qué pasó?",
+        "literal": "¿Cómo hizo?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 97,
+        "jp": "しゃあないな。",
+        "romaji": "Shaa nai na.",
+        "natural": "Ni modo.",
+        "literal": "No hay forma/opción, ¿eh?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 98,
+        "jp": "おおきに。",
+        "romaji": "Ookini.",
+        "natural": "Gracias.",
+        "literal": "Muchas gracias.",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 99,
+        "jp": "ほな行こか。",
+        "romaji": "Hona iko ka.",
+        "natural": "Bueno, vámonos.",
+        "literal": "Entonces, ¿vamos?",
+        "category": "Osaka/Kansai"
+      },
+      {
+        "id": 100,
+        "jp": "ええ感じやん。",
+        "romaji": "Ee kanji yan.",
+        "natural": "Tiene buena vibra.",
+        "literal": "Buena sensación, ¿no?",
+        "category": "Osaka/Kansai"
+      }
+    ]
+  },
+  "gaki-style": {
+    "en": [
+      {
+        "id": 1,
+        "jp": "なんでやねん！",
+        "romaji": "Nande yanen!",
+        "natural": "What the heck?! / Come on!",
+        "literal": "Why is-it-like-that?!",
+        "category": "Kansai reaction"
+      },
+      {
+        "id": 2,
+        "jp": "何してんねん。",
+        "romaji": "Nani shiten nen.",
+        "natural": "What are you doing?",
+        "literal": "What doing is-it?",
+        "category": "Teasing"
+      },
+      {
+        "id": 3,
+        "jp": "ちゃうちゃう。",
+        "romaji": "Chau chau.",
+        "natural": "No, no, that's not it.",
+        "literal": "Different, different.",
+        "category": "Correction"
+      },
+      {
+        "id": 4,
+        "jp": "それちゃうやろ。",
+        "romaji": "Sore chau yaro.",
+        "natural": "That's not it, right?",
+        "literal": "That different, surely.",
+        "category": "Correction"
+      },
+      {
+        "id": 5,
+        "jp": "ほんまか？",
+        "romaji": "Honma ka?",
+        "natural": "For real?",
+        "literal": "Truth?",
+        "category": "Reaction"
+      },
+      {
+        "id": 6,
+        "jp": "ほんまに言うてる？",
+        "romaji": "Honma ni yuuteru?",
+        "natural": "Are you seriously saying that?",
+        "literal": "Really saying?",
+        "category": "Reaction"
+      },
+      {
+        "id": 7,
+        "jp": "うそやろ。",
+        "romaji": "Uso yaro.",
+        "natural": "No way.",
+        "literal": "Lie, surely.",
+        "category": "Reaction"
+      },
+      {
+        "id": 8,
+        "jp": "ありえへん。",
+        "romaji": "Ariehen.",
+        "natural": "Unbelievable.",
+        "literal": "Cannot exist.",
+        "category": "Reaction"
+      },
+      {
+        "id": 9,
+        "jp": "あかんあかん。",
+        "romaji": "Akan akan.",
+        "natural": "Nope, nope.",
+        "literal": "No good, no good.",
+        "category": "Reaction"
+      },
+      {
+        "id": 10,
+        "jp": "全然あかん。",
+        "romaji": "Zenzen akan.",
+        "natural": "Totally not good.",
+        "literal": "Completely no good.",
+        "category": "Reaction"
+      },
+      {
+        "id": 11,
+        "jp": "めっちゃおもろい。",
+        "romaji": "Meccha omoroi.",
+        "natural": "That's hilarious.",
+        "literal": "Super funny.",
+        "category": "Comedy"
+      },
+      {
+        "id": 12,
+        "jp": "おもろいやん。",
+        "romaji": "Omoroi yan.",
+        "natural": "That's funny, isn't it?",
+        "literal": "Funny, isn't it.",
+        "category": "Comedy"
+      },
+      {
+        "id": 13,
+        "jp": "笑ってもうた。",
+        "romaji": "Waratte mouta.",
+        "natural": "I ended up laughing.",
+        "literal": "Laughed completely.",
+        "category": "Comedy"
+      },
+      {
+        "id": 14,
+        "jp": "笑ったらあかん。",
+        "romaji": "Warattara akan.",
+        "natural": "I can't laugh.",
+        "literal": "If laugh, no good.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 15,
+        "jp": "今のは無理やろ。",
+        "romaji": "Ima no wa muri yaro.",
+        "natural": "That one was impossible.",
+        "literal": "That just now impossible, surely.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 16,
+        "jp": "こらえられへん。",
+        "romaji": "Koraerarehen.",
+        "natural": "I can't hold it in.",
+        "literal": "Cannot endure.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 17,
+        "jp": "危なかった。",
+        "romaji": "Abunakatta.",
+        "natural": "That was close.",
+        "literal": "Was dangerous.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 18,
+        "jp": "ギリギリ耐えた。",
+        "romaji": "Girigiri taeta.",
+        "natural": "I barely held it in.",
+        "literal": "Barely endured.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 19,
+        "jp": "今、笑いかけた。",
+        "romaji": "Ima, waraikaketa.",
+        "natural": "I almost laughed just now.",
+        "literal": "Now, began-to-laugh.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 20,
+        "jp": "それは卑怯やわ。",
+        "romaji": "Sore wa hikyou ya wa.",
+        "natural": "That's unfair.",
+        "literal": "That is cowardly/unfair.",
+        "category": "Comedy"
+      },
+      {
+        "id": 21,
+        "jp": "ずるいやろ。",
+        "romaji": "Zurui yaro.",
+        "natural": "That's cheating, right?",
+        "literal": "Sneaky, surely.",
+        "category": "Comedy"
+      },
+      {
+        "id": 22,
+        "jp": "反則やん。",
+        "romaji": "Hansoku yan.",
+        "natural": "That's against the rules.",
+        "literal": "Rule violation, isn't it.",
+        "category": "Comedy"
+      },
+      {
+        "id": 23,
+        "jp": "これは笑うわ。",
+        "romaji": "Kore wa warau wa.",
+        "natural": "This is laugh-worthy.",
+        "literal": "This, I laugh.",
+        "category": "Comedy"
+      },
+      {
+        "id": 24,
+        "jp": "そんなん笑うやん。",
+        "romaji": "Sonnan warau yan.",
+        "natural": "Of course I'd laugh at that.",
+        "literal": "Such thing, laugh, right.",
+        "category": "Comedy"
+      },
+      {
+        "id": 25,
+        "jp": "なんちゅう顔してんねん。",
+        "romaji": "Nanchuu kao shiten nen.",
+        "natural": "What kind of face is that?",
+        "literal": "What kind face doing?",
+        "category": "Teasing"
+      },
+      {
+        "id": 26,
+        "jp": "その顔やめて。",
+        "romaji": "Sono kao yamete.",
+        "natural": "Stop making that face.",
+        "literal": "That face, stop.",
+        "category": "Teasing"
+      },
+      {
+        "id": 27,
+        "jp": "顔がもうあかん。",
+        "romaji": "Kao ga mou akan.",
+        "natural": "Your face is already too much.",
+        "literal": "Face already no good.",
+        "category": "Teasing"
+      },
+      {
+        "id": 28,
+        "jp": "声でかいねん。",
+        "romaji": "Koe dekai nen.",
+        "natural": "You're too loud.",
+        "literal": "Voice big, man.",
+        "category": "Teasing"
+      },
+      {
+        "id": 29,
+        "jp": "近い近い。",
+        "romaji": "Chikai chikai.",
+        "natural": "Too close, too close.",
+        "literal": "Close, close.",
+        "category": "Teasing"
+      },
+      {
+        "id": 30,
+        "jp": "怖い怖い。",
+        "romaji": "Kowai kowai.",
+        "natural": "Scary, scary.",
+        "literal": "Scary, scary.",
+        "category": "Reaction"
+      },
+      {
+        "id": 31,
+        "jp": "急に来るな。",
+        "romaji": "Kyuu ni kuru na.",
+        "natural": "Don't come at me suddenly.",
+        "literal": "Suddenly come, don't.",
+        "category": "Reaction"
+      },
+      {
+        "id": 32,
+        "jp": "びっくりした。",
+        "romaji": "Bikkuri shita.",
+        "natural": "That surprised me.",
+        "literal": "Surprise did.",
+        "category": "Reaction"
+      },
+      {
+        "id": 33,
+        "jp": "心臓止まるわ。",
+        "romaji": "Shinzou tomaru wa.",
+        "natural": "My heart almost stopped.",
+        "literal": "Heart stops.",
+        "category": "Reaction"
+      },
+      {
+        "id": 34,
+        "jp": "何が起きたん？",
+        "romaji": "Nani ga okitan?",
+        "natural": "What happened?",
+        "literal": "What occurred?",
+        "category": "Reaction"
+      },
+      {
+        "id": 35,
+        "jp": "どないなってんねん。",
+        "romaji": "Donai natten nen.",
+        "natural": "What is going on?",
+        "literal": "How is it becoming?",
+        "category": "Kansai reaction"
+      },
+      {
+        "id": 36,
+        "jp": "意味わからん。",
+        "romaji": "Imi wakaran.",
+        "natural": "I don't get it.",
+        "literal": "Meaning not understand.",
+        "category": "Reaction"
+      },
+      {
+        "id": 37,
+        "jp": "意味わからんけどおもろい。",
+        "romaji": "Imi wakaran kedo omoroi.",
+        "natural": "I don't get it, but it's funny.",
+        "literal": "Meaning don't understand, but funny.",
+        "category": "Comedy"
+      },
+      {
+        "id": 38,
+        "jp": "それ言うたらあかんやつ。",
+        "romaji": "Sore yuutara akan yatsu.",
+        "natural": "That's something you shouldn't say.",
+        "literal": "If say that, no-good thing.",
+        "category": "Teasing"
+      },
+      {
+        "id": 39,
+        "jp": "言い方きついわ。",
+        "romaji": "Iikata kitsui wa.",
+        "natural": "That way of saying it is harsh.",
+        "literal": "Way of saying is strong.",
+        "category": "Teasing"
+      },
+      {
+        "id": 40,
+        "jp": "やめたれや。",
+        "romaji": "Yametare ya.",
+        "natural": "Leave him alone.",
+        "literal": "Stop doing that to him.",
+        "category": "Teasing"
+      },
+      {
+        "id": 41,
+        "jp": "かわいそうやろ。",
+        "romaji": "Kawaisou yaro.",
+        "natural": "Poor guy, come on.",
+        "literal": "Pitiful, surely.",
+        "category": "Teasing"
+      },
+      {
+        "id": 42,
+        "jp": "もうええわ。",
+        "romaji": "Mou ee wa.",
+        "natural": "Enough already.",
+        "literal": "Already good.",
+        "category": "Ending joke"
+      },
+      {
+        "id": 43,
+        "jp": "もうええて。",
+        "romaji": "Mou eete.",
+        "natural": "That's enough, man.",
+        "literal": "Already good, I said.",
+        "category": "Ending joke"
+      },
+      {
+        "id": 44,
+        "jp": "ええ加減にせえ。",
+        "romaji": "Ee kagen ni see.",
+        "natural": "Cut it out already.",
+        "literal": "Do good amount.",
+        "category": "Kansai scold"
+      },
+      {
+        "id": 45,
+        "jp": "何回言うねん。",
+        "romaji": "Nankai yuu nen.",
+        "natural": "How many times are you going to say that?",
+        "literal": "How many times say?",
+        "category": "Teasing"
+      },
+      {
+        "id": 46,
+        "jp": "しつこいねん。",
+        "romaji": "Shitsukoi nen.",
+        "natural": "You're being too persistent.",
+        "literal": "Persistent, man.",
+        "category": "Teasing"
+      },
+      {
+        "id": 47,
+        "jp": "またそれかい。",
+        "romaji": "Mata sore kai.",
+        "natural": "That again?",
+        "literal": "Again that?",
+        "category": "Reaction"
+      },
+      {
+        "id": 48,
+        "jp": "また出た。",
+        "romaji": "Mata deta.",
+        "natural": "There it is again.",
+        "literal": "Again came out.",
+        "category": "Reaction"
+      },
+      {
+        "id": 49,
+        "jp": "来ると思った。",
+        "romaji": "Kuru to omotta.",
+        "natural": "I knew it was coming.",
+        "literal": "Thought it would come.",
+        "category": "Prediction"
+      },
+      {
+        "id": 50,
+        "jp": "やっぱり来た。",
+        "romaji": "Yappari kita.",
+        "natural": "Yep, there it is.",
+        "literal": "As expected, came.",
+        "category": "Prediction"
+      },
+      {
+        "id": 51,
+        "jp": "絶対そうやと思った。",
+        "romaji": "Zettai sou ya to omotta.",
+        "natural": "I totally knew it.",
+        "literal": "Absolutely so, I thought.",
+        "category": "Prediction"
+      },
+      {
+        "id": 52,
+        "jp": "怪しいな。",
+        "romaji": "Ayashii na.",
+        "natural": "That's suspicious.",
+        "literal": "Suspicious, huh.",
+        "category": "Suspicion"
+      },
+      {
+        "id": 53,
+        "jp": "なんか怪しい。",
+        "romaji": "Nanka ayashii.",
+        "natural": "Something's suspicious.",
+        "literal": "Somehow suspicious.",
+        "category": "Suspicion"
+      },
+      {
+        "id": 54,
+        "jp": "絶対なんかある。",
+        "romaji": "Zettai nanka aru.",
+        "natural": "There's definitely something going on.",
+        "literal": "Absolutely something exists.",
+        "category": "Suspicion"
+      },
+      {
+        "id": 55,
+        "jp": "これ罠やろ。",
+        "romaji": "Kore wana yaro.",
+        "natural": "This is a trap, right?",
+        "literal": "This trap, surely.",
+        "category": "Suspicion"
+      },
+      {
+        "id": 56,
+        "jp": "嫌な予感する。",
+        "romaji": "Iya na yokan suru.",
+        "natural": "I have a bad feeling.",
+        "literal": "Bad premonition does.",
+        "category": "Suspicion"
+      },
+      {
+        "id": 57,
+        "jp": "見た瞬間アウト。",
+        "romaji": "Mita shunkan auto.",
+        "natural": "The moment I saw it, I was out.",
+        "literal": "Saw moment, out.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 58,
+        "jp": "アウトやん。",
+        "romaji": "Auto yan.",
+        "natural": "That's an out.",
+        "literal": "Out, isn't it.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 59,
+        "jp": "今のアウトやろ。",
+        "romaji": "Ima no auto yaro.",
+        "natural": "That was an out, right?",
+        "literal": "That just now out, surely.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 60,
+        "jp": "セーフやろ？",
+        "romaji": "Seefu yaro?",
+        "natural": "I'm safe, right?",
+        "literal": "Safe, surely?",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 61,
+        "jp": "いや、アウトや。",
+        "romaji": "Iya, auto ya.",
+        "natural": "Nope, you're out.",
+        "literal": "No, out.",
+        "category": "No-laugh vibe"
+      },
+      {
+        "id": 62,
+        "jp": "なんで俺だけ？",
+        "romaji": "Nande ore dake?",
+        "natural": "Why only me?",
+        "literal": "Why me only?",
+        "category": "Complaint"
+      },
+      {
+        "id": 63,
+        "jp": "俺関係ないやん。",
+        "romaji": "Ore kankei nai yan.",
+        "natural": "This has nothing to do with me.",
+        "literal": "I relation none, right.",
+        "category": "Complaint"
+      },
+      {
+        "id": 64,
+        "jp": "巻き込まれた。",
+        "romaji": "Makikomareta.",
+        "natural": "I got dragged into this.",
+        "literal": "Got dragged/involved.",
+        "category": "Complaint"
+      },
+      {
+        "id": 65,
+        "jp": "理不尽やわ。",
+        "romaji": "Rifujin ya wa.",
+        "natural": "That's unreasonable.",
+        "literal": "Unreasonable it is.",
+        "category": "Complaint"
+      },
+      {
+        "id": 66,
+        "jp": "納得いかん。",
+        "romaji": "Nattoku ikan.",
+        "natural": "I don't accept that.",
+        "literal": "Understanding/acceptance doesn't go.",
+        "category": "Complaint"
+      },
+      {
+        "id": 67,
+        "jp": "なんでそうなるん？",
+        "romaji": "Nande sou narun?",
+        "natural": "How does it end up like that?",
+        "literal": "Why so becomes?",
+        "category": "Complaint"
+      },
+      {
+        "id": 68,
+        "jp": "誰が決めたん？",
+        "romaji": "Dare ga kimetan?",
+        "natural": "Who decided that?",
+        "literal": "Who decided?",
+        "category": "Complaint"
+      },
+      {
+        "id": 69,
+        "jp": "説明して。",
+        "romaji": "Setsumei shite.",
+        "natural": "Explain it.",
+        "literal": "Explanation do.",
+        "category": "Complaint"
+      },
+      {
+        "id": 70,
+        "jp": "説明になってへん。",
+        "romaji": "Setsumei ni nattehen.",
+        "natural": "That doesn't explain anything.",
+        "literal": "Not becoming explanation.",
+        "category": "Complaint"
+      },
+      {
+        "id": 71,
+        "jp": "雑やな。",
+        "romaji": "Zatsu ya na.",
+        "natural": "That's sloppy.",
+        "literal": "Sloppy, huh.",
+        "category": "Teasing"
+      },
+      {
+        "id": 72,
+        "jp": "適当すぎるやろ。",
+        "romaji": "Tekitou sugiru yaro.",
+        "natural": "That's way too half-baked.",
+        "literal": "Too random, surely.",
+        "category": "Teasing"
+      },
+      {
+        "id": 73,
+        "jp": "ちゃんとやれや。",
+        "romaji": "Chanto yare ya.",
+        "natural": "Do it properly.",
+        "literal": "Properly do it.",
+        "category": "Teasing"
+      },
+      {
+        "id": 74,
+        "jp": "何を見せられてんねん。",
+        "romaji": "Nani o miserareten nen.",
+        "natural": "What am I even watching?",
+        "literal": "What am I being shown?",
+        "category": "Reaction"
+      },
+      {
+        "id": 75,
+        "jp": "地獄やん。",
+        "romaji": "Jigoku yan.",
+        "natural": "This is hell.",
+        "literal": "Hell, isn't it.",
+        "category": "Reaction"
+      },
+      {
+        "id": 76,
+        "jp": "空気おかしいやろ。",
+        "romaji": "Kuuki okashii yaro.",
+        "natural": "The vibe is weird, right?",
+        "literal": "Air/vibe strange, surely.",
+        "category": "Reaction"
+      },
+      {
+        "id": 77,
+        "jp": "変な空気なった。",
+        "romaji": "Hen na kuuki natta.",
+        "natural": "The vibe got weird.",
+        "literal": "Strange air became.",
+        "category": "Reaction"
+      },
+      {
+        "id": 78,
+        "jp": "誰も助けてくれへん。",
+        "romaji": "Dare mo tasukete kurehen.",
+        "natural": "Nobody is helping me.",
+        "literal": "Nobody helps-gives.",
+        "category": "Comedy complaint"
+      },
+      {
+        "id": 79,
+        "jp": "助けてくれや。",
+        "romaji": "Tasukete kure ya.",
+        "natural": "Help me out, man.",
+        "literal": "Help give me.",
+        "category": "Comedy complaint"
+      },
+      {
+        "id": 80,
+        "jp": "なんで黙ってんねん。",
+        "romaji": "Nande damatten nen.",
+        "natural": "Why are you quiet?",
+        "literal": "Why being silent?",
+        "category": "Teasing"
+      },
+      {
+        "id": 81,
+        "jp": "何か言えや。",
+        "romaji": "Nanika ie ya.",
+        "natural": "Say something.",
+        "literal": "Something say.",
+        "category": "Teasing"
+      },
+      {
+        "id": 82,
+        "jp": "今言うタイミングちゃう。",
+        "romaji": "Ima yuu taimingu chau.",
+        "natural": "This is not the time to say that.",
+        "literal": "Now saying timing is different.",
+        "category": "Correction"
+      },
+      {
+        "id": 83,
+        "jp": "タイミング悪いわ。",
+        "romaji": "Taimingu warui wa.",
+        "natural": "Bad timing.",
+        "literal": "Timing bad.",
+        "category": "Correction"
+      },
+      {
+        "id": 84,
+        "jp": "そこ拾うんかい。",
+        "romaji": "Soko hiroun kai.",
+        "natural": "That's what you're reacting to?",
+        "literal": "There pick up?",
+        "category": "Comedy"
+      },
+      {
+        "id": 85,
+        "jp": "そこ気になる？",
+        "romaji": "Soko ki ni naru?",
+        "natural": "That's what bothers you?",
+        "literal": "There becomes concern?",
+        "category": "Comedy"
+      },
+      {
+        "id": 86,
+        "jp": "細かいねん。",
+        "romaji": "Komakai nen.",
+        "natural": "You're too picky/detail-focused.",
+        "literal": "Small/detail, man.",
+        "category": "Teasing"
+      },
+      {
+        "id": 87,
+        "jp": "どうでもええわ。",
+        "romaji": "Dou demo ee wa.",
+        "natural": "Who cares?",
+        "literal": "Any way is good.",
+        "category": "Teasing"
+      },
+      {
+        "id": 88,
+        "jp": "それは大事やろ。",
+        "romaji": "Sore wa daiji yaro.",
+        "natural": "That part matters, though.",
+        "literal": "That important, surely.",
+        "category": "Correction"
+      },
+      {
+        "id": 89,
+        "jp": "急に真面目になるな。",
+        "romaji": "Kyuu ni majime ni naru na.",
+        "natural": "Don't suddenly get serious.",
+        "literal": "Suddenly serious become, don't.",
+        "category": "Teasing"
+      },
+      {
+        "id": 90,
+        "jp": "真面目か。",
+        "romaji": "Majime ka.",
+        "natural": "Why so serious?",
+        "literal": "Serious, huh?",
+        "category": "Teasing"
+      },
+      {
+        "id": 91,
+        "jp": "顔だけ真剣やん。",
+        "romaji": "Kao dake shinken yan.",
+        "natural": "Only your face looks serious.",
+        "literal": "Face only serious, isn't it.",
+        "category": "Teasing"
+      },
+      {
+        "id": 92,
+        "jp": "何の時間やねん。",
+        "romaji": "Nan no jikan ya nen.",
+        "natural": "What kind of segment is this?",
+        "literal": "What time/segment is this?",
+        "category": "Comedy"
+      },
+      {
+        "id": 93,
+        "jp": "終わり方おかしい。",
+        "romaji": "Owarikata okashii.",
+        "natural": "That ending was weird.",
+        "literal": "Ending method strange.",
+        "category": "Comedy"
+      },
+      {
+        "id": 94,
+        "jp": "オチないんかい。",
+        "romaji": "Ochi nain kai.",
+        "natural": "There's no punchline?",
+        "literal": "Punchline doesn't exist?",
+        "category": "Comedy"
+      },
+      {
+        "id": 95,
+        "jp": "オチ弱いな。",
+        "romaji": "Ochi yowai na.",
+        "natural": "That punchline is weak.",
+        "literal": "Punchline weak, huh.",
+        "category": "Comedy"
+      },
+      {
+        "id": 96,
+        "jp": "悔しいけど笑った。",
+        "romaji": "Kuyashii kedo waratta.",
+        "natural": "I'm annoyed, but I laughed.",
+        "literal": "Frustrating but laughed.",
+        "category": "Comedy"
+      },
+      {
+        "id": 97,
+        "jp": "これは負けたわ。",
+        "romaji": "Kore wa maketa wa.",
+        "natural": "This one beat me.",
+        "literal": "This, lost.",
+        "category": "Comedy"
+      },
+      {
+        "id": 98,
+        "jp": "さすがやな。",
+        "romaji": "Sasuga ya na.",
+        "natural": "That's impressive.",
+        "literal": "As expected, huh.",
+        "category": "Reaction"
+      },
+      {
+        "id": 99,
+        "jp": "天才か。",
+        "romaji": "Tensai ka.",
+        "natural": "Are you a genius?",
+        "literal": "Genius, huh?",
+        "category": "Reaction"
+      },
+      {
+        "id": 100,
+        "jp": "アホやろ。",
+        "romaji": "Aho yaro.",
+        "natural": "You're ridiculous.",
+        "literal": "Fool, surely.",
+        "category": "Teasing"
+      }
+    ],
+    "es": [
+      {
+        "id": 1,
+        "jp": "なんでやねん！",
+        "romaji": "Nande yanen!",
+        "natural": "¡¿Pero qué rayos?! / ¡No me fastidies!",
+        "literal": "¿Por qué es así?",
+        "category": "Reacción Kansai"
+      },
+      {
+        "id": 2,
+        "jp": "何してんねん。",
+        "romaji": "Nani shiten nen.",
+        "natural": "¿Qué estás haciendo?",
+        "literal": "¿Qué haciendo?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 3,
+        "jp": "ちゃうちゃう。",
+        "romaji": "Chau chau.",
+        "natural": "No, no, eso no es.",
+        "literal": "Diferente, diferente.",
+        "category": "Corrección"
+      },
+      {
+        "id": 4,
+        "jp": "それちゃうやろ。",
+        "romaji": "Sore chau yaro.",
+        "natural": "Eso no es, ¿verdad?",
+        "literal": "Eso diferente, seguro.",
+        "category": "Corrección"
+      },
+      {
+        "id": 5,
+        "jp": "ほんまか？",
+        "romaji": "Honma ka?",
+        "natural": "¿De verdad?",
+        "literal": "¿Verdad?",
+        "category": "Reacción"
+      },
+      {
+        "id": 6,
+        "jp": "ほんまに言うてる？",
+        "romaji": "Honma ni yuuteru?",
+        "natural": "¿Lo estás diciendo en serio?",
+        "literal": "¿De verdad diciendo?",
+        "category": "Reacción"
+      },
+      {
+        "id": 7,
+        "jp": "うそやろ。",
+        "romaji": "Uso yaro.",
+        "natural": "No puede ser.",
+        "literal": "Mentira, seguro.",
+        "category": "Reacción"
+      },
+      {
+        "id": 8,
+        "jp": "ありえへん。",
+        "romaji": "Ariehen.",
+        "natural": "Increíble. / Eso no puede ser.",
+        "literal": "No puede existir.",
+        "category": "Reacción"
+      },
+      {
+        "id": 9,
+        "jp": "あかんあかん。",
+        "romaji": "Akan akan.",
+        "natural": "No, no, ni loco.",
+        "literal": "No sirve, no sirve.",
+        "category": "Reacción"
+      },
+      {
+        "id": 10,
+        "jp": "全然あかん。",
+        "romaji": "Zenzen akan.",
+        "natural": "Totalmente mal.",
+        "literal": "Completamente no sirve.",
+        "category": "Reacción"
+      },
+      {
+        "id": 11,
+        "jp": "めっちゃおもろい。",
+        "romaji": "Meccha omoroi.",
+        "natural": "Eso está buenísimo. / Qué risa.",
+        "literal": "Súper gracioso.",
+        "category": "Comedia"
+      },
+      {
+        "id": 12,
+        "jp": "おもろいやん。",
+        "romaji": "Omoroi yan.",
+        "natural": "Está gracioso, ¿no?",
+        "literal": "Gracioso, ¿verdad?",
+        "category": "Comedia"
+      },
+      {
+        "id": 13,
+        "jp": "笑ってもうた。",
+        "romaji": "Waratte mouta.",
+        "natural": "Terminé riéndome.",
+        "literal": "Reí completamente.",
+        "category": "Comedia"
+      },
+      {
+        "id": 14,
+        "jp": "笑ったらあかん。",
+        "romaji": "Warattara akan.",
+        "natural": "No me puedo reír.",
+        "literal": "Si me río, mal.",
+        "category": "No reírse"
+      },
+      {
+        "id": 15,
+        "jp": "今のは無理やろ。",
+        "romaji": "Ima no wa muri yaro.",
+        "natural": "Eso de ahora fue imposible.",
+        "literal": "Eso de ahora imposible, seguro.",
+        "category": "No reírse"
+      },
+      {
+        "id": 16,
+        "jp": "こらえられへん。",
+        "romaji": "Koraerarehen.",
+        "natural": "No puedo aguantarme.",
+        "literal": "No puedo resistir.",
+        "category": "No reírse"
+      },
+      {
+        "id": 17,
+        "jp": "危なかった。",
+        "romaji": "Abunakatta.",
+        "natural": "Eso estuvo cerca.",
+        "literal": "Fue peligroso.",
+        "category": "No reírse"
+      },
+      {
+        "id": 18,
+        "jp": "ギリギリ耐えた。",
+        "romaji": "Girigiri taeta.",
+        "natural": "Apenas me aguanté.",
+        "literal": "Apenas resistí.",
+        "category": "No reírse"
+      },
+      {
+        "id": 19,
+        "jp": "今、笑いかけた。",
+        "romaji": "Ima, waraikaketa.",
+        "natural": "Casi me río ahora mismo.",
+        "literal": "Ahora, empecé a reírme.",
+        "category": "No reírse"
+      },
+      {
+        "id": 20,
+        "jp": "それは卑怯やわ。",
+        "romaji": "Sore wa hikyou ya wa.",
+        "natural": "Eso es trampa.",
+        "literal": "Eso es injusto/cobarde.",
+        "category": "Comedia"
+      },
+      {
+        "id": 21,
+        "jp": "ずるいやろ。",
+        "romaji": "Zurui yaro.",
+        "natural": "Eso es hacer trampa, ¿no?",
+        "literal": "Tramposo, seguro.",
+        "category": "Comedia"
+      },
+      {
+        "id": 22,
+        "jp": "反則やん。",
+        "romaji": "Hansoku yan.",
+        "natural": "Eso rompe las reglas.",
+        "literal": "Violación de regla, ¿no?",
+        "category": "Comedia"
+      },
+      {
+        "id": 23,
+        "jp": "これは笑うわ。",
+        "romaji": "Kore wa warau wa.",
+        "natural": "Con esto uno se ríe.",
+        "literal": "Esto, me río.",
+        "category": "Comedia"
+      },
+      {
+        "id": 24,
+        "jp": "そんなん笑うやん。",
+        "romaji": "Sonnan warau yan.",
+        "natural": "Claro que uno se ríe con eso.",
+        "literal": "Esa cosa, uno se ríe, ¿no?",
+        "category": "Comedia"
+      },
+      {
+        "id": 25,
+        "jp": "なんちゅう顔してんねん。",
+        "romaji": "Nanchuu kao shiten nen.",
+        "natural": "¿Qué clase de cara es esa?",
+        "literal": "¿Qué tipo de cara estás haciendo?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 26,
+        "jp": "その顔やめて。",
+        "romaji": "Sono kao yamete.",
+        "natural": "Deja de poner esa cara.",
+        "literal": "Esa cara, para.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 27,
+        "jp": "顔がもうあかん。",
+        "romaji": "Kao ga mou akan.",
+        "natural": "Tu cara ya lo arruinó todo.",
+        "literal": "Cara ya no sirve.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 28,
+        "jp": "声でかいねん。",
+        "romaji": "Koe dekai nen.",
+        "natural": "Estás hablando demasiado alto.",
+        "literal": "Voz grande, mano.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 29,
+        "jp": "近い近い。",
+        "romaji": "Chikai chikai.",
+        "natural": "Muy cerca, muy cerca.",
+        "literal": "Cerca, cerca.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 30,
+        "jp": "怖い怖い。",
+        "romaji": "Kowai kowai.",
+        "natural": "Qué miedo, qué miedo.",
+        "literal": "Miedo, miedo.",
+        "category": "Reacción"
+      },
+      {
+        "id": 31,
+        "jp": "急に来るな。",
+        "romaji": "Kyuu ni kuru na.",
+        "natural": "No me salgas de repente.",
+        "literal": "De repente venir, no.",
+        "category": "Reacción"
+      },
+      {
+        "id": 32,
+        "jp": "びっくりした。",
+        "romaji": "Bikkuri shita.",
+        "natural": "Me asustaste.",
+        "literal": "Sorpresa hice.",
+        "category": "Reacción"
+      },
+      {
+        "id": 33,
+        "jp": "心臓止まるわ。",
+        "romaji": "Shinzou tomaru wa.",
+        "natural": "Casi se me para el corazón.",
+        "literal": "El corazón se detiene.",
+        "category": "Reacción"
+      },
+      {
+        "id": 34,
+        "jp": "何が起きたん？",
+        "romaji": "Nani ga okitan?",
+        "natural": "¿Qué pasó?",
+        "literal": "¿Qué ocurrió?",
+        "category": "Reacción"
+      },
+      {
+        "id": 35,
+        "jp": "どないなってんねん。",
+        "romaji": "Donai natten nen.",
+        "natural": "¿Qué está pasando aquí?",
+        "literal": "¿Cómo se está volviendo?",
+        "category": "Reacción Kansai"
+      },
+      {
+        "id": 36,
+        "jp": "意味わからん。",
+        "romaji": "Imi wakaran.",
+        "natural": "No entiendo.",
+        "literal": "Significado no entiendo.",
+        "category": "Reacción"
+      },
+      {
+        "id": 37,
+        "jp": "意味わからんけどおもろい。",
+        "romaji": "Imi wakaran kedo omoroi.",
+        "natural": "No entiendo, pero da risa.",
+        "literal": "Significado no entiendo, pero gracioso.",
+        "category": "Comedia"
+      },
+      {
+        "id": 38,
+        "jp": "それ言うたらあかんやつ。",
+        "romaji": "Sore yuutara akan yatsu.",
+        "natural": "Eso es algo que no se debe decir.",
+        "literal": "Si dices eso, cosa mala.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 39,
+        "jp": "言い方きついわ。",
+        "romaji": "Iikata kitsui wa.",
+        "natural": "Esa forma de decirlo está fuerte.",
+        "literal": "Forma de decir es fuerte.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 40,
+        "jp": "やめたれや。",
+        "romaji": "Yametare ya.",
+        "natural": "Déjalo quieto.",
+        "literal": "Para de hacerle eso.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 41,
+        "jp": "かわいそうやろ。",
+        "romaji": "Kawaisou yaro.",
+        "natural": "Pobrecito, no seas así.",
+        "literal": "Da pena, seguro.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 42,
+        "jp": "もうええわ。",
+        "romaji": "Mou ee wa.",
+        "natural": "Ya, suficiente.",
+        "literal": "Ya está bien.",
+        "category": "Remate"
+      },
+      {
+        "id": 43,
+        "jp": "もうええて。",
+        "romaji": "Mou eete.",
+        "natural": "Ya basta, mano.",
+        "literal": "Ya está bien, te digo.",
+        "category": "Remate"
+      },
+      {
+        "id": 44,
+        "jp": "ええ加減にせえ。",
+        "romaji": "Ee kagen ni see.",
+        "natural": "Ya para con eso.",
+        "literal": "Hazlo en buena medida.",
+        "category": "Regaño Kansai"
+      },
+      {
+        "id": 45,
+        "jp": "何回言うねん。",
+        "romaji": "Nankai yuu nen.",
+        "natural": "¿Cuántas veces vas a decir eso?",
+        "literal": "¿Cuántas veces decir?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 46,
+        "jp": "しつこいねん。",
+        "romaji": "Shitsukoi nen.",
+        "natural": "Estás demasiado insistente.",
+        "literal": "Insistente, mano.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 47,
+        "jp": "またそれかい。",
+        "romaji": "Mata sore kai.",
+        "natural": "¿Otra vez con eso?",
+        "literal": "¿Otra vez eso?",
+        "category": "Reacción"
+      },
+      {
+        "id": 48,
+        "jp": "また出た。",
+        "romaji": "Mata deta.",
+        "natural": "Ahí salió otra vez.",
+        "literal": "Otra vez salió.",
+        "category": "Reacción"
+      },
+      {
+        "id": 49,
+        "jp": "来ると思った。",
+        "romaji": "Kuru to omotta.",
+        "natural": "Sabía que venía.",
+        "literal": "Pensé que iba a venir.",
+        "category": "Predicción"
+      },
+      {
+        "id": 50,
+        "jp": "やっぱり来た。",
+        "romaji": "Yappari kita.",
+        "natural": "Sí, ahí está.",
+        "literal": "Como esperaba, vino.",
+        "category": "Predicción"
+      },
+      {
+        "id": 51,
+        "jp": "絶対そうやと思った。",
+        "romaji": "Zettai sou ya to omotta.",
+        "natural": "Yo sabía que iba a ser eso.",
+        "literal": "Absolutamente así, pensé.",
+        "category": "Predicción"
+      },
+      {
+        "id": 52,
+        "jp": "怪しいな。",
+        "romaji": "Ayashii na.",
+        "natural": "Eso está sospechoso.",
+        "literal": "Sospechoso, ¿no?",
+        "category": "Sospecha"
+      },
+      {
+        "id": 53,
+        "jp": "なんか怪しい。",
+        "romaji": "Nanka ayashii.",
+        "natural": "Algo está raro.",
+        "literal": "De alguna forma sospechoso.",
+        "category": "Sospecha"
+      },
+      {
+        "id": 54,
+        "jp": "絶対なんかある。",
+        "romaji": "Zettai nanka aru.",
+        "natural": "Aquí definitivamente hay algo.",
+        "literal": "Definitivamente algo existe.",
+        "category": "Sospecha"
+      },
+      {
+        "id": 55,
+        "jp": "これ罠やろ。",
+        "romaji": "Kore wana yaro.",
+        "natural": "Esto es una trampa, ¿verdad?",
+        "literal": "Esto trampa, seguro.",
+        "category": "Sospecha"
+      },
+      {
+        "id": 56,
+        "jp": "嫌な予感する。",
+        "romaji": "Iya na yokan suru.",
+        "natural": "Tengo un mal presentimiento.",
+        "literal": "Mal presentimiento hace.",
+        "category": "Sospecha"
+      },
+      {
+        "id": 57,
+        "jp": "見た瞬間アウト。",
+        "romaji": "Mita shunkan auto.",
+        "natural": "En cuanto lo vi, perdí.",
+        "literal": "Momento de ver, fuera.",
+        "category": "No reírse"
+      },
+      {
+        "id": 58,
+        "jp": "アウトやん。",
+        "romaji": "Auto yan.",
+        "natural": "Eso cuenta como fuera.",
+        "literal": "Fuera, ¿no?",
+        "category": "No reírse"
+      },
+      {
+        "id": 59,
+        "jp": "今のアウトやろ。",
+        "romaji": "Ima no auto yaro.",
+        "natural": "Eso de ahora fue fuera, ¿verdad?",
+        "literal": "Eso de ahora fuera, seguro.",
+        "category": "No reírse"
+      },
+      {
+        "id": 60,
+        "jp": "セーフやろ？",
+        "romaji": "Seefu yaro?",
+        "natural": "Estoy a salvo, ¿no?",
+        "literal": "A salvo, seguro?",
+        "category": "No reírse"
+      },
+      {
+        "id": 61,
+        "jp": "いや、アウトや。",
+        "romaji": "Iya, auto ya.",
+        "natural": "No, quedaste fuera.",
+        "literal": "No, fuera.",
+        "category": "No reírse"
+      },
+      {
+        "id": 62,
+        "jp": "なんで俺だけ？",
+        "romaji": "Nande ore dake?",
+        "natural": "¿Por qué solo yo?",
+        "literal": "¿Por qué yo solamente?",
+        "category": "Queja"
+      },
+      {
+        "id": 63,
+        "jp": "俺関係ないやん。",
+        "romaji": "Ore kankei nai yan.",
+        "natural": "Esto no tiene nada que ver conmigo.",
+        "literal": "Yo relación ninguna, ¿no?",
+        "category": "Queja"
+      },
+      {
+        "id": 64,
+        "jp": "巻き込まれた。",
+        "romaji": "Makikomareta.",
+        "natural": "Me arrastraron a esto.",
+        "literal": "Fui arrastrado/involucrado.",
+        "category": "Queja"
+      },
+      {
+        "id": 65,
+        "jp": "理不尽やわ。",
+        "romaji": "Rifujin ya wa.",
+        "natural": "Eso no es justo.",
+        "literal": "Irracional es.",
+        "category": "Queja"
+      },
+      {
+        "id": 66,
+        "jp": "納得いかん。",
+        "romaji": "Nattoku ikan.",
+        "natural": "No acepto eso.",
+        "literal": "Aceptación no va.",
+        "category": "Queja"
+      },
+      {
+        "id": 67,
+        "jp": "なんでそうなるん？",
+        "romaji": "Nande sou narun?",
+        "natural": "¿Cómo termina siendo así?",
+        "literal": "¿Por qué así se vuelve?",
+        "category": "Queja"
+      },
+      {
+        "id": 68,
+        "jp": "誰が決めたん？",
+        "romaji": "Dare ga kimetan?",
+        "natural": "¿Quién decidió eso?",
+        "literal": "¿Quién decidió?",
+        "category": "Queja"
+      },
+      {
+        "id": 69,
+        "jp": "説明して。",
+        "romaji": "Setsumei shite.",
+        "natural": "Explícalo.",
+        "literal": "Explicación haz.",
+        "category": "Queja"
+      },
+      {
+        "id": 70,
+        "jp": "説明になってへん。",
+        "romaji": "Setsumei ni nattehen.",
+        "natural": "Eso no explica nada.",
+        "literal": "No se vuelve explicación.",
+        "category": "Queja"
+      },
+      {
+        "id": 71,
+        "jp": "雑やな。",
+        "romaji": "Zatsu ya na.",
+        "natural": "Eso está hecho a lo loco.",
+        "literal": "Descuidado, ¿no?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 72,
+        "jp": "適当すぎるやろ。",
+        "romaji": "Tekitou sugiru yaro.",
+        "natural": "Eso está demasiado improvisado.",
+        "literal": "Demasiado al azar, seguro.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 73,
+        "jp": "ちゃんとやれや。",
+        "romaji": "Chanto yare ya.",
+        "natural": "Hazlo bien.",
+        "literal": "Bien hazlo.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 74,
+        "jp": "何を見せられてんねん。",
+        "romaji": "Nani o miserareten nen.",
+        "natural": "¿Qué rayos estoy viendo?",
+        "literal": "¿Qué se me está mostrando?",
+        "category": "Reacción"
+      },
+      {
+        "id": 75,
+        "jp": "地獄やん。",
+        "romaji": "Jigoku yan.",
+        "natural": "Esto es un desastre.",
+        "literal": "Infierno, ¿no?",
+        "category": "Reacción"
+      },
+      {
+        "id": 76,
+        "jp": "空気おかしいやろ。",
+        "romaji": "Kuuki okashii yaro.",
+        "natural": "El ambiente está raro, ¿verdad?",
+        "literal": "Aire/ambiente raro, seguro.",
+        "category": "Reacción"
+      },
+      {
+        "id": 77,
+        "jp": "変な空気なった。",
+        "romaji": "Hen na kuuki natta.",
+        "natural": "El ambiente se puso raro.",
+        "literal": "Aire extraño se volvió.",
+        "category": "Reacción"
+      },
+      {
+        "id": 78,
+        "jp": "誰も助けてくれへん。",
+        "romaji": "Dare mo tasukete kurehen.",
+        "natural": "Nadie me está ayudando.",
+        "literal": "Nadie ayuda-da.",
+        "category": "Queja cómica"
+      },
+      {
+        "id": 79,
+        "jp": "助けてくれや。",
+        "romaji": "Tasukete kure ya.",
+        "natural": "Ayúdame, mano.",
+        "literal": "Ayuda dame.",
+        "category": "Queja cómica"
+      },
+      {
+        "id": 80,
+        "jp": "なんで黙ってんねん。",
+        "romaji": "Nande damatten nen.",
+        "natural": "¿Por qué te quedas callado?",
+        "literal": "¿Por qué estando en silencio?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 81,
+        "jp": "何か言えや。",
+        "romaji": "Nanika ie ya.",
+        "natural": "Di algo.",
+        "literal": "Algo di.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 82,
+        "jp": "今言うタイミングちゃう。",
+        "romaji": "Ima yuu taimingu chau.",
+        "natural": "Ahora no es el momento de decir eso.",
+        "literal": "Ahora decir momento es diferente.",
+        "category": "Corrección"
+      },
+      {
+        "id": 83,
+        "jp": "タイミング悪いわ。",
+        "romaji": "Taimingu warui wa.",
+        "natural": "Qué mal timing.",
+        "literal": "Momento malo.",
+        "category": "Corrección"
+      },
+      {
+        "id": 84,
+        "jp": "そこ拾うんかい。",
+        "romaji": "Soko hiroun kai.",
+        "natural": "¿A eso es que vas a reaccionar?",
+        "literal": "¿Ahí recoges?",
+        "category": "Comedia"
+      },
+      {
+        "id": 85,
+        "jp": "そこ気になる？",
+        "romaji": "Soko ki ni naru?",
+        "natural": "¿Eso es lo que te preocupa?",
+        "literal": "¿Ahí se vuelve preocupación?",
+        "category": "Comedia"
+      },
+      {
+        "id": 86,
+        "jp": "細かいねん。",
+        "romaji": "Komakai nen.",
+        "natural": "Estás demasiado detallista.",
+        "literal": "Pequeño/detalle, mano.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 87,
+        "jp": "どうでもええわ。",
+        "romaji": "Dou demo ee wa.",
+        "natural": "¿Y a quién le importa?",
+        "literal": "Cualquier forma está bien.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 88,
+        "jp": "それは大事やろ。",
+        "romaji": "Sore wa daiji yaro.",
+        "natural": "Esa parte sí importa.",
+        "literal": "Eso importante, seguro.",
+        "category": "Corrección"
+      },
+      {
+        "id": 89,
+        "jp": "急に真面目になるな。",
+        "romaji": "Kyuu ni majime ni naru na.",
+        "natural": "No te pongas serio de repente.",
+        "literal": "De repente serio volverse, no.",
+        "category": "Vacilón"
+      },
+      {
+        "id": 90,
+        "jp": "真面目か。",
+        "romaji": "Majime ka.",
+        "natural": "¿Ahora te pones serio?",
+        "literal": "Serio, ¿eh?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 91,
+        "jp": "顔だけ真剣やん。",
+        "romaji": "Kao dake shinken yan.",
+        "natural": "Solo tu cara se ve seria.",
+        "literal": "Solo cara seria, ¿no?",
+        "category": "Vacilón"
+      },
+      {
+        "id": 92,
+        "jp": "何の時間やねん。",
+        "romaji": "Nan no jikan ya nen.",
+        "natural": "¿Qué clase de segmento es este?",
+        "literal": "¿Qué tiempo/segmento es este?",
+        "category": "Comedia"
+      },
+      {
+        "id": 93,
+        "jp": "終わり方おかしい。",
+        "romaji": "Owarikata okashii.",
+        "natural": "Ese final estuvo raro.",
+        "literal": "Forma de terminar extraña.",
+        "category": "Comedia"
+      },
+      {
+        "id": 94,
+        "jp": "オチないんかい。",
+        "romaji": "Ochi nain kai.",
+        "natural": "¿No hay remate?",
+        "literal": "¿Remate no existe?",
+        "category": "Comedia"
+      },
+      {
+        "id": 95,
+        "jp": "オチ弱いな。",
+        "romaji": "Ochi yowai na.",
+        "natural": "Ese remate está flojo.",
+        "literal": "Remate débil, ¿no?",
+        "category": "Comedia"
+      },
+      {
+        "id": 96,
+        "jp": "悔しいけど笑った。",
+        "romaji": "Kuyashii kedo waratta.",
+        "natural": "Me da coraje, pero me reí.",
+        "literal": "Frustrante, pero reí.",
+        "category": "Comedia"
+      },
+      {
+        "id": 97,
+        "jp": "これは負けたわ。",
+        "romaji": "Kore wa maketa wa.",
+        "natural": "Con esta perdí.",
+        "literal": "Esto, perdí.",
+        "category": "Comedia"
+      },
+      {
+        "id": 98,
+        "jp": "さすがやな。",
+        "romaji": "Sasuga ya na.",
+        "natural": "Eso estuvo brutal.",
+        "literal": "Como era de esperarse, ¿no?",
+        "category": "Reacción"
+      },
+      {
+        "id": 99,
+        "jp": "天才か。",
+        "romaji": "Tensai ka.",
+        "natural": "¿Eres un genio o qué?",
+        "literal": "Genio, ¿eh?",
+        "category": "Reacción"
+      },
+      {
+        "id": 100,
+        "jp": "アホやろ。",
+        "romaji": "Aho yaro.",
+        "natural": "Eres un caso. / Estás brutal.",
+        "literal": "Tonto, seguro.",
+        "category": "Vacilón"
+      }
+    ]
+  }
+}

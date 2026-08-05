@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 92" role="img" aria-labelledby="title desc">
+  <title id="title">Think in Japanese</title>
+  <desc id="desc">Cherry blossom logo and Think in Japanese wordmark</desc>
+  <defs>
+    <linearGradient id="petal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff8bbb"/><stop offset="1" stop-color="#f05692"/></linearGradient>
+  </defs>
+  <g transform="translate(46 46)">
+    <g fill="url(#petal)" stroke="#d63d79" stroke-width="2">
+      <ellipse rx="14" ry="25" transform="rotate(0) translate(0 -19)"/>
+      <ellipse rx="14" ry="25" transform="rotate(72) translate(0 -19)"/>
+      <ellipse rx="14" ry="25" transform="rotate(144) translate(0 -19)"/>
+      <ellipse rx="14" ry="25" transform="rotate(216) translate(0 -19)"/>
+      <ellipse rx="14" ry="25" transform="rotate(288) translate(0 -19)"/>
+    </g>
+    <circle r="9" fill="#ffd56f" stroke="#c98731" stroke-width="2"/>
+    <circle r="3" fill="#fff5d4"/>
+  </g>
+  <text x="90" y="38" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800" fill="#183e2f">Think in</text>
+  <text x="90" y="70" font-family="Segoe UI, Arial, sans-serif" font-size="31" font-weight="800" fill="#2f7547">Japanese</text>
+  <text x="91" y="87" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="800" letter-spacing="1.35" fill="#4f8e52">LEARN NATURALLY. SPEAK CONFIDENTLY.</text>
+</svg>

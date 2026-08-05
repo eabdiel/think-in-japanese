@@ -1,0 +1,16 @@
+Think in Japanese v20.2 - Kanji Radicals Trainer
+
+Added:
+- English and Spanish radicals trainer pages.
+- 150 frequent radicals/components with meaning, on/kun reading fields, position diagrams, and example kanji.
+- Browse/search/filter mode.
+- Flashcard study mode.
+- Memory matching game.
+- Radical-to-meaning matching game.
+- Red radical/component emphasis.
+- Pixel Pastel, Garden Cream, and Tokyo Night themes with saved preference.
+- Standalone single-file offline operation (no libraries or network required).
+- Navigation links added across the website Practice menu.
+
+Accuracy note:
+Readings describe the standalone kanji form where applicable. Positional variants such as 亻, 氵, 扌, 忄, 礻, and 糹 normally do not have an independent on/kun reading, so they display a dash.

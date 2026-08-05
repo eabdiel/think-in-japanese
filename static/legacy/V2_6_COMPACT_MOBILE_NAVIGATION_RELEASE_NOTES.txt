@@ -1,0 +1,23 @@
+Think in Japanese v2.6 — Compact Mobile Navigation
+
+Summary
+- Replaced the always-expanded mobile navigation with a compact app-style Menu bar.
+- The full menu now opens only when requested and appears in a scrollable overlay panel.
+- The active page name is shown in the compact bar.
+- The panel closes after choosing a link, tapping outside, pressing Escape, or returning to desktop width.
+- Existing desktop navigation, persistent theme selection, language controls, and submenu behavior are preserved.
+- Applied the shared navigation assets to every English and Spanish site page that uses the common navigation.
+
+Responsive behavior
+- Mobile (720px and below): compact sticky bar with Menu button and page label.
+- Very small screens (390px and below): menu choices use a single-column layout.
+- Desktop/tablet above 720px: existing horizontal navigation remains unchanged.
+
+Files and directories modified
+- public_html/site-navigation-v26.css (new shared responsive navigation stylesheet)
+- public_html/site-navigation-v26.js (new shared navigation/theme controller)
+- public_html/*.html (26 pages updated to load the v2.6 shared assets)
+- public_html/V2_6_COMPACT_MOBILE_NAVIGATION_RELEASE_NOTES.txt (this file)
+
+Legacy files retained
+- site-navigation-v23.css and site-navigation-v23.js remain in the package for rollback/reference but are no longer loaded by the updated pages.

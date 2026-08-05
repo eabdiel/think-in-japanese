@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>Piensa en japonés - Parte 6: Plan de Reprogramación Mental de 90 Días</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:linear-gradient(135deg,#111827,#1f2937);color:#f9fafb}
+header{text-align:center;padding:40px 20px}
+main{max-width:1100px;margin:auto;padding:20px}
+.card{background:#1f2937;border-radius:12px;padding:20px;margin-bottom:16px}
+h1,h2,h3{margin-top:0}
+.phase{border-left:6px solid #fbbf24}
+.days{color:#fbbf24;font-weight:bold}
+table{width:100%;border-collapse:collapse}
+th,td{padding:10px;border-bottom:1px solid #374151;text-align:left}
+th{background:#0f172a}
+.highlight{color:#93c5fd}
+
+
+/* === Final fix: move hero title card below language selector and remove Sensei card === */
+.pixel-site-header .pixel-brand,
+.pixel-site-header .pixel-teacher {
+  display: none !important;
+}
+
+.moved-hero-title {
+  max-width: 760px;
+  margin: 22px auto 22px;
+  padding: 0 16px;
+}
+
+.moved-hero-title .pixel-brand {
+  display: block !important;
+  padding: 18px 24px;
+  text-align: center;
+  border: 3px solid rgba(171, 142, 226, 0.85);
+  border-radius: 22px;
+  background: rgba(255, 250, 255, 0.94);
+  box-shadow: 0 8px 0 rgba(101, 83, 168, 0.16), 0 20px 45px rgba(63, 54, 126, 0.13);
+}
+
+.moved-hero-title .pixel-brand h1 {
+  margin: 6px 0 8px;
+}
+
+.moved-hero-title .pixel-brand p {
+  margin: 0;
+}
+
+</style>
+
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#9fbe82">
+<link href="pixel-theme-v2.css" rel="stylesheet"/>
+
+<style id="hero-badge-overlay-fix">
+/* Place the title/theme badge inside the illustrated hero for all three themes. */
+.pixel-site-header {
+  min-height: clamp(210px, 27vw, 360px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.pixel-site-header .pixel-hero-inner {
+  position: relative !important;
+  z-index: 3 !important;
+  width: min(1180px, 94vw) !important;
+  margin: 0 auto !important;
+  padding: 24px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.pixel-site-header .pixel-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: min(690px, 88vw) !important;
+  max-width: 690px !important;
+  margin: 0 auto !important;
+  padding: 16px 24px 18px !important;
+  text-align: center !important;
+  border: 3px solid rgba(171, 142, 226, 0.85) !important;
+  border-radius: 22px !important;
+  background: rgba(255, 250, 255, 0.90) !important;
+  box-shadow: 0 8px 0 rgba(101, 83, 168, 0.16), 0 20px 45px rgba(35, 28, 90, 0.22) !important;
+  backdrop-filter: blur(6px) !important;
+}
+.pixel-site-header .pixel-brand h1 {
+  margin: 5px 0 8px !important;
+}
+.pixel-site-header .pixel-brand p {
+  margin: 0 !important;
+}
+.pixel-site-header .pixel-teacher,
+.moved-hero-title {
+  display: none !important;
+}
+body.theme-garden .pixel-site-header .pixel-brand {
+  background: rgba(255, 250, 240, 0.91) !important;
+  border-color: rgba(158, 145, 91, 0.82) !important;
+}
+body.theme-night .pixel-site-header .pixel-brand {
+  background: rgba(9, 14, 42, 0.91) !important;
+  border-color: rgba(113, 89, 191, 0.88) !important;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.28), 0 20px 48px rgba(0, 0, 0, 0.40), 0 0 24px rgba(103, 85, 210, 0.20) !important;
+}
+@media (max-width: 700px) {
+  .pixel-site-header {
+    min-height: 190px !important;
+    background-size: cover !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: 94vw !important;
+    padding: 16px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: min(620px, 92vw) !important;
+    padding: 13px 14px 15px !important;
+    border-radius: 17px !important;
+  }
+  .pixel-site-header .pixel-brand h1 {
+    font-size: clamp(1.8rem, 9vw, 2.6rem) !important;
+  }
+  .pixel-site-header .pixel-brand p {
+    font-size: .88rem !important;
+  }
+}
+</style>
+
+
+<style id="responsive-theme-banner-fill-v18-6">
+/* Keep all three illustrated theme banners full-bleed at narrow browser widths. */
+.pixel-site-header,
+body.theme-garden .pixel-site-header,
+body.theme-night .pixel-site-header {
+  width: 100% !important;
+  height: clamp(220px, 24vw, 390px) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media (max-width: 900px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(190px, 38vw, 280px) !important;
+    min-height: 190px !important;
+    max-height: 280px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: min(94vw, 720px) !important;
+    padding: 14px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: min(88vw, 650px) !important;
+    padding: 12px 16px 14px !important;
+  }
+}
+@media (max-width: 520px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(180px, 52vw, 230px) !important;
+    min-height: 180px !important;
+    max-height: 230px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: 96vw !important;
+    padding: 10px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: 92vw !important;
+    padding: 10px 11px 12px !important;
+    border-width: 2px !important;
+    border-radius: 15px !important;
+  }
+  .pixel-site-header .pixel-brand h1 {
+    margin: 3px 0 6px !important;
+    font-size: clamp(1.55rem, 8vw, 2.15rem) !important;
+    line-height: 1.05 !important;
+  }
+  .pixel-site-header .pixel-brand p {
+    font-size: clamp(.72rem, 3.3vw, .86rem) !important;
+    line-height: 1.25 !important;
+  }
+  .pixel-site-header .title-theme-switcher,
+  .pixel-site-header .theme-switcher {
+    gap: 4px !important;
+  }
+  .pixel-site-header .theme-btn {
+    padding: 5px 7px !important;
+    font-size: .68rem !important;
+  }
+}
+</style>
+
+<style id="think-in-japanese-v2-header-polish">
+/* Think in Japanese v2.0 — unified, gap-free responsive hero/header */
+html, body { margin-top: 0 !important; }
+
+.pixel-site-header,
+body.theme-garden .pixel-site-header,
+body.theme-night .pixel-site-header {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: clamp(205px, 21vw, 340px) !important;
+  min-height: 205px !important;
+  max-height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  line-height: normal !important;
+}
+
+.pixel-site-header::before,
+.pixel-site-header::after {
+  bottom: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+.pixel-site-header .pixel-hero-inner {
+  box-sizing: border-box !important;
+  width: min(1180px, 94vw) !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  padding: clamp(12px, 1.7vw, 22px) 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.pixel-site-header .pixel-brand {
+  transform: none !important;
+  margin: 0 auto !important;
+}
+
+.pixel-nav {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
+  top: 0 !important;
+}
+
+.pixel-site-header + .pixel-nav {
+  margin-top: 0 !important;
+}
+
+.pixel-nav-inner {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(200px, 27vw, 285px) !important;
+    min-height: 200px !important;
+    max-height: 285px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(185px, 42vw, 245px) !important;
+    min-height: 185px !important;
+    max-height: 245px !important;
+    background-position: center center !important;
+  }
+
+  .pixel-site-header .pixel-hero-inner {
+    width: 96vw !important;
+    padding: 10px 0 !important;
+  }
+
+  .pixel-site-header .pixel-brand {
+    width: min(90vw, 620px) !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(178px, 54vw, 225px) !important;
+    min-height: 178px !important;
+    max-height: 225px !important;
+  }
+
+  .pixel-site-header .pixel-brand {
+    width: 92vw !important;
+    padding: 9px 10px 11px !important;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="site-navigation-v26.css">
+<link rel="stylesheet" href="site-shell-v27.css">
+</head>
+<body class="theme-garden">
+<header class="pixel-site-header">
+<div class="pixel-hero-inner">
+<div class="pixel-brand">
+<div class="theme-switcher title-theme-switcher" aria-label="Selector de tema"><button class="theme-btn" type="button" data-theme="pixel">Pixel Pastel v2</button><button class="theme-btn active" type="button" data-theme="garden">Jardín Crema</button><button class="theme-btn" type="button" data-theme="night">Tokio Noche</button></div>
+<h1>Piensa en japonés</h1>
+<p>Aprende de forma natural. Habla con confianza. 一緒に日本語を学ぼう!</p>
+</div>
+<div class="pixel-teacher"><img alt="Chibi teacher mascot" src="assets/chibi_teacher.png"/><div class="pixel-mini-title">Modo Sensei</div></div>
+</div>
+</header>
+<nav class="pixel-nav"><div class="pixel-nav-inner grouped-nav">
+<a href="index_es.html">Inicio</a>
+<details class="nav-group"><summary>Práctica</summary><div class="nav-menu"><a href="kana_dojo_es.html">Dojo Kana</a><a href="kanji_hub_es.html">Centro Kanji</a><a href="kanji_radicals_trainer_es.html">Radicales Kanji</a><a href="think_in_japanese_character_reading_aid_part4_es.html">Ayuda de Lectura</a><a href="think_in_japanese_part5_frequency_deck_es.html">Mazo de Frecuencia</a></div></details>
+<details class="nav-group"><summary>Frases</summary><div class="nav-menu"><a href="think_in_japanese_100_phrases_part1_reformatted_es.html">Frases 1</a><a href="think_in_japanese_100_casual_phrases_part2_es.html">Frases 2</a><a href="think_in_japanese_100_gaki_style_phrases_part3_es.html">Estilo Gaki</a></div></details>
+<details class="nav-group"><summary>Planes</summary><div class="nav-menu"><a href="japanese_90_day_calendar_tracker_es.html">Seguimiento 90 Días</a><a href="think_in_japanese_part6_90_day_plan_es.html" class="active">Plan de 90 Días</a><a href="michel_thomas_japanese_supplement.html">Suplemento MT</a></div></details>
+<details class="nav-group tools-menu"><summary>Herramientas</summary><div class="nav-menu"><a href="games_with_furigana_by_system.html">Juegos con furigana</a></div></details>
+<div class="nav-spacer"></div><div aria-label="Selector de idioma" class="lang-toggle nav-lang-toggle"><a class="lang-pill" href="think_in_japanese_part6_90_day_plan.html">English</a><span class="lang-pill active">Español</span></div></div></nav>
+<section class="moved-hero-title">
+<div class="pixel-brand">
+<div class="theme-switcher title-theme-switcher" aria-label="Selector de tema"><button class="theme-btn" type="button" data-theme="pixel">Pixel Pastel v2</button><button class="theme-btn active" type="button" data-theme="garden">Jardín Crema</button><button class="theme-btn" type="button" data-theme="night">Tokio Noche</button></div>
+<h1>Piensa en japonés</h1>
+<p>Aprende de forma natural. Habla con confianza. 一緒に日本語を学ぼう!</p>
+</div>
+
+</section>
+
+
+
+<div class="pixel-page-shell">
+<section class="pixel-welcome">
+<div class="pixel-card"><div class="pixel-mini-title">Cómo empezar</div><strong>Usa el portal como una ruta de estudio guiada:</strong> • Aprende frases en las Partes 1–3 • Estudia caracteres en Ayuda de Lectura y Mazo de Frecuencia • Practica en el Dojo Kana y el Kanji Hub • Sigue el Rastreador y el Plan de 90 Días • Reduce el romaji gradualmente. La constancia diaria es más efectiva que sesiones largas ocasionales.</div>
+<div class="pixel-side-art pixel-flag-pair"><img alt="Bandera de Japón" class="flag-art" src="assets/flag_japan.svg"/><img alt="Bandera de Puerto Rico" class="flag-art" src="assets/flag_puerto_rico.svg"/></div>
+</section>
+</div>
+<header>
+<h1>Piensa en japonés – Parte 6</h1>
+<h2>Plan de reprogramación mental de japonés de 90 días</h2>
+<p>Construido a partir de las Partes 1–5. Enfocado en pensar en japonés, no en aprobar exámenes.</p>
+</header>
+<main>
+<div class="card">
+<h2>Misión</h2>
+<p>Tu meta no es memorizar reglas gramaticales. Tu meta es reemplazar pensamientos internos comunes con japonés para que el idioma se vuelva parte de tu proceso mental diario.</p>
+</div>
+<div class="card phase">
+<h2>Fase 1 – Cerebro de supervivencia</h2>
+<p class="days">Días 1–14</p>
+<ul>
+<li>25 frases</li>
+<li>Los 25 caracteres más frecuentes</li>
+<li>Cansancio, hambre, sed, confusión y reacciones básicas</li>
+</ul>
+<p><b>Ejemplos:</b> 疲れた ・ お腹すいた ・ 何これ？ ・ どうしよう</p>
+<p><span class="highlight">Meta:</span> Empieza a pensar necesidades básicas en japonés.</p>
+</div>
+<div class="card phase">
+<h2>Fase 2 – Narración de la vida diaria</h2>
+<p class="days">Días 15–30</p>
+<ul>
+<li>50 frases en total</li>
+<li>Los 50 caracteres más frecuentes</li>
+<li>Trabajo, casa, viajes y decisiones</li>
+</ul>
+<p><b>Ejemplos:</b> 今何時？ ・ 後でやろう ・ 忘れた ・ まだ早い</p>
+<p><span class="highlight">Meta:</span> Narra tu día en japonés.</p>
+</div>
+<div class="card phase">
+<h2>Fase 3 – Supervivencia social</h2>
+<p class="days">Días 31–45</p>
+<ul>
+<li>75 frases en total</li>
+<li>Preguntas y aclaraciones</li>
+</ul>
+<p><b>Ejemplos:</b> 何て言うの？ ・ どういう意味？ ・ 本当？ ・ なるほど</p>
+<p><span class="highlight">Meta:</span> Piensa lo que realmente le dirías a otra persona.</p>
+</div>
+<div class="card phase">
+<h2>Fase 4 – Modo puertorriqueño (modo Osaka)</h2>
+<p class="days">Días 46–60</p>
+<ul>
+<li>100 frases en total</li>
+<li>Habla casual de Kansai / Osaka</li>
+</ul>
+<p><b>Ejemplos:</b> なんでやねん ・ ほんま？ ・ あかん ・ めっちゃ ・ おもろい</p>
+<p><span class="highlight">Meta:</span> Entiende reacciones casuales nativas y humor.</p>
+</div>
+<div class="card phase">
+<h2>Fase 5 – Modo Gaki no Tsukai</h2>
+<p class="days">Días 61–75</p>
+<ul>
+<li>150 frases en total</li>
+<li>Vocabulario de reacciones y comedia</li>
+</ul>
+<p><b>Ejemplos:</b> ありえへん ・ うそやろ ・ 何してんねん ・ 今のアウトやろ</p>
+<p><span class="highlight">Meta:</span> Sigue de forma natural las reacciones de programas de variedades japoneses.</p>
+</div>
+<div class="card phase">
+<h2>Fase 6 – Desbloqueo de lectura</h2>
+<p class="days">Días 76–90</p>
+<ul>
+<li>Quitar el romaji</li>
+<li>Leer japonés directamente</li>
+<li>Reconocer al instante los 100 caracteres principales</li>
+</ul>
+<table>
+<tr><th>Deja de hacer</th><th>Empieza a hacer</th></tr>
+<tr><td>疲れた → tsukareta → cansado</td><td>疲れた → cansado</td></tr>
+<tr><td>今 → ima → ahora</td><td>今 → ahora</td></tr>
+</table>
+<p><span class="highlight">Meta:</span> Reconoce palabras sin tener que pronunciarlas mentalmente primero.</p>
+</div>
+<div class="card">
+<h2>Rutina diaria de 20 minutos</h2>
+<table>
+<tr><th>Tiempo</th><th>Actividad</th></tr>
+<tr><td>5 min</td><td>Repasar las frases de ayer</td></tr>
+<tr><td>5 min</td><td>Aprender frases nuevas</td></tr>
+<tr><td>5 min</td><td>Hacer shadowing en voz alta</td></tr>
+<tr><td>5 min</td><td>Forzar el monólogo interno en japonés</td></tr>
+</table>
+</div>
+<div class="card">
+<h2>Criterios de éxito después de 90 días</h2>
+<ul>
+<li>150+ frases activas en la memoria</li>
+<li>Reconoces los 100 caracteres más comunes</li>
+<li>Sin dependencia del romaji</li>
+<li>Puedes entender muchas reacciones en programas de variedades japoneses</li>
+<li>Puedes pensar pensamientos simples en japonés de forma natural</li>
+</ul>
+</div>
+<section class="sensei-recommends" id="sensei-recommends">
+<div class="sensei-note">
+<img alt="Chibi Sensei Abdiel" class="sensei-avatar" src="assets/chibi_teacher.png"/>
+<div>
+<h2>El Sensei recomienda</h2>
+<p>Usa cada herramienta en el momento correcto en vez de intentar estudiarlo todo a la vez.</p>
+</div>
+</div>
+<div class="tool-card-grid">
+<article class="tool-card">
+<span class="tool-badge">Días 1–30 • Base auditiva</span>
+<h3>Michel Thomas Japonés</h3>
+<p>Ideal para desarrollar primero el instinto de formar frases. Úsalo mientras caminas, conduces o haces tareas para que el japonés empiece a sentirse conversacional.</p>
+<a class="tool-button" href="https://amzn.to/43JOn6N" rel="nofollow sponsored noopener" target="_blank">Ver Michel Thomas</a>
+</article>
+<article class="tool-card">
+<span class="tool-badge">Días 15–90 • Libro principal</span>
+<h3>Paquete Genki 1</h3>
+<p>Usa el libro, el cuaderno de ejercicios y la clave de respuestas para estructura, lectura de kana, gramática y práctica tipo tarea.</p>
+<a class="tool-button" href="https://amzn.to/4oQzU2v" rel="nofollow sponsored noopener" target="_blank">Ver paquete Genki</a>
+</article>
+<article class="tool-card">
+<span class="tool-badge">Suplemento diario • Mantener la racha</span>
+<h3>Mondly Premium de por vida</h3>
+<p>Usa Mondly como práctica diaria ligera para vocabulario, escucha y mantener el impulso cuando solo tengas unos minutos.</p>
+<a class="tool-button" href="https://www.stacksocial.com/sales/mondly-premium-lifetime-subscription-all-languages?aid=a-qlrk51n8" rel="nofollow sponsored noopener" target="_blank">Obtener Mondly Lifetime</a>
+</article>
+</div>
+<p class="affiliate-disclosure">Aviso: algunos enlaces son de afiliado. Ayudan a apoyar este proyecto sin costo adicional para ti.</p>
+</section>
+</main>
+<footer class="pixel-footer"><span class="pixel-badge">Another Tool from <a href="https://progretech.com" target="_blank" rel="noopener">ProgreTech</a></span></footer>
+<script>
+(function(){
+  function applyTheme(theme){
+    theme = (theme === 'garden' || theme === 'night') ? theme : 'pixel';
+    document.body.classList.remove('theme-pixel','theme-garden','theme-night');
+    document.body.classList.add('theme-' + theme);
+    try{ localStorage.setItem('tij-theme', theme); }catch(e){}
+    document.querySelectorAll('.theme-btn').forEach(function(btn){
+      var on = btn.getAttribute('data-theme') === theme;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  function initTheme(){
+    var saved = 'garden';
+    try{ saved = localStorage.getItem('tij-theme') || 'garden'; }catch(e){}
+    applyTheme(saved);
+    document.querySelectorAll('.theme-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ applyTheme(btn.getAttribute('data-theme')); });
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initTheme); else initTheme();
+})();
+</script>
+<script src="https://app.aminos.ai/js/chat_plugin.js" data-bot-id="59258"></script>
+
+<!--
+============================================================
+ THINK IN JAPANESE / PIENSA EN JAPONÉS
+============================================================
+ Author: Edwin A. Rodriguez (Abdiel)
+ GitHub: https://github.com/eabdiel
+ Project: Think in Japanese learning portal
+ Intent: A free, offline-friendly Japanese study hub for kana,
+         kanji, phrase practice, internal monologue training,
+         and a structured 90-day learning path.
+ Notes: This comment is intentionally kept in source only and
+        does not display on the website.
+============================================================
+-->
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.pixel-nav details[open]').forEach(function(d){ if(!d.contains(e.target)) d.removeAttribute('open'); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ document.querySelectorAll('.pixel-nav details[open]').forEach(function(d){d.removeAttribute('open');}); }});
+})();
+</script>
+<script src="site-navigation-v26.js"></script>
+<script src="site-shell-v27.js"></script>
+</body>
+</html>

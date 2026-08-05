@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Think in Japanese - 100 Phrases, Part 1 Reformatted</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<style>
+  body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(135deg, #111827, #1f2937); color: #f9fafb; line-height: 1.5; }
+  header { padding: 38px 22px 22px; text-align: center; background: rgba(0,0,0,0.22); border-bottom: 1px solid rgba(255,255,255,0.08); }
+  h1 { margin: 0; font-size: clamp(28px, 5vw, 46px); }
+  .subtitle { max-width: 950px; margin: 14px auto 0; color: #d1d5db; font-size: 18px; }
+  main { max-width: 1180px; margin: 0 auto; padding: 26px 18px 60px; }
+  .note { background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.35); padding: 18px; border-radius: 14px; margin-bottom: 22px; }
+  .note strong { color: #fbbf24; }
+  .mini-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin-bottom: 22px; }
+  .card { background: rgba(31,41,55,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; padding: 16px; }
+  .card h2 { margin: 0 0 8px; font-size: 19px; color: #93c5fd; }
+  .table-wrap { overflow-x: auto; background: rgba(31,41,55,0.9); border: 1px solid rgba(255,255,255,0.08); border-radius: 14px; }
+  table { width: 100%; border-collapse: collapse; min-width: 980px; }
+  th, td { padding: 12px 10px; border-bottom: 1px solid rgba(255,255,255,0.08); vertical-align: top; }
+  th { position: sticky; top: 0; background: #111827; color: #fbbf24; text-align: left; z-index: 1; }
+  tr:hover { background: rgba(255,255,255,0.04); }
+  .num { color: #9ca3af; width: 44px; text-align: right; }
+  .jp { font-size: 22px; font-weight: 700; color: #ffffff; min-width: 190px; }
+  .romaji { color: #bfdbfe; font-style: italic; }
+  .tag { display: inline-block; background: rgba(96,165,250,0.15); border: 1px solid rgba(96,165,250,0.35); color: #bfdbfe; border-radius: 999px; padding: 4px 9px; font-size: 12px; white-space: nowrap; }
+  footer { text-align: center; color: #9ca3af; padding: 22px; font-size: 14px; }
+  @media print {
+    body { background: white; color: black; }
+    header, main, footer { padding: 10px; }
+    .table-wrap, .card, .note { border: 1px solid #aaa; background: white; }
+    th { position: static; background: #eee; color: black; }
+    .jp, .romaji, .tag, .card h2, .note strong { color: black; }
+    .tag { border: 1px solid #aaa; background: white; }
+  }
+
+
+/* === Final fix: move hero title card below language selector and remove Sensei card === */
+.pixel-site-header .pixel-brand,
+.pixel-site-header .pixel-teacher {
+  display: none !important;
+}
+
+.moved-hero-title {
+  max-width: 760px;
+  margin: 22px auto 22px;
+  padding: 0 16px;
+}
+
+.moved-hero-title .pixel-brand {
+  display: block !important;
+  padding: 18px 24px;
+  text-align: center;
+  border: 3px solid rgba(171, 142, 226, 0.85);
+  border-radius: 22px;
+  background: rgba(255, 250, 255, 0.94);
+  box-shadow: 0 8px 0 rgba(101, 83, 168, 0.16), 0 20px 45px rgba(63, 54, 126, 0.13);
+}
+
+.moved-hero-title .pixel-brand h1 {
+  margin: 6px 0 8px;
+}
+
+.moved-hero-title .pixel-brand p {
+  margin: 0;
+}
+
+
+
+/* === Responsive phrase cards: replaces wide phrase table on mobile/desktop === */
+.table-wrap { display: none !important; }
+.phrase-card-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 18px 0 14px;
+  padding: 14px 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(31,41,55,0.82);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+.phrase-card-toolbar strong,
+.phrase-card-toolbar .tracker-title {
+  color: #ffffff;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+.phrase-progress-block {
+  flex: 1 1 360px;
+  min-width: min(100%, 260px);
+}
+.phrase-progress-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.phrase-progress-count {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 800;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+.phrase-progress-count .memorized-label {
+  color: #ff7ac8;
+  font-weight: 900;
+}
+.phrase-progress-count .memorized-count {
+  color: #ffffff;
+  font-weight: 900;
+}
+.phrase-progress-track {
+  margin-top: 8px;
+  height: 10px;
+  width: 100%;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.25);
+}
+.phrase-progress-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #ff7ac8, #ffd166);
+  transition: width 180ms ease;
+}
+.phrase-progress-percent {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  opacity: 0.95;
+}
+.phrase-card-toolbar button {
+  border: 1px solid rgba(251,191,36,0.42);
+  background: rgba(251,191,36,0.12);
+  color: #fef3c7;
+  border-radius: 999px;
+  padding: 9px 13px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.phrase-card-toolbar button:hover { background: rgba(251,191,36,0.2); }
+.phrase-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 285px), 1fr));
+  gap: 14px;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+.phrase-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.10);
+  background: rgba(31,41,55,0.92);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.20);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform .18s ease, opacity .18s ease, filter .18s ease, box-shadow .18s ease;
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+.phrase-card:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,0.28); }
+.phrase-card-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
+.phrase-id {
+  flex: 0 0 auto;
+  min-width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(251,191,36,0.14);
+  border: 1px solid rgba(251,191,36,0.35);
+  color: #fef3c7;
+  font-weight: 800;
+  font-size: 14px;
+}
+.phrase-jp {
+  flex: 1 1 auto;
+  text-align: right;
+  font-size: clamp(22px, 7vw, 32px);
+  line-height: 1.25;
+  font-weight: 800;
+  color: #ffffff;
+  overflow-wrap: anywhere;
+}
+.phrase-meta { display: grid; gap: 8px; }
+.phrase-field {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+.phrase-label {
+  color: #9ca3af;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 800;
+}
+.phrase-value { color: #f9fafb; font-size: 15px; }
+.phrase-value.romaji { color: #bfdbfe; font-style: italic; }
+.phrase-card .tag { align-self: flex-start; white-space: normal; }
+.memorized-toggle {
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 38px;
+  border: 1px solid rgba(96,165,250,0.30);
+  background: rgba(96,165,250,0.10);
+  color: #dbeafe;
+  border-radius: 13px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: 800;
+  user-select: none;
+}
+.memorized-toggle input { width: 18px; height: 18px; accent-color: #fbbf24; }
+.phrase-card.is-memorized {
+  opacity: .58;
+  filter: grayscale(.55);
+  background: rgba(17,24,39,0.92);
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.25), 0 6px 18px rgba(0,0,0,0.25);
+}
+.phrase-card.is-memorized .phrase-jp { text-decoration: line-through; text-decoration-thickness: 2px; }
+.phrase-card.is-memorized .memorized-toggle { background: rgba(22,163,74,0.14); border-color: rgba(74,222,128,0.35); color: #bbf7d0; }
+
+
+/* === Theme readability overrides for responsive phrase cards === */
+.phrase-card-section { color: inherit; }
+body.theme-pixel .phrase-card-toolbar,
+body.theme-garden .phrase-card-toolbar {
+  background: rgba(31, 41, 55, 0.88) !important;
+  color: #ffffff !important;
+}
+body.theme-pixel .phrase-card-toolbar strong,
+body.theme-garden .phrase-card-toolbar strong,
+body.theme-night .phrase-card-toolbar strong { color: #ffffff !important; }
+body.theme-pixel .phrase-card-toolbar .memorized-count,
+body.theme-garden .phrase-card-toolbar .memorized-count,
+body.theme-night .phrase-card-toolbar .memorized-count { color: #dbeafe !important; }
+
+body.theme-pixel .phrase-progress-count .memorized-label { color: #ff7ac8 !important; }
+body.theme-pixel .phrase-progress-fill { background: linear-gradient(90deg, #ff7ac8, #ffd166) !important; }
+body.theme-garden .phrase-progress-count .memorized-label { color: #b7e08c !important; }
+body.theme-garden .phrase-progress-fill { background: linear-gradient(90deg, #7aa85b, #d7efb4) !important; }
+body.theme-night .phrase-progress-count .memorized-label { color: #7fdcff !important; }
+body.theme-night .phrase-progress-fill { background: linear-gradient(90deg, #7fdcff, #ff74d4) !important; }
+body.theme-pixel .phrase-progress-count,
+body.theme-garden .phrase-progress-count,
+body.theme-night .phrase-progress-count,
+body.theme-pixel .phrase-progress-percent,
+body.theme-garden .phrase-progress-percent,
+body.theme-night .phrase-progress-percent,
+body.theme-pixel .phrase-progress-count .memorized-count,
+body.theme-garden .phrase-progress-count .memorized-count,
+body.theme-night .phrase-progress-count .memorized-count { color: #ffffff !important; }
+
+
+body.theme-pixel .phrase-card {
+  background: rgba(255, 250, 255, 0.97) !important;
+  border-color: rgba(132, 102, 202, 0.45) !important;
+  color: #2d244f !important;
+}
+body.theme-pixel .phrase-jp { color: #3a2466 !important; text-shadow: none !important; }
+body.theme-pixel .phrase-field {
+  background: rgba(255, 255, 255, 0.82) !important;
+  border-color: rgba(132, 102, 202, 0.18) !important;
+}
+body.theme-pixel .phrase-label { color: #625778 !important; }
+body.theme-pixel .phrase-value { color: #2d244f !important; }
+body.theme-pixel .phrase-value.romaji { color: #315b9c !important; }
+body.theme-pixel .phrase-card .tag {
+  background: rgba(126, 104, 200, 0.14) !important;
+  border-color: rgba(126, 104, 200, 0.36) !important;
+  color: #34285f !important;
+}
+body.theme-pixel .phrase-id {
+  background: rgba(255, 205, 99, 0.30) !important;
+  border-color: rgba(205, 143, 28, 0.45) !important;
+  color: #3a2466 !important;
+}
+body.theme-pixel .memorized-toggle {
+  background: rgba(235, 241, 255, 0.95) !important;
+  border-color: rgba(126, 104, 200, 0.32) !important;
+  color: #2d244f !important;
+}
+
+body.theme-garden .phrase-card {
+  background: rgba(255, 252, 240, 0.98) !important;
+  border-color: rgba(151, 132, 82, 0.50) !important;
+  color: #283a26 !important;
+}
+body.theme-garden .phrase-jp { color: #213b24 !important; text-shadow: none !important; }
+body.theme-garden .phrase-field {
+  background: rgba(255, 255, 248, 0.88) !important;
+  border-color: rgba(132, 121, 78, 0.20) !important;
+}
+body.theme-garden .phrase-label { color: #66715f !important; }
+body.theme-garden .phrase-value { color: #263b28 !important; }
+body.theme-garden .phrase-value.romaji { color: #3d6b8f !important; }
+body.theme-garden .phrase-card .tag {
+  background: rgba(134, 168, 93, 0.18) !important;
+  border-color: rgba(95, 130, 61, 0.36) !important;
+  color: #294423 !important;
+}
+body.theme-garden .phrase-id {
+  background: rgba(255, 223, 142, 0.34) !important;
+  border-color: rgba(180, 140, 43, 0.50) !important;
+  color: #294423 !important;
+}
+body.theme-garden .memorized-toggle {
+  background: rgba(240, 247, 230, 0.98) !important;
+  border-color: rgba(95, 130, 61, 0.34) !important;
+  color: #294423 !important;
+}
+
+body.theme-night .phrase-card-toolbar { background: rgba(20, 29, 45, 0.92) !important; color: #ffffff !important; }
+body.theme-night .phrase-card { background: rgba(9, 14, 31, 0.95) !important; border-color: rgba(96, 165, 250, 0.40) !important; color: #f8fafc !important; }
+body.theme-night .phrase-jp { color: #ffffff !important; text-shadow: none !important; }
+body.theme-night .phrase-field { background: rgba(255, 255, 255, 0.07) !important; border-color: rgba(255, 255, 255, 0.10) !important; }
+body.theme-night .phrase-label { color: #cbd5e1 !important; }
+body.theme-night .phrase-value { color: #ffffff !important; }
+body.theme-night .phrase-value.romaji { color: #bfdbfe !important; }
+body.theme-night .phrase-card .tag { background: rgba(96,165,250,0.22) !important; border-color: rgba(147,197,253,0.42) !important; color: #e0f2fe !important; }
+body.theme-night .phrase-id { color: #fde68a !important; }
+body.theme-night .memorized-toggle { background: rgba(59,130,246,0.18) !important; color: #eaf2ff !important; border-color: rgba(147,197,253,0.36) !important; }
+
+body.theme-pixel .phrase-card.is-memorized,
+body.theme-garden .phrase-card.is-memorized,
+body.theme-night .phrase-card.is-memorized {
+  opacity: 0.76 !important;
+  filter: grayscale(0.35) brightness(0.88) !important;
+  box-shadow: inset 0 0 0 2px rgba(0,0,0,0.18), 0 8px 20px rgba(0,0,0,0.25) !important;
+}
+body.theme-pixel .phrase-card.is-memorized .memorized-toggle,
+body.theme-garden .phrase-card.is-memorized .memorized-toggle,
+body.theme-night .phrase-card.is-memorized .memorized-toggle {
+  background: rgba(22, 101, 52, 0.18) !important;
+  border-color: rgba(22, 101, 52, 0.36) !important;
+  color: inherit !important;
+}
+
+@media (max-width: 520px) {
+  main { padding-left: 12px; padding-right: 12px; }
+  .phrase-card-grid { grid-template-columns: 1fr; gap: 12px; }
+  .phrase-card { padding: 13px; border-radius: 16px; }
+  .phrase-card-header { align-items: flex-start; }
+  .phrase-jp { text-align: left; }
+  .phrase-card-toolbar { margin-left: 0; margin-right: 0; }
+}
+@media print {
+  .table-wrap { display: none !important; }
+  .phrase-card-toolbar button, .memorized-toggle input { display: none; }
+  .phrase-card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .phrase-card, .phrase-card-toolbar, .phrase-field { background: white; color: black; border: 1px solid #aaa; box-shadow: none; }
+  .phrase-jp, .phrase-value, .phrase-value.romaji, .phrase-label { color: black; }
+}
+
+
+/* === Responsive card deck conversion: no horizontal table overflow === */
+.table-wrap, table.converted-source-table { display: none !important; }
+.responsive-card-section { width: 100%; max-width: 100%; box-sizing: border-box; }
+.deck-toolbar {
+  display:flex; justify-content:space-between; align-items:center; gap:14px; flex-wrap:wrap;
+  margin: 18px 0 14px; padding:14px 16px; border-radius:18px;
+  border:1px solid rgba(255,255,255,.10); background:rgba(31,41,55,.88);
+  box-shadow:0 8px 22px rgba(0,0,0,.18); color:#fff;
+}
+.deck-progress-block{flex:1 1 360px; min-width:min(100%,260px)}
+.deck-progress-meta{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.deck-title{color:#fff;font-weight:900;letter-spacing:.01em}
+.deck-count{color:#fff;font-size:15px;font-weight:900;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+.deck-count .deck-label{color:#ff7ac8;font-weight:900}.deck-count .deck-count-num{color:#fff;font-weight:900}
+.deck-track{margin-top:8px;height:10px;width:100%;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.18);box-shadow:inset 0 1px 3px rgba(0,0,0,.25)}
+.deck-fill{width:0%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#ff7ac8,#ffd166);transition:width 180ms ease}
+.deck-percent{color:#fff;font-size:13px;font-weight:900;opacity:.96}
+.deck-reset{border:1px solid rgba(251,191,36,.42);background:rgba(251,191,36,.12);color:#fef3c7;border-radius:999px;padding:9px 13px;cursor:pointer;font-weight:800}.deck-reset:hover{background:rgba(251,191,36,.22)}
+.responsive-card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,285px),1fr));gap:14px;width:100%;max-width:100%;overflow:visible}
+.study-card{width:100%;max-width:100%;box-sizing:border-box;border-radius:18px;border:1px solid rgba(255,255,255,.10);background:rgba(31,41,55,.92);box-shadow:0 10px 24px rgba(0,0,0,.20);padding:15px;display:flex;flex-direction:column;gap:10px;transition:transform .18s ease,opacity .18s ease,filter .18s ease,box-shadow .18s ease;overflow-wrap:anywhere;word-break:normal;color:#f9fafb}
+.study-card:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(0,0,0,.28)}
+.study-card-header{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}.study-id{flex:0 0 auto;min-width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;border-radius:12px;background:rgba(251,191,36,.14);border:1px solid rgba(251,191,36,.35);color:#fef3c7;font-weight:900;font-size:14px}.study-main{flex:1 1 auto;text-align:right;font-size:clamp(22px,7vw,32px);line-height:1.25;font-weight:900;color:#fff;overflow-wrap:anywhere}.study-main.char-main{font-size:clamp(34px,12vw,54px);text-align:center}.study-meta{display:grid;gap:8px}.study-field{display:grid;gap:2px;padding:8px 10px;border-radius:12px;background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.06)}.study-label{color:#9ca3af;font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:900}.study-value{color:#f9fafb;font-size:15px}.study-value.romaji{color:#bfdbfe;font-style:italic}.study-card .tag{align-self:flex-start;white-space:normal}.study-toggle{margin-top:2px;display:flex;align-items:center;gap:9px;min-height:38px;border:1px solid rgba(96,165,250,.30);background:rgba(96,165,250,.10);color:#dbeafe;border-radius:13px;padding:8px 10px;cursor:pointer;font-weight:900;user-select:none}.study-toggle input{width:18px;height:18px;accent-color:#fbbf24}.study-card.is-memorized{opacity:.58;filter:grayscale(.55);background:rgba(17,24,39,.92);box-shadow:inset 0 0 0 2px rgba(0,0,0,.25),0 6px 18px rgba(0,0,0,.25)}.study-card.is-memorized .study-main{text-decoration:line-through;text-decoration-thickness:2px}.study-card.is-memorized .study-toggle{background:rgba(22,163,74,.14);border-color:rgba(74,222,128,.35);color:#bbf7d0}
+body.theme-pixel .deck-toolbar, body.theme-garden .deck-toolbar{background:rgba(31,41,55,.88)!important;color:#fff!important}body.theme-pixel .deck-title,body.theme-garden .deck-title,body.theme-night .deck-title{color:#fff!important}body.theme-pixel .deck-count .deck-label{color:#ff7ac8!important}body.theme-pixel .deck-fill{background:linear-gradient(90deg,#ff7ac8,#ffd166)!important}body.theme-garden .deck-count .deck-label{color:#b7e08c!important}body.theme-garden .deck-fill{background:linear-gradient(90deg,#7aa85b,#d7efb4)!important}body.theme-night .deck-count .deck-label{color:#7fdcff!important}body.theme-night .deck-fill{background:linear-gradient(90deg,#7fdcff,#ff74d4)!important}body.theme-pixel .deck-count,body.theme-garden .deck-count,body.theme-night .deck-count,body.theme-pixel .deck-percent,body.theme-garden .deck-percent,body.theme-night .deck-percent,body.theme-pixel .deck-count-num,body.theme-garden .deck-count-num,body.theme-night .deck-count-num{color:#fff!important}
+body.theme-pixel .study-card{background:rgba(255,250,255,.97)!important;border-color:rgba(132,102,202,.45)!important;color:#2d244f!important}body.theme-pixel .study-main{color:#3a2466!important;text-shadow:none!important}body.theme-pixel .study-field{background:rgba(255,255,255,.82)!important;border-color:rgba(132,102,202,.18)!important}body.theme-pixel .study-label{color:#625778!important}body.theme-pixel .study-value{color:#2d244f!important}body.theme-pixel .study-value.romaji{color:#315b9c!important}body.theme-pixel .study-card .tag{background:rgba(126,104,200,.14)!important;border-color:rgba(126,104,200,.36)!important;color:#2d3a66!important}body.theme-pixel .study-toggle{background:rgba(240,246,255,.75)!important;border-color:rgba(96,165,250,.35)!important;color:#3a376b!important}.body.theme-pixel .study-id{color:#3a2466!important}
+body.theme-garden .study-card{background:rgba(255,252,244,.97)!important;border-color:rgba(146,124,72,.45)!important;color:#203625!important}body.theme-garden .study-main{color:#214b2f!important;text-shadow:none!important}body.theme-garden .study-field{background:rgba(255,255,249,.85)!important;border-color:rgba(146,124,72,.20)!important}body.theme-garden .study-label{color:#63735e!important}body.theme-garden .study-value{color:#203625!important}body.theme-garden .study-value.romaji{color:#2e6f9f!important}body.theme-garden .study-card .tag{background:rgba(122,168,91,.18)!important;border-color:rgba(122,168,91,.42)!important;color:#244725!important}body.theme-garden .study-toggle{background:rgba(231,244,221,.72)!important;border-color:rgba(122,168,91,.42)!important;color:#2c3a63!important}.body.theme-garden .study-id{color:#214b2f!important}
+body.theme-night .study-card{background:rgba(6,12,31,.96)!important;border-color:rgba(127,220,255,.42)!important;color:#f7fbff!important}body.theme-night .study-main{color:#fff!important;text-shadow:0 1px 8px rgba(127,220,255,.18)!important}body.theme-night .study-field{background:rgba(255,255,255,.075)!important;border-color:rgba(127,220,255,.14)!important}body.theme-night .study-label{color:#cbd7ec!important}body.theme-night .study-value{color:#fff!important}body.theme-night .study-value.romaji{color:#b9dcff!important}body.theme-night .study-card .tag{background:rgba(82,145,255,.22)!important;border-color:rgba(127,220,255,.35)!important;color:#e6f7ff!important}body.theme-night .study-toggle{background:rgba(30,93,155,.32)!important;border-color:rgba(127,220,255,.35)!important;color:#e6f7ff!important}
+@media(max-width:520px){main,section{padding-left:12px!important;padding-right:12px!important}.responsive-card-grid{grid-template-columns:1fr;gap:12px}.study-card{padding:13px;border-radius:16px}.study-card-header{align-items:flex-start}.study-main{text-align:left}.study-main.char-main{text-align:center}.deck-toolbar{margin-left:0;margin-right:0}}
+@media print{.table-wrap, table.converted-source-table{display:none!important}.deck-reset,.study-toggle input{display:none}.responsive-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.study-card,.deck-toolbar,.study-field{background:white!important;color:black!important;border:1px solid #aaa!important;box-shadow:none!important}.study-main,.study-value,.study-value.romaji,.study-label{color:black!important}}
+</style>
+<link href="favicon.ico" rel="icon" sizes="any"/>
+<link href="favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="site.webmanifest" rel="manifest"/>
+<meta content="#ff7ac8" name="theme-color"/>
+<link href="pixel-theme-v2.css" rel="stylesheet"/>
+
+<style id="hero-badge-overlay-fix">
+/* Place the title/theme badge inside the illustrated hero for all three themes. */
+.pixel-site-header {
+  min-height: clamp(210px, 27vw, 360px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.pixel-site-header .pixel-hero-inner {
+  position: relative !important;
+  z-index: 3 !important;
+  width: min(1180px, 94vw) !important;
+  margin: 0 auto !important;
+  padding: 24px 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.pixel-site-header .pixel-brand {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: min(690px, 88vw) !important;
+  max-width: 690px !important;
+  margin: 0 auto !important;
+  padding: 16px 24px 18px !important;
+  text-align: center !important;
+  border: 3px solid rgba(171, 142, 226, 0.85) !important;
+  border-radius: 22px !important;
+  background: rgba(255, 250, 255, 0.90) !important;
+  box-shadow: 0 8px 0 rgba(101, 83, 168, 0.16), 0 20px 45px rgba(35, 28, 90, 0.22) !important;
+  backdrop-filter: blur(6px) !important;
+}
+.pixel-site-header .pixel-brand h1 {
+  margin: 5px 0 8px !important;
+}
+.pixel-site-header .pixel-brand p {
+  margin: 0 !important;
+}
+.pixel-site-header .pixel-teacher,
+.moved-hero-title {
+  display: none !important;
+}
+body.theme-garden .pixel-site-header .pixel-brand {
+  background: rgba(255, 250, 240, 0.91) !important;
+  border-color: rgba(158, 145, 91, 0.82) !important;
+}
+body.theme-night .pixel-site-header .pixel-brand {
+  background: rgba(9, 14, 42, 0.91) !important;
+  border-color: rgba(113, 89, 191, 0.88) !important;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.28), 0 20px 48px rgba(0, 0, 0, 0.40), 0 0 24px rgba(103, 85, 210, 0.20) !important;
+}
+@media (max-width: 700px) {
+  .pixel-site-header {
+    min-height: 190px !important;
+    background-size: cover !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: 94vw !important;
+    padding: 16px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: min(620px, 92vw) !important;
+    padding: 13px 14px 15px !important;
+    border-radius: 17px !important;
+  }
+  .pixel-site-header .pixel-brand h1 {
+    font-size: clamp(1.8rem, 9vw, 2.6rem) !important;
+  }
+  .pixel-site-header .pixel-brand p {
+    font-size: .88rem !important;
+  }
+}
+</style>
+
+
+<style id="responsive-theme-banner-fill-v18-6">
+/* Keep all three illustrated theme banners full-bleed at narrow browser widths. */
+.pixel-site-header,
+body.theme-garden .pixel-site-header,
+body.theme-night .pixel-site-header {
+  width: 100% !important;
+  height: clamp(220px, 24vw, 390px) !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media (max-width: 900px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(190px, 38vw, 280px) !important;
+    min-height: 190px !important;
+    max-height: 280px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: min(94vw, 720px) !important;
+    padding: 14px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: min(88vw, 650px) !important;
+    padding: 12px 16px 14px !important;
+  }
+}
+@media (max-width: 520px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(180px, 52vw, 230px) !important;
+    min-height: 180px !important;
+    max-height: 230px !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+  .pixel-site-header .pixel-hero-inner {
+    width: 96vw !important;
+    padding: 10px 0 !important;
+  }
+  .pixel-site-header .pixel-brand {
+    width: 92vw !important;
+    padding: 10px 11px 12px !important;
+    border-width: 2px !important;
+    border-radius: 15px !important;
+  }
+  .pixel-site-header .pixel-brand h1 {
+    margin: 3px 0 6px !important;
+    font-size: clamp(1.55rem, 8vw, 2.15rem) !important;
+    line-height: 1.05 !important;
+  }
+  .pixel-site-header .pixel-brand p {
+    font-size: clamp(.72rem, 3.3vw, .86rem) !important;
+    line-height: 1.25 !important;
+  }
+  .pixel-site-header .title-theme-switcher,
+  .pixel-site-header .theme-switcher {
+    gap: 4px !important;
+  }
+  .pixel-site-header .theme-btn {
+    padding: 5px 7px !important;
+    font-size: .68rem !important;
+  }
+}
+</style>
+
+<style id="think-in-japanese-v2-header-polish">
+/* Think in Japanese v2.0 — unified, gap-free responsive hero/header */
+html, body { margin-top: 0 !important; }
+
+.pixel-site-header,
+body.theme-garden .pixel-site-header,
+body.theme-night .pixel-site-header {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: clamp(205px, 21vw, 340px) !important;
+  min-height: 205px !important;
+  max-height: 340px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+  border-radius: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  line-height: normal !important;
+}
+
+.pixel-site-header::before,
+.pixel-site-header::after {
+  bottom: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+}
+
+.pixel-site-header .pixel-hero-inner {
+  box-sizing: border-box !important;
+  width: min(1180px, 94vw) !important;
+  height: 100% !important;
+  margin: 0 auto !important;
+  padding: clamp(12px, 1.7vw, 22px) 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.pixel-site-header .pixel-brand {
+  transform: none !important;
+  margin: 0 auto !important;
+}
+
+.pixel-nav {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: 0 !important;
+  top: 0 !important;
+}
+
+.pixel-site-header + .pixel-nav {
+  margin-top: 0 !important;
+}
+
+.pixel-nav-inner {
+  margin-top: 0 !important;
+}
+
+@media (max-width: 1100px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(200px, 27vw, 285px) !important;
+    min-height: 200px !important;
+    max-height: 285px !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(185px, 42vw, 245px) !important;
+    min-height: 185px !important;
+    max-height: 245px !important;
+    background-position: center center !important;
+  }
+
+  .pixel-site-header .pixel-hero-inner {
+    width: 96vw !important;
+    padding: 10px 0 !important;
+  }
+
+  .pixel-site-header .pixel-brand {
+    width: min(90vw, 620px) !important;
+  }
+}
+
+@media (max-width: 520px) {
+  .pixel-site-header,
+  body.theme-garden .pixel-site-header,
+  body.theme-night .pixel-site-header {
+    height: clamp(178px, 54vw, 225px) !important;
+    min-height: 178px !important;
+    max-height: 225px !important;
+  }
+
+  .pixel-site-header .pixel-brand {
+    width: 92vw !important;
+    padding: 9px 10px 11px !important;
+  }
+}
+</style>
+
+<link rel="stylesheet" href="site-navigation-v26.css">
+<link rel="stylesheet" href="site-shell-v27.css">
+</head>
+<body class="theme-garden">
+<header class="pixel-site-header">
+<div class="pixel-hero-inner">
+<div class="pixel-brand">
+<div aria-label="Theme selector" class="theme-switcher title-theme-switcher"><button class="theme-btn" data-theme="pixel" type="button">Pixel Pastel v2</button><button class="theme-btn active" data-theme="garden" type="button">Garden Cream</button><button class="theme-btn" data-theme="night" type="button">Tokyo Night</button></div>
+<h1>Think in Japanese</h1>
+<p>Learn naturally. Speak confidently. 一緒に日本語を学ぼう!</p>
+</div>
+<div class="pixel-teacher"><img alt="Chibi teacher mascot" src="assets/chibi_teacher.png"/><div class="pixel-mini-title">Sensei Mode</div></div>
+</div>
+</header>
+<nav class="pixel-nav"><div class="pixel-nav-inner grouped-nav">
+<a href="index.html">Home</a>
+<details class="nav-group"><summary>Practice</summary><div class="nav-menu"><a href="kana_dojo.html">Kana Dojo</a><a href="kanji_hub.html">Kanji Hub</a><a href="kanji_radicals_trainer.html">Kanji Radicals</a><a href="think_in_japanese_character_reading_aid_part4.html">Reading Aid</a><a href="think_in_japanese_part5_frequency_deck.html">Frequency Deck</a><a href="sentence_structure_trainer.html">Sentence Structure</a></div></details>
+<details class="nav-group"><summary>Phrase Decks</summary><div class="nav-menu"><a href="think_in_japanese_100_phrases_part1_reformatted.html" class="active">Phrases 1</a><a href="think_in_japanese_100_casual_phrases_part2.html">Phrases 2</a><a href="think_in_japanese_100_gaki_style_phrases_part3.html">Gaki Style</a></div></details>
+<details class="nav-group"><summary>Plans</summary><div class="nav-menu"><a href="japanese_90_day_calendar_tracker.html">90-Day Tracker</a><a href="think_in_japanese_part6_90_day_plan.html">90-Day Plan</a><a href="michel_thomas_japanese_supplement.html">MT Supplement</a></div></details>
+<details class="nav-group tools-menu"><summary>Tools</summary><div class="nav-menu"><a href="games_with_furigana_by_system.html">Games with Furigana</a></div></details>
+<div class="nav-spacer"></div><div aria-label="Language selector" class="lang-toggle nav-lang-toggle"><span class="lang-pill active">English</span><a class="lang-pill" href="think_in_japanese_100_phrases_part1_reformatted_es.html">Español</a></div></div></nav>
+<section class="moved-hero-title">
+<div class="pixel-brand">
+<div aria-label="Theme selector" class="theme-switcher title-theme-switcher"><button class="theme-btn" data-theme="pixel" type="button">Pixel Pastel v2</button><button class="theme-btn active" data-theme="garden" type="button">Garden Cream</button><button class="theme-btn" data-theme="night" type="button">Tokyo Night</button></div>
+<h1>Think in Japanese</h1>
+<p>Learn naturally. Speak confidently. 一緒に日本語を学ぼう!</p>
+</div>
+</section>
+<div class="pixel-page-shell">
+<section class="pixel-welcome">
+<div class="pixel-card"><div class="pixel-mini-title">Getting Started</div><strong>Use the portal as a guided study path:</strong> • Learn phrases in Parts 1–3 • Study characters in Reading Aid and Frequency Deck • Practice in Kana Dojo and Kanji Hub • Follow the 90-Day Tracker and Study Plan • Reduce romaji over time. Small daily practice is more effective than occasional marathon sessions.</div>
+<div class="pixel-side-art pixel-flag-pair"><img alt="Japanese flag" class="flag-art" src="assets/flag_japan.svg"/><img alt="Puerto Rican flag" class="flag-art" src="assets/flag_puerto_rico.svg"/></div>
+</section>
+</div>
+<header>
+<h1>Think in Japanese: 100 Phrases, Part 1</h1>
+<p class="subtitle">Short internal-monologue phrases for building Japanese thought patterns. Reformatted to match Parts 2 and 3: Japanese, romaji, natural English, literal brain translation, and category.</p>
+</header>
+<main>
+<section class="note">
+<strong>How to use:</strong> Don’t memorize every phrase perfectly. Pick 5–10 per day and actually think them during normal moments: waking up, working, driving, eating, waiting, and getting tired.
+  </section>
+<section class="mini-grid">
+<div class="card">
+<h2>How to practice</h2>
+<p>Read the Japanese first, say the romaji out loud, then check the literal brain translation. The goal is to feel the Japanese structure directly.</p>
+</div>
+<div class="card">
+<h2>Daily thinking</h2>
+<p>These are simple inner-monologue phrases meant for real life: morning, work, tired moments, travel, emotions, decisions, and nighttime.</p>
+</div>
+<div class="card">
+<h2>Literal mode</h2>
+<p>The “literal brain translation” is intentionally awkward in English so the Japanese word order and logic are easier to remember.</p>
+</div>
+</section>
+<section class="phrase-card-section"><div class="phrase-card-toolbar"><div class="phrase-progress-block"><div class="phrase-progress-meta"><strong class="tracker-title">Responsive Phrase Cards</strong><span class="phrase-progress-count"><span class="memorized-count">0 / 0</span> <span class="memorized-label">Memorized</span> <span class="phrase-progress-percent">0%</span></span></div><div aria-hidden="true" class="phrase-progress-track"><div class="phrase-progress-fill"></div></div></div><button data-reset-memorized="" type="button">Reset memorized</button></div><div class="phrase-card-grid"><article class="phrase-card" data-id="1"><div class="phrase-card-header"><span class="phrase-id">1</span><div class="phrase-jp">眠い…</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nemui...</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm sleepy...</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Sleepy...</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #1" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="2"><div class="phrase-card-header"><span class="phrase-id">2</span><div class="phrase-jp">まだ起きたくない。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mada okitakunai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I don't want to get up yet.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Still get-up-want-not.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #2" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="3"><div class="phrase-card-header"><span class="phrase-id">3</span><div class="phrase-jp">今日は忙しそう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou wa isogashisou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Today looks busy.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today, busy-seems.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #3" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="4"><div class="phrase-card-header"><span class="phrase-id">4</span><div class="phrase-jp">コーヒーが必要。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Koohii ga hitsuyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I need coffee.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Coffee is necessary.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #4" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="5"><div class="phrase-card-header"><span class="phrase-id">5</span><div class="phrase-jp">よし、始めよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Yoshi, hajimeyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Alright, let's start.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Good, start-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #5" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="6"><div class="phrase-card-header"><span class="phrase-id">6</span><div class="phrase-jp">今日はゆっくり行こう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou wa yukkuri ikou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's take it slow today.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today, slowly go-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #6" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="7"><div class="phrase-card-header"><span class="phrase-id">7</span><div class="phrase-jp">時間がない。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Jikan ga nai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I don't have time.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Time does not exist.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #7" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="8"><div class="phrase-card-header"><span class="phrase-id">8</span><div class="phrase-jp">準備できた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Junbi dekita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm ready.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Preparation was possible/done.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #8" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="9"><div class="phrase-card-header"><span class="phrase-id">9</span><div class="phrase-jp">忘れ物ないかな。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Wasuremono nai kana.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I wonder if I forgot anything.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Forgotten thing, none I wonder.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #9" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="10"><div class="phrase-card-header"><span class="phrase-id">10</span><div class="phrase-jp">今日も頑張ろう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou mo ganbarou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's do our best today too.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today also, endure/do-best-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Morning / Starting the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #10" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="11"><div class="phrase-card-header"><span class="phrase-id">11</span><div class="phrase-jp">まず何をする？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mazu nani o suru?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">What should I do first?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">First, what do?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #11" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="12"><div class="phrase-card-header"><span class="phrase-id">12</span><div class="phrase-jp">これを先に終わらせよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore o saki ni owaraseyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let me finish this first.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This, first, finish-make-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #12" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="13"><div class="phrase-card-header"><span class="phrase-id">13</span><div class="phrase-jp">ちょっと集中しよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto shuuchuu shiyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let me focus for a bit.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little concentration do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #13" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="14"><div class="phrase-card-header"><span class="phrase-id">14</span><div class="phrase-jp">これは大事。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore wa daiji.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This is important.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This, important.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #14" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="15"><div class="phrase-card-header"><span class="phrase-id">15</span><div class="phrase-jp">あとで確認しよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ato de kakunin shiyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'll check later.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Later, confirmation do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #15" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="16"><div class="phrase-card-header"><span class="phrase-id">16</span><div class="phrase-jp">ちょっと待って。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto matte.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Wait a second.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little wait.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #16" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="17"><div class="phrase-card-header"><span class="phrase-id">17</span><div class="phrase-jp">意味が分からない。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Imi ga wakaranai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I don't understand what it means.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Meaning is not understood.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #17" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="18"><div class="phrase-card-header"><span class="phrase-id">18</span><div class="phrase-jp">これは後回しでいい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore wa atomawashi de ii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This can wait.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This, later-turn is good.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #18" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="19"><div class="phrase-card-header"><span class="phrase-id">19</span><div class="phrase-jp">一つずつやろう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Hitotsu zutsu yarou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's do it one by one.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">One each do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #19" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="20"><div class="phrase-card-header"><span class="phrase-id">20</span><div class="phrase-jp">やっと終わった。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Yatto owatta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Finally done.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">At last, ended.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Work / Focus Mode</span></div><label class="memorized-toggle"><input aria-label="Memorized #20" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="21"><div class="phrase-card-header"><span class="phrase-id">21</span><div class="phrase-jp">すごく疲れた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Sugoku tsukareta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm really tired.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Amazingly tired.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #21" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="22"><div class="phrase-card-header"><span class="phrase-id">22</span><div class="phrase-jp">もう無理。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mou muri.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I can't anymore.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Already impossible.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #22" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="23"><div class="phrase-card-header"><span class="phrase-id">23</span><div class="phrase-jp">休みたい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Yasumitai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I want to rest.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Rest-want.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #23" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="24"><div class="phrase-card-header"><span class="phrase-id">24</span><div class="phrase-jp">頭がいっぱい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Atama ga ippai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">My head is full.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Head is full.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #24" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="25"><div class="phrase-card-header"><span class="phrase-id">25</span><div class="phrase-jp">ちょっと休憩しよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto kyuukei shiyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's take a short break.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little break do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #25" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="26"><div class="phrase-card-header"><span class="phrase-id">26</span><div class="phrase-jp">今日は長い日だ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou wa nagai hi da.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Today is a long day.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today, long day is.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #26" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="27"><div class="phrase-card-header"><span class="phrase-id">27</span><div class="phrase-jp">体が重い。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Karada ga omoi.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">My body feels heavy.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Body is heavy.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #27" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="28"><div class="phrase-card-header"><span class="phrase-id">28</span><div class="phrase-jp">眠くなってきた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nemuku natte kita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm starting to get sleepy.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Sleepy becoming came.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #28" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="29"><div class="phrase-card-header"><span class="phrase-id">29</span><div class="phrase-jp">もう少しだけ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mou sukoshi dake.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Just a little more.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Already/now little only.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #29" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="30"><div class="phrase-card-header"><span class="phrase-id">30</span><div class="phrase-jp">今日は早く寝よう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou wa hayaku neyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'll sleep early today.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today, early sleep-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Tired / Overwhelmed</span></div><label class="memorized-toggle"><input aria-label="Memorized #30" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="31"><div class="phrase-card-header"><span class="phrase-id">31</span><div class="phrase-jp">なんでだろう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nande darou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I wonder why.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Why, I wonder.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #31" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="32"><div class="phrase-card-header"><span class="phrase-id">32</span><div class="phrase-jp">どうすればいい？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Dou sureba ii?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">What should I do?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">How if-do good?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #32" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="33"><div class="phrase-card-header"><span class="phrase-id">33</span><div class="phrase-jp">ちょっと変だな。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto hen da na.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">That's kind of strange.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little strange, huh.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #33" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="34"><div class="phrase-card-header"><span class="phrase-id">34</span><div class="phrase-jp">何か違う。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nanika chigau.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Something is off.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Something different.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #34" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="35"><div class="phrase-card-header"><span class="phrase-id">35</span><div class="phrase-jp">もう一回考えよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mou ikkai kangaeyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's think about it again.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">One more time think-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #35" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="36"><div class="phrase-card-header"><span class="phrase-id">36</span><div class="phrase-jp">たぶんこれだ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Tabun kore da.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">It's probably this.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Probably this is.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #36" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="37"><div class="phrase-card-header"><span class="phrase-id">37</span><div class="phrase-jp">違った。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chigatta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">That was wrong.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Was different.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #37" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="38"><div class="phrase-card-header"><span class="phrase-id">38</span><div class="phrase-jp">なるほど。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Naruhodo.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I see.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">As it becomes / makes sense.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #38" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="39"><div class="phrase-card-header"><span class="phrase-id">39</span><div class="phrase-jp">分かってきた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Wakatte kita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm starting to understand.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Understanding came.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #39" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="40"><div class="phrase-card-header"><span class="phrase-id">40</span><div class="phrase-jp">まだ分からない。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mada wakaranai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I still don't understand.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Still not understood.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Confused / Thinking Through Problems</span></div><label class="memorized-toggle"><input aria-label="Memorized #40" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="41"><div class="phrase-card-header"><span class="phrase-id">41</span><div class="phrase-jp">お腹すいた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Onaka suita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm hungry.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Stomach emptied.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #41" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="42"><div class="phrase-card-header"><span class="phrase-id">42</span><div class="phrase-jp">何を食べよう？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nani o tabeyou?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">What should I eat?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">What eat-let's?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #42" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="43"><div class="phrase-card-header"><span class="phrase-id">43</span><div class="phrase-jp">これ美味しそう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore oishisou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This looks tasty.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This delicious-seems.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #43" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="44"><div class="phrase-card-header"><span class="phrase-id">44</span><div class="phrase-jp">いただきます。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Itadakimasu.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's eat / I gratefully receive.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">I humbly receive.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #44" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="45"><div class="phrase-card-header"><span class="phrase-id">45</span><div class="phrase-jp">ごちそうさま。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Gochisousama.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Thanks for the meal.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Feast honorable-state.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #45" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="46"><div class="phrase-card-header"><span class="phrase-id">46</span><div class="phrase-jp">水が飲みたい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mizu ga nomitai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I want to drink water.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Water drink-want.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #46" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="47"><div class="phrase-card-header"><span class="phrase-id">47</span><div class="phrase-jp">部屋を片付けよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Heya o katazukeyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's clean up the room.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Room tidy-up-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #47" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="48"><div class="phrase-card-header"><span class="phrase-id">48</span><div class="phrase-jp">洗濯しなきゃ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Sentaku shinakya.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I have to do laundry.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Laundry must-do.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #48" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="49"><div class="phrase-card-header"><span class="phrase-id">49</span><div class="phrase-jp">これはあとでやる。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore wa ato de yaru.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'll do this later.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This, later do.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #49" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="50"><div class="phrase-card-header"><span class="phrase-id">50</span><div class="phrase-jp">家に帰りたい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ie ni kaeritai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I want to go home.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Home to return-want.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Food / Home / Daily Life</span></div><label class="memorized-toggle"><input aria-label="Memorized #50" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="51"><div class="phrase-card-header"><span class="phrase-id">51</span><div class="phrase-jp">ここはどこ？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Koko wa doko?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Where am I?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Here is where?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #51" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="52"><div class="phrase-card-header"><span class="phrase-id">52</span><div class="phrase-jp">駅はどっち？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Eki wa dotchi?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Which way is the station?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Station is which?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #52" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="53"><div class="phrase-card-header"><span class="phrase-id">53</span><div class="phrase-jp">道に迷った。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Michi ni mayotta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I got lost.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">In road got confused.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #53" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="54"><div class="phrase-card-header"><span class="phrase-id">54</span><div class="phrase-jp">この場所、いいね。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kono basho, ii ne.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This place is nice.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This place, good, right?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #54" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="55"><div class="phrase-card-header"><span class="phrase-id">55</span><div class="phrase-jp">写真を撮りたい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Shashin o toritai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I want to take a picture.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Photo take-want.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #55" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="56"><div class="phrase-card-header"><span class="phrase-id">56</span><div class="phrase-jp">人が多い。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Hito ga ooi.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">There are a lot of people.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">People are many.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #56" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="57"><div class="phrase-card-header"><span class="phrase-id">57</span><div class="phrase-jp">静かでいい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Shizuka de ii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">It's nice and quiet.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Quiet and good.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #57" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="58"><div class="phrase-card-header"><span class="phrase-id">58</span><div class="phrase-jp">次はどこに行く？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Tsugi wa doko ni iku?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Where do we go next?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Next, where to go?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #58" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="59"><div class="phrase-card-header"><span class="phrase-id">59</span><div class="phrase-jp">ちょっと歩こう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto arukou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's walk a little.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little walk-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #59" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="60"><div class="phrase-card-header"><span class="phrase-id">60</span><div class="phrase-jp">ここで休もう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Koko de yasumou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's rest here.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Here at rest-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Travel / Outside</span></div><label class="memorized-toggle"><input aria-label="Memorized #60" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="61"><div class="phrase-card-header"><span class="phrase-id">61</span><div class="phrase-jp">嬉しい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ureshii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm happy.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Happy.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #61" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="62"><div class="phrase-card-header"><span class="phrase-id">62</span><div class="phrase-jp">楽しい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Tanoshii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This is fun.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Fun.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #62" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="63"><div class="phrase-card-header"><span class="phrase-id">63</span><div class="phrase-jp">ちょっと不安。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto fuan.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm a little nervous.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little uneasy.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #63" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="64"><div class="phrase-card-header"><span class="phrase-id">64</span><div class="phrase-jp">イライラする。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Iraira suru.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm annoyed.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Irritation do.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #64" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="65"><div class="phrase-card-header"><span class="phrase-id">65</span><div class="phrase-jp">びっくりした。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Bikkuri shita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">That surprised me.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Surprise did.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #65" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="66"><div class="phrase-card-header"><span class="phrase-id">66</span><div class="phrase-jp">ちょっと怖い。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto kowai.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">That's a little scary.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little scary.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #66" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="67"><div class="phrase-card-header"><span class="phrase-id">67</span><div class="phrase-jp">安心した。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Anshin shita.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm relieved.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Peace-of-mind did.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #67" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="68"><div class="phrase-card-header"><span class="phrase-id">68</span><div class="phrase-jp">まあ、いいか。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Maa, ii ka.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Well, it's fine I guess.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Well, good maybe.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #68" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="69"><div class="phrase-card-header"><span class="phrase-id">69</span><div class="phrase-jp">最高。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Saikou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Awesome / the best.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Highest.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #69" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="70"><div class="phrase-card-header"><span class="phrase-id">70</span><div class="phrase-jp">最悪。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Saiaku.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">This sucks / the worst.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Most bad.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Emotions / Reactions</span></div><label class="memorized-toggle"><input aria-label="Memorized #70" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="71"><div class="phrase-card-header"><span class="phrase-id">71</span><div class="phrase-jp">おはよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ohayou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Morning.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Early.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #71" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="72"><div class="phrase-card-header"><span class="phrase-id">72</span><div class="phrase-jp">お疲れさま。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Otsukaresama.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Good work / thanks for your effort.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Honorable tired-state.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #72" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="73"><div class="phrase-card-header"><span class="phrase-id">73</span><div class="phrase-jp">大丈夫？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Daijoubu?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Are you okay?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">All right?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #73" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="74"><div class="phrase-card-header"><span class="phrase-id">74</span><div class="phrase-jp">大丈夫。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Daijoubu.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm okay.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">All right.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #74" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="75"><div class="phrase-card-header"><span class="phrase-id">75</span><div class="phrase-jp">ありがとう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Arigatou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Thank you.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Difficult to exist / appreciated.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #75" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="76"><div class="phrase-card-header"><span class="phrase-id">76</span><div class="phrase-jp">ごめん。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Gomen.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Sorry.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Forgiveness.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #76" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="77"><div class="phrase-card-header"><span class="phrase-id">77</span><div class="phrase-jp">いいよ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ii yo.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">It's okay / sure.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Good, you know.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #77" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="78"><div class="phrase-card-header"><span class="phrase-id">78</span><div class="phrase-jp">またね。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mata ne.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">See you later.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Again, okay?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #78" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="79"><div class="phrase-card-header"><span class="phrase-id">79</span><div class="phrase-jp">久しぶり。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Hisashiburi.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Long time no see.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">After a long while.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #79" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="80"><div class="phrase-card-header"><span class="phrase-id">80</span><div class="phrase-jp">元気？</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Genki?</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">How are you?</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Energy?</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Social / Small Talk</span></div><label class="memorized-toggle"><input aria-label="Memorized #80" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="81"><div class="phrase-card-header"><span class="phrase-id">81</span><div class="phrase-jp">やってみよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Yatte miyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's try it.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Do and see-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #81" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="82"><div class="phrase-card-header"><span class="phrase-id">82</span><div class="phrase-jp">無理しないで。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Muri shinaide.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Don't overdo it.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Impossible don't do.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #82" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="83"><div class="phrase-card-header"><span class="phrase-id">83</span><div class="phrase-jp">少しずつでいい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Sukoshi zutsu de ii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Little by little is fine.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Little each is good.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #83" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="84"><div class="phrase-card-header"><span class="phrase-id">84</span><div class="phrase-jp">今やろう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ima yarou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's do it now.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Now do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #84" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="85"><div class="phrase-card-header"><span class="phrase-id">85</span><div class="phrase-jp">あとでいい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ato de ii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Later is fine.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Later is good.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #85" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="86"><div class="phrase-card-header"><span class="phrase-id">86</span><div class="phrase-jp">これはやめよう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kore wa yameyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's stop this.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">This stop-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #86" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="87"><div class="phrase-card-header"><span class="phrase-id">87</span><div class="phrase-jp">もう決めた。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mou kimeta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I've already decided.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Already decided.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #87" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="88"><div class="phrase-card-header"><span class="phrase-id">88</span><div class="phrase-jp">まだ迷ってる。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mada mayotteru.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm still unsure.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Still lost/hesitating.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #88" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="89"><div class="phrase-card-header"><span class="phrase-id">89</span><div class="phrase-jp">できるかも。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Dekiru kamo.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Maybe I can do it.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Can maybe.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #89" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="90"><div class="phrase-card-header"><span class="phrase-id">90</span><div class="phrase-jp">なんとかなる。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Nantoka naru.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">It'll work out somehow.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Somehow becomes.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Decision / Motivation</span></div><label class="memorized-toggle"><input aria-label="Memorized #90" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="91"><div class="phrase-card-header"><span class="phrase-id">91</span><div class="phrase-jp">今日はもう終わり。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Kyou wa mou owari.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">That's enough for today.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Today, already end.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #91" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="92"><div class="phrase-card-header"><span class="phrase-id">92</span><div class="phrase-jp">いい一日だった。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ii ichinichi datta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">It was a good day.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Good one-day was.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #92" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="93"><div class="phrase-card-header"><span class="phrase-id">93</span><div class="phrase-jp">疲れたけど楽しかった。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Tsukareta kedo tanoshikatta.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I was tired, but it was fun.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Tired but fun-was.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #93" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="94"><div class="phrase-card-header"><span class="phrase-id">94</span><div class="phrase-jp">明日またやろう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ashita mata yarou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's do it again tomorrow.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Tomorrow again do-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #94" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="95"><div class="phrase-card-header"><span class="phrase-id">95</span><div class="phrase-jp">早く寝なきゃ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Hayaku nenakya.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I need to sleep early.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Early sleep-must.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #95" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="96"><div class="phrase-card-header"><span class="phrase-id">96</span><div class="phrase-jp">もう寝る。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Mou neru.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'm going to sleep now.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Already/now sleep.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #96" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="97"><div class="phrase-card-header"><span class="phrase-id">97</span><div class="phrase-jp">電気を消そう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Denki o kesou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Let's turn off the light.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Electricity/light erase-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #97" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="98"><div class="phrase-card-header"><span class="phrase-id">98</span><div class="phrase-jp">明日は忙しい。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Ashita wa isogashii.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Tomorrow will be busy.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Tomorrow busy.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #98" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="99"><div class="phrase-card-header"><span class="phrase-id">99</span><div class="phrase-jp">ちょっとだけ見よう。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Chotto dake miyou.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">I'll watch just a little.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">A little only see-let's.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #99" type="checkbox"/><span>Memorized</span></label></article><article class="phrase-card" data-id="100"><div class="phrase-card-header"><span class="phrase-id">100</span><div class="phrase-jp">おやすみ。</div></div><div class="phrase-meta"><div class="phrase-field"><div class="phrase-label">Romaji</div><div class="phrase-value romaji">Oyasumi.</div></div><div class="phrase-field"><div class="phrase-label">Natural English</div><div class="phrase-value">Good night.</div></div><div class="phrase-field"><div class="phrase-label">Literal Brain Translation</div><div class="phrase-value">Rest.</div></div></div><div class="phrase-category"><div class="phrase-label">Category</div><span class="tag">Night / Ending the Day</span></div><label class="memorized-toggle"><input aria-label="Memorized #100" type="checkbox"/><span>Memorized</span></label></article></div></section>
+</main>
+<footer class="pixel-footer"><span class="pixel-badge">Another Tool from <a href="https://progretech.com" rel="noopener" target="_blank">ProgreTech</a></span></footer>
+<script>
+(function(){
+  function applyTheme(theme){
+    theme = (theme === 'garden' || theme === 'night') ? theme : 'pixel';
+    document.body.classList.remove('theme-pixel','theme-garden','theme-night');
+    document.body.classList.add('theme-' + theme);
+    try{ localStorage.setItem('tij-theme', theme); }catch(e){}
+    document.querySelectorAll('.theme-btn').forEach(function(btn){
+      var on = btn.getAttribute('data-theme') === theme;
+      btn.classList.toggle('active', on);
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  }
+  function initTheme(){
+    var saved = 'garden';
+    try{ saved = localStorage.getItem('tij-theme') || 'garden'; }catch(e){}
+    applyTheme(saved);
+    document.querySelectorAll('.theme-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){ applyTheme(btn.getAttribute('data-theme')); });
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initTheme); else initTheme();
+})();
+</script>
+<script data-bot-id="59258" src="https://app.aminos.ai/js/chat_plugin.js"></script>
+<script>
+(function(){
+  const grid = document.querySelector('.phrase-card-grid');
+  if (!grid) return;
+  const storageKey = 'thinkJapanesePart1Memorized_' + (document.documentElement.lang || 'en');
+  const countEl = document.querySelector('.memorized-count');
+  const percentEl = document.querySelector('.phrase-progress-percent');
+  const progressFill = document.querySelector('.phrase-progress-fill');
+  const resetBtn = document.querySelector('[data-reset-memorized]');
+  let memorized = new Set();
+  try { memorized = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]').map(String)); } catch(e) { memorized = new Set(); }
+
+  function save(){ localStorage.setItem(storageKey, JSON.stringify([...memorized])); }
+  function applyState(){
+    const cards = [...grid.querySelectorAll('.phrase-card')];
+    cards.forEach(card => {
+      const id = card.dataset.id;
+      const isDone = memorized.has(id);
+      card.classList.toggle('is-memorized', isDone);
+      const input = card.querySelector('input[type="checkbox"]');
+      if (input) input.checked = isDone;
+      card.style.order = isDone ? (10000 + Number(id)) : Number(id);
+    });
+    if (countEl) countEl.textContent = memorized.size + ' / ' + cards.length;
+    const percent = cards.length ? Math.round((memorized.size / cards.length) * 100) : 0;
+    if (percentEl) percentEl.textContent = percent + '%';
+    if (progressFill) progressFill.style.width = percent + '%';
+  }
+
+  grid.addEventListener('change', function(evt){
+    const input = evt.target.closest('input[type="checkbox"]');
+    if (!input) return;
+    const card = input.closest('.phrase-card');
+    if (!card) return;
+    const id = card.dataset.id;
+    if (input.checked) memorized.add(id); else memorized.delete(id);
+    save();
+    applyState();
+  });
+
+  if (resetBtn) {
+    resetBtn.addEventListener('click', function(){
+      memorized.clear();
+      save();
+      applyState();
+    });
+  }
+
+  applyState();
+})();
+</script>
+
+<script>
+(function(){
+  document.querySelectorAll('.responsive-card-section').forEach(function(section){
+    const grid = section.querySelector('.responsive-card-grid'); if(!grid) return;
+    const storageKey = section.dataset.storageKey || ('studyDeck_' + location.pathname + '_' + (document.documentElement.lang || 'en'));
+    const countEl = section.querySelector('.deck-count-num');
+    const fillEl = section.querySelector('.deck-fill');
+    const percentEl = section.querySelector('.deck-percent');
+    const resetBtn = section.querySelector('[data-reset-deck]');
+    let memorized = new Set();
+    try { memorized = new Set(JSON.parse(localStorage.getItem(storageKey) || '[]').map(String)); } catch(e) { memorized = new Set(); }
+    function save(){ localStorage.setItem(storageKey, JSON.stringify(Array.from(memorized))); }
+    function apply(){
+      const cards = Array.from(grid.querySelectorAll('.study-card'));
+      cards.forEach(function(card){
+        const id = String(card.dataset.id || ''); const done = memorized.has(id);
+        card.classList.toggle('is-memorized', done);
+        const input = card.querySelector('input[type="checkbox"]'); if(input) input.checked = done;
+        const ord = Number(card.dataset.order || id.replace(/\D/g,'') || 0);
+        card.style.order = done ? (100000 + ord) : ord;
+      });
+      const total = cards.length; const doneCount = memorized.size; const pct = total ? Math.round(doneCount/total*100) : 0;
+      if(countEl) countEl.textContent = doneCount + ' / ' + total;
+      if(fillEl) fillEl.style.width = pct + '%';
+      if(percentEl) percentEl.textContent = pct + '%';
+    }
+    grid.addEventListener('change', function(evt){
+      const input = evt.target.closest('input[type="checkbox"]'); if(!input) return;
+      const card = input.closest('.study-card'); if(!card) return; const id = String(card.dataset.id || '');
+      if(input.checked) memorized.add(id); else memorized.delete(id); save(); apply();
+    });
+    if(resetBtn) resetBtn.addEventListener('click', function(){ memorized.clear(); save(); apply(); });
+    apply();
+  });
+
+  // Preserve Reading Aid search/type filter behavior for cards.
+  const searchBox = document.getElementById('searchBox');
+  const typeFilter = document.getElementById('typeFilter');
+  const charGrid = document.querySelector('.char-card-grid');
+  function filterCards(){
+    if(!charGrid) return;
+    const q = (searchBox && searchBox.value || '').toLowerCase();
+    const type = (typeFilter && typeFilter.value || 'All');
+    charGrid.querySelectorAll('.study-card').forEach(function(card){
+      const matchText = !q || (card.dataset.search || '').toLowerCase().includes(q);
+      const matchType = type === 'All' || (card.dataset.type || '') === type;
+      card.style.display = (matchText && matchType) ? '' : 'none';
+    });
+  }
+  if(searchBox) searchBox.addEventListener('input', filterCards);
+  if(typeFilter) typeFilter.addEventListener('change', filterCards);
+  filterCards();
+})();
+</script>
+
+<!--
+============================================================
+ THINK IN JAPANESE / PIENSA EN JAPONÉS
+============================================================
+ Author: Edwin A. Rodriguez (Abdiel)
+ GitHub: https://github.com/eabdiel
+ Project: Think in Japanese learning portal
+ Intent: A free, offline-friendly Japanese study hub for kana,
+         kanji, phrase practice, internal monologue training,
+         and a structured 90-day learning path.
+ Notes: This comment is intentionally kept in source only and
+        does not display on the website.
+============================================================
+-->
+<script>
+(function(){
+  document.addEventListener('click', function(e){
+    document.querySelectorAll('.pixel-nav details[open]').forEach(function(d){ if(!d.contains(e.target)) d.removeAttribute('open'); });
+  });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape'){ document.querySelectorAll('.pixel-nav details[open]').forEach(function(d){d.removeAttribute('open');}); }});
+})();
+</script>
+<script src="site-navigation-v26.js"></script>
+<script src="site-shell-v27.js"></script>
+</body>
+</html>

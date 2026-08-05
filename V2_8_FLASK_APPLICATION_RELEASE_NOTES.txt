@@ -1,0 +1,31 @@
+THINK IN JAPANESE V2.8 — FLASK APPLICATION RELEASE NOTES
+Date: 2026-08-04
+
+SUMMARY
+- Converted the static site into a structured Flask Python application.
+- Added one shared Jinja navigation shell for English and Spanish.
+- Rebuilt the home page as a modern learning dashboard inspired by the supplied prototypes.
+- Added a consistent responsive sidebar, desktop top bar, and mobile app navigation.
+- Added persistent Pixel Pastel, Garden Cream, and Tokyo Night themes.
+- Preserved the original interactive learning tools inside a shared, full-height workspace.
+- Kept all images, scripts, styles, and learning content local for offline-friendly use.
+- Added health endpoint and clean language/page routes.
+
+FILES AND DIRECTORIES ADDED OR MODIFIED
+- app.py
+- run.py
+- requirements.txt
+- README.md
+- templates/base.html
+- templates/home.html
+- templates/tool.html
+- templates/404.html
+- static/css/app.css
+- static/js/app.js
+- static/js/workspace.js
+- static/assets/
+- static/legacy/
+
+NOTES
+- Existing tool logic is intentionally preserved in static/legacy for this first Flask conversion.
+- The application shell intercepts legacy page navigation so users remain inside the unified Flask interface.

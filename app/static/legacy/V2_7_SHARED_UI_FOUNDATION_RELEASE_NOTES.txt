@@ -1,0 +1,36 @@
+THINK IN JAPANESE — V2.7 SHARED UI FOUNDATION
+Date: August 4, 2026
+Author: Edwin A. Rodriguez / Progretech.com
+
+SUMMARY
+This release establishes the new V2 product-style interface as a shared layer across every English and Spanish page while keeping the site static, lightweight, downloadable, and offline-friendly.
+
+WHAT CHANGED
+- Replaced page-specific visible navigation with one shared application shell.
+- Added a modern fixed top application bar on desktop.
+- Added a consistent left tool rail for internal pages.
+- Added a compact mobile bottom navigation and slide-out full menu.
+- Added a shared theme chooser for Pixel Pastel, Garden Cream, and Tokyo Night.
+- Preserved the selected theme through localStorage across all pages and languages.
+- Added consistent page introductions with a clear purpose statement.
+- Standardized cards, borders, shadows, spacing, typography, and interaction feedback.
+- Reused local assets only; no framework, font, or image CDN was added.
+- Existing exercises, trackers, decks, and page logic remain intact.
+
+OFFLINE / PERFORMANCE NOTES
+- The new shell consists of one CSS file and one JavaScript file.
+- All navigation, theme, icons, and artwork work locally after extraction.
+- Emoji icons use the operating system font and add no download weight.
+- The optional existing Aminos AI widget still requires an internet connection; the learning site itself remains usable offline.
+
+FILES ADDED
+- site-shell-v27.css
+- site-shell-v27.js
+- V2_7_SHARED_UI_FOUNDATION_RELEASE_NOTES.txt
+
+FILES MODIFIED
+- site-navigation-v26.js (exposes the shared theme function)
+- All 26 HTML pages in public_html (shared CSS/JS references only)
+
+NEXT UI ITERATION
+The shared shell now allows future menu, theme, typography, and responsive-layout adjustments to be made once instead of separately on every page. Individual learning pages can next be reorganized into the prototype-style cards without creating navigation drift.

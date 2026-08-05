@@ -1,0 +1,37 @@
+Think in Japanese v2.4
+Persistent Theme Selector and Furigana Game Report Update
+=========================================================
+
+Summary
+-------
+- Added a dedicated theme-selector tile to the Games with Furigana report.
+- Theme selections now persist through localStorage across all English and Spanish site pages.
+- Theme buttons stay synchronized when more than one selector appears on a page.
+- Added cross-tab synchronization: changing the theme in one open site tab updates other open tabs.
+- Preserved the shared mobile navigation behavior and added Escape-key menu closing.
+
+Theme behavior
+--------------
+- Pixel Pastel v2
+- Garden Cream
+- Tokyo Night
+- Storage key: tij-theme
+- Default theme when no saved selection exists: Garden Cream
+
+Files and directories modified
+------------------------------
+Modified:
+- public_html/games_with_furigana_by_system.html
+- public_html/site-navigation-v23.js
+
+Added:
+- public_html/V2_4_PERSISTENT_THEME_SELECTOR_RELEASE_NOTES.txt
+
+Directories affected:
+- public_html/
+
+Validation
+----------
+- Confirmed all top-level HTML pages reference site-navigation-v23.js.
+- Confirmed the game report contains both the banner selector markup and the new visible report selector tile.
+- Confirmed the selected theme is stored and reapplied across page navigation.

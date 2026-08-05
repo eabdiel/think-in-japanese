@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block title %}Think in Japanese — {{ 'Learning Workbench' if lang=='en' else 'Centro de aprendizaje' }}{% endblock %}
+{% block content %}
+<!-- =====================================================================
+     THINK IN JAPANESE — PUBLIC HOME WORKBENCH
+     ---------------------------------------------------------------------
+     Purpose: Present static guidance and direct entry points without
+     implying account-based scoring, membership, or server-side progress.
+     ===================================================================== -->
+<section class="hero-stage">
+  <div class="hero hero-v210">
+    <img class="hero-scene" src="{{ url_for('static',filename='assets/pixel_tokyo_hero.jpg') }}" alt="">
+    <div class="hero-overlay hero-centered">
+      <div class="hero-copy">
+        <span class="eyebrow">🌸 {{ 'YOUR JAPANESE JOURNEY' if lang=='en' else 'TU VIAJE EN JAPONÉS' }}</span>
+        <h1>Think in <strong>Japanese</strong></h1>
+        <div class="jp-tagline">一緒に日本語を学ぼう！ 🌸</div>
+        <p class="hero-subtitle">{{ 'A friendly offline learning workbench for building kana, vocabulary, reading, and speaking habits.' if lang=='en' else 'Un centro de aprendizaje amigable y sin conexión para desarrollar kana, vocabulario, lectura y conversación.' }}</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="{{ url_for('core.tool_page',lang=lang,slug='kana-dojo') }}">あ {{ 'Start with Kana' if lang=='en' else 'Comienza con Kana' }}</a>
+          <a class="secondary-button" href="{{ url_for('core.tool_page',lang=lang,slug='tracker') }}">📅 {{ 'Open the tracker' if lang=='en' else 'Abrir el rastreador' }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mascot-stand" aria-hidden="true">
+    <img src="{{ url_for('static',filename='assets/chibi_teacher_cutout.png') }}" alt="">
+  </div>
+</section>
+
+<section class="dashboard-grid dashboard-grid-static" data-tile-grid>
+  <article class="dashboard-tile guidance-card quest-guide" data-tile-id="today-quest">
+    <span class="section-kicker">🎯 {{ "TODAY'S QUEST" if lang=='en' else 'MISIÓN DE HOY' }}</span>
+    <h2>{{ 'Practice, review, then save your progress.' if lang=='en' else 'Practica, repasa y luego guarda tu progreso.' }}</h2>
+    <p>{{ 'Choose one focused learning tool, review a small set of cards, and download or cache the page you want to keep.' if lang=='en' else 'Elige una herramienta, repasa un grupo pequeño de tarjetas y descarga o guarda en caché la página que quieras conservar.' }}</p>
+    <a class="primary-button full-button" href="{{ url_for('core.tool_page',lang=lang,slug='tracker') }}">{{ 'Open the 90-Day Tracker' if lang=='en' else 'Abrir el rastreador de 90 días' }} <span>→</span></a>
+  </article>
+
+  <article class="dashboard-tile guidance-card quick-guide" data-tile-id="quick-start">
+    <span class="section-kicker">⚡ {{ 'QUICK START' if lang=='en' else 'INICIO RÁPIDO' }}</span>
+    <h2>{{ 'Jump directly into a learning tool.' if lang=='en' else 'Entra directamente a una herramienta.' }}</h2>
+    <div class="quick-grid quick-grid-static">
+      {% for p in pages[1:8] %}
+      <a href="{{ url_for('core.tool_page',lang=lang,slug=p.slug) }}">
+        <span>{{ p.icon }}</span>
+        <b>{{ p.en if lang=='en' else p.es }}</b>
+      </a>
+      {% endfor %}
+    </div>
+  </article>
+
+  <article class="dashboard-tile guidance-card path-guide" data-tile-id="recommended-path">
+    <span class="section-kicker">🗺️ {{ 'RECOMMENDED PATH' if lang=='en' else 'RUTA RECOMENDADA' }}</span>
+    <h2>{{ 'A simple order for building confidence.' if lang=='en' else 'Un orden sencillo para ganar confianza.' }}</h2>
+    <ol class="static-path-list">
+      <li><b>1</b><span><strong>{{ 'Kana Foundation' if lang=='en' else 'Base de kana' }}</strong><small>{{ 'Recognize and write hiragana and katakana.' if lang=='en' else 'Reconoce y escribe hiragana y katakana.' }}</small></span></li>
+      <li><b>2</b><span><strong>{{ 'Core Vocabulary' if lang=='en' else 'Vocabulario esencial' }}</strong><small>{{ 'Use the frequency deck and phrase collections.' if lang=='en' else 'Usa el mazo de frecuencia y las colecciones de frases.' }}</small></span></li>
+      <li><b>3</b><span><strong>{{ 'Reading & Expression' if lang=='en' else 'Lectura y expresión' }}</strong><small>{{ 'Read, build sentences, and speak naturally.' if lang=='en' else 'Lee, forma oraciones y habla naturalmente.' }}</small></span></li>
+    </ol>
+  </article>
+</section>
+
+<section class="resource-catalog dashboard-tile" data-tile-id="all-resources">
+  <span class="section-kicker">🧰 {{ 'ALL RESOURCES' if lang=='en' else 'TODOS LOS RECURSOS' }}</span>
+  <div class="resource-heading">
+    <div>
+      <h2>{{ 'Everything you need, organized in one place' if lang=='en' else 'Todo lo que necesitas, organizado en un solo lugar' }}</h2>
+      <p>{{ 'Open a tool online, save it for offline use, or download its themed report from the page toolbar.' if lang=='en' else 'Abre una herramienta en línea, guárdala para usarla sin conexión o descarga su informe temático desde la barra de la página.' }}</p>
+    </div>
+  </div>
+  <div class="resource-grid">
+    {% for p in pages[1:] %}
+    <a class="resource-link" href="{{ url_for('core.tool_page',lang=lang,slug=p.slug) }}">
+      <span class="resource-icon">{{ p.icon }}</span>
+      <span><b>{{ p.en if lang=='en' else p.es }}</b><small>{{ p.help_en if lang=='en' else p.help_es }}</small></span>
+      <em>→</em>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

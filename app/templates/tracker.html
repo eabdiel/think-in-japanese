@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}{{ tracker.title }} — Think in Japanese{% endblock %}
+{% block content %}
+<section class="kana-heading tracker-heading"><div><span class="section-kicker">{{ current.icon }} {{ tracker.kicker }}</span><h1>{{ tracker.title }}</h1><p>{{ tracker.subtitle }}</p></div></section>
+<section class="modes-card tracker-modes">
+  <div class="modes-card__intro"><span class="section-kicker">🧭 {{ tracker.overview_title|upper }}</span><h2>{{ tracker.overview_title }}</h2><p>{{ tracker.overview }}</p></div>
+  <article class="mode-option"><span class="mode-option__icon">🌐</span><div><h3>{{ tracker.web_title }}</h3><p>{{ tracker.web_body }}</p></div></article>
+  <article class="mode-option mode-option--download"><span class="mode-option__icon">📦</span><div><h3>{{ tracker.offline_title }}</h3><p>{{ tracker.offline_body }}</p><a class="primary-button offline-download" data-report-download href="{{ url_for('reports.download_page',lang=lang,slug=current.slug,theme='pixel') }}">⬇ {{ tracker.download }}</a></div></article>
+</section>
+<section class="tracker-guide"><span class="section-kicker">💡 {{ tracker.how_title|upper }}</span><h2>{{ tracker.how_title }}</h2><ol>{% for step in tracker.steps %}<li><b>{{ loop.index }}</b><span>{{ step }}</span></li>{% endfor %}</ol></section>
+<section class="tracker-native" data-language="{{ lang }}">
+  <header class="tracker-native__header"><div><span class="status-dot"></span><strong>{{ tracker.workspace_title }}</strong><small>{{ tracker.workspace_note }}</small></div><div class="tracker-native__actions"><button class="workbench-button workbench-button--quiet" id="tracker-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button><button class="workbench-button workbench-button--quiet" id="tracker-reset" type="button">↻ {{ 'Reset progress' if lang=='en' else 'Reiniciar progreso' }}</button></div></header>
+  <div class="tracker-canvas" id="tracker-canvas">
+    <article class="tracker-tile tracker-summary-tile" data-tracker-tile="summary" draggable="true">
+      <div class="tracker-tile-toolbar"><span class="tracker-drag-handle" title="{{ 'Drag to rearrange' if lang=='en' else 'Arrastra para reorganizar' }}">⠿</span><span>{{ 'Plan setup & summary' if lang=='en' else 'Configuración y resumen' }}</span><button class="tracker-minimize" type="button" aria-label="Minimize">−</button><span class="tracker-resize-hint">↘</span></div>
+      <div class="tracker-tile-body">
+        <div class="tracker-setup"><label>{{ 'Start date' if lang=='en' else 'Fecha inicial' }}<input id="tracker-start" type="date"></label><button class="workbench-button workbench-button--primary" id="tracker-apply" type="button">{{ 'Apply date' if lang=='en' else 'Aplicar fecha' }}</button><button class="workbench-button" id="tracker-compact" type="button">{{ 'Compact view' if lang=='en' else 'Vista compacta' }}</button><button class="workbench-button" id="tracker-print" type="button">🖨 {{ 'Print' if lang=='en' else 'Imprimir' }}</button></div>
+        <div class="tracker-metrics"><div><small>{{ 'Completed' if lang=='en' else 'Completado' }}</small><strong id="tracker-completed">0/90</strong></div><div><small>{{ 'Deferred' if lang=='en' else 'Pospuestos' }}</small><strong id="tracker-deferred">0</strong></div><div><small>{{ 'Current target' if lang=='en' else 'Objetivo actual' }}</small><strong id="tracker-target">{{ 'Day 1' if lang=='en' else 'Día 1' }}</strong></div><div><small>{{ 'Finish date' if lang=='en' else 'Fecha final' }}</small><strong id="tracker-finish">—</strong></div></div>
+        <div class="tracker-progress"><span id="tracker-progress-bar"></span></div>
+        <div class="tracker-legend"><span><i class="today"></i>{{ 'Today' if lang=='en' else 'Hoy' }}</span><span><i class="complete"></i>{{ 'Complete' if lang=='en' else 'Completado' }}</span><span><i class="deferred"></i>{{ 'Deferred / shifted' if lang=='en' else 'Pospuesto / movido' }}</span></div>
+      </div>
+    </article>
+    <article class="tracker-tile tracker-calendar-tile" data-tracker-tile="calendar" draggable="true">
+      <div class="tracker-tile-toolbar"><span class="tracker-drag-handle">⠿</span><span>{{ '90-day calendar' if lang=='en' else 'Calendario de 90 días' }}</span><button class="tracker-minimize" type="button" aria-label="Minimize">−</button><span class="tracker-resize-hint">↘</span></div>
+      <div class="tracker-tile-body"><div class="tracker-calendar" id="tracker-calendar"></div></div>
+    </article>
+    <article class="tracker-tile tracker-notes-tile" data-tracker-tile="notes" draggable="true">
+      <div class="tracker-tile-toolbar"><span class="tracker-drag-handle">⠿</span><span>{{ 'Notes & study guidance' if lang=='en' else 'Notas y guía de estudio' }}</span><button class="tracker-minimize" type="button" aria-label="Minimize">−</button><span class="tracker-resize-hint">↘</span></div>
+      <div class="tracker-tile-body"><label class="tracker-notes-label">{{ 'Personal notes / adjustments' if lang=='en' else 'Notas personales / ajustes' }}<textarea id="tracker-notes" placeholder="{{ 'Example: Genki particles need extra review Sunday.' if lang=='en' else 'Ejemplo: repasar partículas de Genki el domingo.' }}"></textarea></label><div class="tracker-guidance"><h3>{{ 'Study rhythm' if lang=='en' else 'Ritmo de estudio' }}</h3><ul><li>{{ 'Weekdays: 45–90 focused minutes.' if lang=='en' else 'Días laborables: 45–90 minutos enfocados.' }}</li><li>{{ 'Weekends: use a longer review block.' if lang=='en' else 'Fin de semana: usa un bloque largo de repaso.' }}</li><li>{{ 'Finish the current card before moving forward.' if lang=='en' else 'Termina la tarjeta actual antes de avanzar.' }}</li><li>{{ 'Use the Kana Dojo and phrase decks as daily supplements.' if lang=='en' else 'Usa Kana Dojo y los mazos de frases como suplementos diarios.' }}</li></ul></div></div>
+    </article>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/tracker.js') }}"></script>{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block title %}{{ kana.title }} — Think in Japanese{% endblock %}
+{% block content %}
+<section class="kana-heading">
+  <div><span class="section-kicker">{{ current.icon }} {{ kana.kicker }}</span><h1>{{ kana.title }}</h1><p>{{ kana.subtitle }}</p></div>
+</section>
+
+<section class="modes-card">
+  <div class="modes-card__intro"><span class="section-kicker">🧭 {{ kana.overview_title|upper }}</span><h2>{{ kana.overview_title }}</h2><p>{{ kana.overview }}</p></div>
+  <article class="mode-option"><span class="mode-option__icon">🌐</span><div><h3>{{ kana.web_title }}</h3><p>{{ kana.web_body }}</p></div></article>
+  <article class="mode-option mode-option--download"><span class="mode-option__icon">📦</span><div><h3>{{ kana.offline_title }}</h3><p>{{ kana.offline_body }}</p><a class="primary-button offline-download" data-report-download href="{{ url_for('reports.download_page',lang=lang,slug=current.slug,theme='pixel') }}">⬇ {{ kana.download }}</a></div></article>
+</section>
+
+<section class="kana-guide-grid">
+  <article class="kana-instructions"><span class="section-kicker">💡 {{ kana.how_title|upper }}</span><h2>{{ kana.how_title }}</h2><ol>{% for step in kana.steps %}<li><b>{{ loop.index }}</b><span>{{ step }}</span></li>{% endfor %}</ol></article>
+  <article class="kana-tips"><span class="section-kicker">✨ {{ kana.tips_title|upper }}</span><h2>{{ kana.tips_title }}</h2><div class="kana-tip-list">{% for tip in kana.tips %}<div class="kana-tip"><span>{{ tip.icon }}</span><div><h3>{{ tip.title }}</h3><p>{{ tip.body }}</p></div></div>{% endfor %}</div></article>
+</section>
+
+<section class="kana-native" data-language="{{ lang }}">
+  <header class="kana-native__header">
+    <div><span class="status-dot"></span><strong>{{ kana.workspace_title }}</strong><small>{{ kana.workspace_note }}</small></div>
+    <div class="kana-native__actions">
+      <button class="workbench-button workbench-button--quiet" id="kana-layout-reset" type="button">▦ {{ 'Reset tile layout' if lang=='en' else 'Restablecer diseño' }}</button>
+      <button class="workbench-button workbench-button--quiet" id="kana-reset" type="button">↻ {{ 'Reset session' if lang=='en' else 'Reiniciar sesión' }}</button>
+    </div>
+  </header>
+
+  <div class="kana-practice-grid">
+    <article class="kana-control-card kana-workbench-tile" data-kana-tile="controls" draggable="true">
+      <div class="kana-tile-toolbar" aria-label="{{ 'Tile controls' if lang=='en' else 'Controles del panel' }}"><span class="kana-drag-handle" title="{{ 'Drag to rearrange' if lang=='en' else 'Arrastra para reorganizar' }}">⠿</span><span>{{ 'Practice controls' if lang=='en' else 'Controles de práctica' }}</span><span class="kana-resize-hint">↘</span></div>
+      <span class="section-kicker">🎯 {{ 'CURRENT WORD' if lang=='en' else 'PALABRA ACTUAL' }}</span>
+      <div class="kana-current-word" id="kana-word">hai</div>
+      <div class="kana-script-switch" role="group" aria-label="Kana script">
+        <button class="active" data-script="h" type="button">Hiragana</button><button data-script="k" type="button">Katakana</button>
+      </div>
+      <div class="kana-score-grid" aria-label="Session score">
+        <div><small>{{ 'Score' if lang=='en' else 'Puntuación' }}</small><strong id="kana-score">0</strong></div>
+        <div><small>{{ 'Accuracy' if lang=='en' else 'Precisión' }}</small><strong id="kana-accuracy">100%</strong></div>
+        <div><small>{{ 'Streak' if lang=='en' else 'Racha' }}</small><strong id="kana-streak">0</strong></div>
+        <div><small>{{ 'Best' if lang=='en' else 'Mejor' }}</small><strong id="kana-best">0</strong></div>
+        <div class="wide"><small>{{ 'Played' if lang=='en' else 'Jugadas' }}</small><strong id="kana-played">0</strong></div>
+      </div>
+      <div class="kana-answer" id="kana-answer" aria-live="polite"></div>
+      <div class="kana-feedback" id="kana-feedback" aria-live="polite">{{ 'Choose the kana in order.' if lang=='en' else 'Elige los kana en orden.' }}</div>
+      <div class="kana-control-stack">
+        <button class="workbench-button workbench-button--primary" id="kana-next" type="button">{{ 'Next word' if lang=='en' else 'Siguiente palabra' }}</button>
+        <button class="workbench-button workbench-button--accent" id="kana-daily" type="button">📅 {{ 'Daily challenge: Off' if lang=='en' else 'Reto diario: No' }}</button>
+        <label>{{ 'Practice mode' if lang=='en' else 'Modo de práctica' }}<select id="kana-mode"><option value="learning">{{ 'Learning' if lang=='en' else 'Aprender' }}</option><option value="recall">{{ 'Recall' if lang=='en' else 'Memoria' }}</option><option value="kana">{{ 'Kana only' if lang=='en' else 'Solo kana' }}</option></select></label>
+        <button class="workbench-button" id="kana-shuffle" type="button">🔀 {{ 'Randomize board' if lang=='en' else 'Mezclar tabla' }}</button>
+        <button class="workbench-button" id="kana-labels" type="button">🎨 {{ 'Hide row help' if lang=='en' else 'Ocultar ayuda de filas' }}</button>
+        <button class="workbench-button" id="kana-density" type="button">↔ {{ 'Compact tiles' if lang=='en' else 'Compactar fichas' }}</button>
+        <button class="workbench-button" id="kana-mnemonics" type="button">🖼 {{ 'Hide mnemonic labels' if lang=='en' else 'Ocultar ayudas' }}</button>
+        <button class="workbench-button" id="kana-dakuten" type="button">゛{{ 'Dakuten: Off' if lang=='en' else 'Dakuten: No' }}</button>
+        <button class="workbench-button" id="kana-handakuten" type="button">゜{{ 'Handakuten: Off' if lang=='en' else 'Handakuten: No' }}</button>
+      </div>
+    </article>
+
+    <article class="kana-board-card kana-workbench-tile" data-kana-tile="board" draggable="true">
+      <div class="kana-tile-toolbar" aria-label="{{ 'Tile controls' if lang=='en' else 'Controles del panel' }}"><span class="kana-drag-handle" title="{{ 'Drag to rearrange' if lang=='en' else 'Arrastra para reorganizar' }}">⠿</span><span>{{ 'Kana board' if lang=='en' else 'Tabla de kana' }}</span><span class="kana-resize-hint">↘</span></div>
+      <div class="kana-board" id="kana-board"></div>
+    </article>
+
+    <article class="kana-session-card kana-workbench-tile" data-kana-tile="review" draggable="true">
+      <div class="kana-tile-toolbar" aria-label="{{ 'Tile controls' if lang=='en' else 'Controles del panel' }}"><span class="kana-drag-handle" title="{{ 'Drag to rearrange' if lang=='en' else 'Arrastra para reorganizar' }}">⠿</span><span>{{ 'Review and history' if lang=='en' else 'Repaso e historial' }}</span><span class="kana-resize-hint">↘</span></div>
+      <span class="section-kicker">🧠 {{ 'REVIEW & SESSION NOTES' if lang=='en' else 'REPASO Y NOTAS' }}</span>
+      <h2>{{ 'Practice deliberately' if lang=='en' else 'Practica con intención' }}</h2>
+      <ul><li>{{ 'Say the sound before clicking.' if lang=='en' else 'Di el sonido antes de hacer clic.' }}</li><li>{{ 'Use Recall once the mnemonics feel familiar.' if lang=='en' else 'Usa Memoria cuando las ayudas ya sean familiares.' }}</li><li>{{ 'Switch scripts instead of memorizing one visual form.' if lang=='en' else 'Alterna escrituras en vez de memorizar una sola forma.' }}</li></ul>
+      <div class="kana-result-summary"><div><span id="kana-correct">0</span><small>{{ 'Correct words' if lang=='en' else 'Palabras correctas' }}</small></div><div><span id="kana-attempts">0</span><small>{{ 'Attempts' if lang=='en' else 'Intentos' }}</small></div></div>
+      <div class="kana-review-box"><div class="kana-review-heading"><h3>{{ 'Most missed kana' if lang=='en' else 'Kana más fallados' }}</h3><button class="mini-button" id="kana-review-missed" type="button">{{ 'Practice missed' if lang=='en' else 'Practicar fallos' }}</button></div><div id="kana-missed" class="kana-missed-list"></div></div>
+      <div class="kana-history"><div class="kana-review-heading"><div><h3>{{ 'Game History' if lang=='en' else 'Historial de juego' }}</h3><p>{{ 'Words played, kana answers, translations, and results are saved in this browser.' if lang=='en' else 'Las palabras jugadas, respuestas en kana, traducciones y resultados se guardan en este navegador.' }}</p></div><button class="mini-button" id="kana-clear-history" type="button">{{ 'Clear history' if lang=='en' else 'Borrar historial' }}</button></div><div id="kana-history" class="kana-history-grid"></div></div>
+    </article>
+  </div>
+</section>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static',filename='js/kana-dojo.js') }}"></script>{% endblock %}

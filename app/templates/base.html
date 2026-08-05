@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="{{ lang }}" data-theme="pixel">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7d9eb">
+  <title>{% block title %}Think in Japanese{% endblock %}</title>
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+</head>
+<body data-lang="{{ lang }}" data-page="{{ current.slug if current else '' }}">
+<a class="skip-link" href="#main">{{ 'Skip to content' if lang=='en' else 'Saltar al contenido' }}</a>
+<header class="topbar">
+  <button class="icon-button menu-button" type="button" aria-label="{{ 'Open navigation' if lang=='en' else 'Abrir navegación' }}" data-drawer-open>☰</button>
+  <a class="brand" href="{{ url_for('core.home', lang=lang) }}" aria-label="Think in Japanese home">
+    <img class="brand-wordmark" src="{{ url_for('static', filename='assets/think_in_japanese_brand.svg') }}" alt="Think in Japanese — Learn naturally. Speak confidently.">
+  </a>
+  <nav class="desktop-nav" aria-label="Primary">
+    {% for p in pages[:8] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span>{{ p.en if lang=='en' else p.es }}</a>{% endfor %}
+  </nav>
+  <div class="top-actions">
+    {% if current %}<a class="report-button" data-report-download href="{{ url_for('reports.download_page',lang=lang,slug=current.slug,theme='pixel') }}" title="{{ 'Download this page' if lang=='en' else 'Descargar esta página' }}">↓ <span>{{ 'Report' if lang=='en' else 'Reporte' }}</span></a>{% endif %}
+    <a class="language-switch" href="{{ url_for('core.home',lang=('es' if lang=='en' else 'en')) if current and current.slug=='home' else url_for('core.tool_page',lang=('es' if lang=='en' else 'en'),slug=current.slug) }}">{{ 'ES' if lang=='en' else 'EN' }}</a>
+    <button class="icon-button" type="button" aria-label="{{ 'Choose theme' if lang=='en' else 'Elegir tema' }}" data-theme-open>🎨</button>
+  </div>
+</header>
+<div class="app-layout">
+<aside class="sidebar" data-drawer>
+  <button class="sidebar-collapse" type="button" aria-label="{{ 'Collapse navigation' if lang=='en' else 'Contraer navegación' }}">‹</button>
+  <div class="sidebar-head"><img src="{{ url_for('static',filename='assets/chibi_teacher_cutout.png') }}" alt=""><div><b>{{ 'Learning Workbench' if lang=='en' else 'Banco de aprendizaje' }}</b><small>{{ 'Choose a tool and keep moving.' if lang=='en' else 'Elige una herramienta y sigue avanzando.' }}</small></div><button class="icon-button close-button" data-drawer-close>×</button></div>
+  {% for group,label_en,label_es in [('learn','Learn','Aprender'),('tools','Tools','Herramientas'),('support','Support','Apoyo')] %}
+  <div class="nav-label">{{ label_en if lang=='en' else label_es }}</div>
+  {% for p in pages if p.group==group %}<a class="side-link {{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span class="nav-icon">{{ p.icon }}</span><span>{{ p.en if lang=='en' else p.es }}</span></a>{% endfor %}
+  {% endfor %}
+  <div class="study-tip"><b>💡 {{ 'Study Tip' if lang=='en' else 'Consejo' }}</b><p>{{ 'Short daily sessions beat long cramming sessions. Consistency is the key!' if lang=='en' else 'Las sesiones cortas diarias superan las sesiones largas. ¡La constancia es la clave!' }} 🌸</p></div>
+</aside>
+<div class="drawer-scrim" data-drawer-close></div>
+<main id="main" class="main-content">{% block content %}{% endblock %}</main>
+</div>
+<nav class="mobile-tabs" aria-label="Mobile navigation">
+{% for p in [pages[0],pages[1],pages[2],pages[7]] %}<a class="{{ 'active' if current and current.slug==p.slug else '' }}" href="{{ url_for('core.home',lang=lang) if p.slug=='home' else url_for('core.tool_page',lang=lang,slug=p.slug) }}"><span>{{ p.icon }}</span><small>{{ p.en if lang=='en' else p.es }}</small></a>{% endfor %}<button data-drawer-open><span>☰</span><small>{{ 'More' if lang=='en' else 'Más' }}</small></button>
+</nav>
+<div class="theme-panel" data-theme-panel role="dialog" aria-label="Theme selector"><div class="theme-title"><b>🎨 {{ 'Choose your style' if lang=='en' else 'Elige tu estilo' }}</b><button data-theme-close>×</button></div><button data-set-theme="pixel"><i class="swatch pixel"></i><span><b>Pixel Pastel</b><small>{{ 'Bright, playful, and soft' if lang=='en' else 'Brillante, divertido y suave' }}</small></span><em>✓</em></button><button data-set-theme="garden"><i class="swatch garden"></i><span><b>Garden Cream</b><small>{{ 'Warm, calm, and natural' if lang=='en' else 'Cálido, tranquilo y natural' }}</small></span><em>✓</em></button><button data-set-theme="night"><i class="swatch night"></i><span><b>Tokyo Night</b><small>{{ 'Focused, vivid, and dark' if lang=='en' else 'Enfocado, vivo y oscuro' }}</small></span><em>✓</em></button></div>
+<script type="module" src="{{ url_for('static',filename='js/app.js') }}"></script>{% block scripts %}{% endblock %}
+</body></html>
