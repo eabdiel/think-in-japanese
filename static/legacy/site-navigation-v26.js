@@ -51,7 +51,6 @@
       if(!opening)closeSubmenus();
     });
   }
-  window.TIJTheme=function(theme){applyTheme(theme,true);};
   function init(){
     applyTheme(readSavedTheme(),false);
     document.querySelectorAll('.theme-btn').forEach(function(btn){
