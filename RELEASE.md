@@ -1,33 +1,46 @@
-# Think in Japanese V2.24 — Native Sentence Builder Parity
+# Think in Japanese V2.25 — Michel Thomas & Furigana Games Parity
 
 **Release date:** August 4, 2026  
 **Author:** Edwin A. Rodriguez / ProgreTech
 
 ## Summary
 
-This release completes the native Flask reconstruction of the Sentence Builder page so it includes the major learning areas from the standalone HTML version instead of only the controls and drag-and-drop exercise.
+This release brings the native Flask Michel Thomas Companion and Furigana Games pages much closer to their standalone HTML counterparts while preserving the shared draggable, horizontally resizable, minimizable workbench framework.
 
-## Added
+## Michel Thomas Companion
 
-- Native Color Key tile with the original grammar-role color system.
-- Native Structured Syllabus tile.
-- Native Most-Used Core Sentence Patterns tile with category filtering and show-all behavior.
-- Native Pattern Flashcards tile with flip, previous, next, and shuffle controls.
-- Native Mini Grammar Cheat Sheet tile.
-- Expanded sentence-building controls with difficulty, validation, reset, reveal, and pattern reference.
-- Color-coded sentence pieces and examples.
-- English and Spanish labels, instructions, controls, and grammar guidance.
-- Drag, horizontal resize, minimize, and local layout persistence for all Sentence Builder tiles.
+- Restored the unofficial-companion explanation and local-progress model.
+- Added a course-progress tile with completed-CD count, percentage, progress bar, and reset action.
+- Added the 6-week / 12-week calendar builder with configurable start date and pace.
+- Added the complete CD-by-CD syllabus with locally saved completion checkboxes.
+- Added the detailed Foundation and Advanced track reference with 134 source-derived track entries, search, expand-all, and collapse-all actions.
+- Added reading and phrase reinforcement cards with Japanese, romaji, meaning, shuffle, romaji visibility, and browser speech playback.
+- Added the kana writing lab with 16 source-derived writing prompts.
+- Added recall flashcards with flip, previous, and next controls.
+- Added the suggested weekly routine.
+- Applied English and Spanish labels and guidance while preserving the source course terminology.
 
-## Preserved
+## Furigana Games
 
-- `main.py` as the local PyCharm entry point.
-- Original standalone HTML as the downloadable offline version.
-- Shared Pixel Pastel, Garden Cream, and Tokyo Night themes.
-- Existing native Flask pages and their local browser state.
+- Replaced the generic card wall with the grouped system-by-system report layout used by the standalone HTML page.
+- Added collection metrics for displayed games, systems, and verified product IDs.
+- Added quick platform chips alongside search and system filtering.
+- Restored tables with English title, Japanese title, and Japanese product ID columns.
+- Added responsive mobile report cards that avoid horizontal scrolling.
+- Preserved the 114 source-derived game records and preferred platform order.
+- Added localized English and Spanish labels and instructions.
+
+## Workbench behavior
+
+- Every added section is a draggable, horizontally resizable, and minimizable tile.
+- Tile layout and tool state remain browser-local.
+- Pixel Pastel, Garden Cream, and Tokyo Night styling is supported.
+- Original standalone HTML files remain available through **Download offline version** only.
+- `main.py` remains the local PyCharm execution entry point.
 
 ## Modified files
 
+- `app/data/tool_content.json`
 - `app/templates/native_tool.html`
 - `app/static/js/native_tools.js`
 - `app/static/css/app.css`
@@ -37,4 +50,5 @@ This release completes the native Flask reconstruction of the Sentence Builder p
 
 - Python source compilation completed successfully.
 - JavaScript syntax validation completed successfully with Node.js.
-- Full Flask request testing was not available in the build environment because Flask is not installed there.
+- JSON content validation completed successfully.
+- ZIP integrity validation completed successfully.

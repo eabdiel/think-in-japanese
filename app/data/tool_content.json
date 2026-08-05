@@ -8120,7 +8120,850 @@
         "How do you say “if I go to Japan”?",
         "にほんにいったら。<br><span class=\"romaji\">Nihon ni ittara</span>"
       ]
-    ]
+    ],
+    "tracks": [
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 1",
+        "content": "Introduction Pronouncing Japanese. Japanese words in English: kimono; karate; karaoke. English words in Japanese are adjusted to Japanese speech patterns: kamera ‘camera’; dejikame ‘digital camera’; hoteru ‘hotel’; aisu kurı-mu ‘ice cream’; ko-hı- ‘coffee’; T. shatsu ‘T-shirt’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 2",
+        "content": "o kudasai ‘please may I have’; aisu kurı-mu o kudasai ‘Ice cream may I have’ = ‘May I have an ice cream, please?’ In Japanese, you don’t need words for ‘a’ or ‘the’. sumimasen ‘excuse me’; sumimasen aisu kurı-mu o kudasai ‘Excuse me, may I have an ice cream, please?’ kore ‘this’; sore ‘that’; are ‘that over there’; sumimasen kore o kudasai ‘Excuse me, please may I have this?’ hai ‘yes’; do-zo ‘go ahead’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 3",
+        "content": "tabemasu ‘to eat; I eat; she eats; he eats; you eat’: aisu kurı-mu o tabemasu ‘Ice cream [o] eat’ = ‘I eat ice cream’. sandoicchi ‘sandwich’ kore o tabemasu ‘This [o] eat’ = ‘I eat this’. This -masu form of Japanese verbs also covers the sense of ‘will’ (the future): kore o tabemasu ‘I will eat this’. nomimasu means “to drink / drink / will drink”; examples include kōhī o nomimasu (drink coffee), plus jūsu (juice) and bīru (beer)."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 4",
+        "content": "ashita ‘tomorrow’: ashita ko-hı- o nomimasu ‘Tomorrow coffee [o] drink’ = ‘I will drink coffee tomorrow’ – the time expression generally comes first in a Japanese sentence. ashita ko-hı- o nomimasu could also mean ‘You will drink coffee tomorrow’, ‘He will drink coffee tomorrow’, ‘They will drink coffee tomorrow’ and so on, as the Japanese -masu verb form can refer to any person as the doer of the action of the verb, but in this track listing we will give the English translation with the person who was mentioned on the recording. sushi ‘rice with vinegar’: ashita sushi o tabemasu ‘I will eat sushi tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 5",
+        "content": "ka = spoken question mark: sushi o tabemasu ka ‘Sushi [o] eat [question mark]’ = ‘Do you / Will you eat sushi?’ hai, tabemasu ‘Yes, I eat’ = ‘Yes, I do / will eat it’ (no word for ‘it’ in this sort of expression)."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 6",
+        "content": "tokidoki ‘sometimes’: tokidoki sushi o tabemasu ‘Sometimes I eat sushi’. mainichi ‘every day’: mainichi ko-hı- o nomimasu ‘Every day I drink coffee’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 7",
+        "content": "mimasu ‘to watch, look, see; I watch, look, see; I will watch, look, see’. terebi ‘television’: mainichi terebi o mimasu ‘Every day television [o] watch’ = ‘I watch television every day’: o is a marker to show which item in a sentence has the action done to it. ashita terebi o mimasu ‘I will watch television tomorrow’; mainichi terebi o mimasu ka ‘Do you watch television every day?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 8",
+        "content": "iie ‘no’: iie, sandoicchi o tabemasu ‘No, I will eat a sandwich / sandwiches’. In general there is no distinction in Japanese between singular and plural"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 9",
+        "content": "soshite ‘and’ (to link sentences): ashita terebi o mimasu. Soshite sushi o tabemasu ‘Tomorrow I will watch television. And I will eat sushi’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 10",
+        "content": "konban terebi o mimasu ka ‘Will you watch television tonight?’ mainichi terebi o mimasu ka ‘Do you watch television every day?’ hai, mimasu ‘Yes, I do (watch)’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 11",
+        "content": "yomimasu ‘to read’ manga ‘comic book’: manga o yomimasu ka ‘Do you read comic books?’ nani ‘what’: nani o tabemasu ka ‘What [marker o] eat [question mark]’ = ‘What will you eat?’ konban nani o tabemasu ka ‘What will you eat tonight?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 12",
+        "content": "To form the negative, the ‘not’ or ‘don’t / doesn’t’ part of the verb, we remove the -masu ending and replace it by -masen: tabemasu ‘I eat’; tabemasen ‘I don’t eat’. This form also covers the future: konban terebi o mimasen ‘Tonight television [marker o] not watch’ = ‘I won’t watch television tonight’. manga o yomimasu ka ‘Do you read comic books?’ iie yomimasen ‘No, I don’t read (them)’ = ‘No, I don’t’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 13",
+        "content": "kaimasu ‘to buy’: ashita kamera o kaimasu ‘Tomorrow I’ll buy / I’m going to buy a camera’. The way the Japanese language is used shows respect. The -masu verbs show politeness. If we use the negative (-masen) part of the verb with the"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 1",
+        "track": "Track 14",
+        "content": "eiga ‘film, movie’: eiga o mimasen ka ‘Won’t you / Would you like to watch a film?’ konsa-to ‘concert’: konban konsa-to o mimasen ka ‘Won’t you watch a concert tonight?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 1",
+        "content": "dore ‘which’: dore o kaimasu ka ‘Which [marker o] buy [question mark]’ = ‘Which will you buy?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 2",
+        "content": "desu ‘is; it is’: ko-hı- desu ‘It is coffee’ (we don’t use the marker o with desu because desu doesn’t indicate an action). ko-hı- desu ka ‘Is it coffee?’ nan desu ka ‘What is (it) [question mark]’ = ‘What is it?’ (nani ‘what’ is shortened to nan before desu ‘is’). desu also covers the plural verb form ‘are’: manga desu = ‘It is a comic book’ or ‘They are comic books’ (no word for ‘it’ or ‘they’ in this context). suki desu ‘I (etc.) like’, literally: suki ‘likeable’, desu ‘it is’: ‘likeable it is’ = ‘I (etc.) like’. kara = indication of reason, so can be translated by ‘so, therefore’: suki desu kara kaimasu ‘Likeable (it) is therefore buy’ = ‘I like it therefore I’ll buy it’. In Japanese we give the reason first, then the result, so ‘I’ll buy it because I like it’ is also suki desu kara kaimasu."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 3",
+        "content": "suki desu kara konban manga o yomimasu ‘I like it therefore I’ll read the comic book tonight’; suki desu kara ko-hı- o kudasai ‘I like it therefore may I have some coffee?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 4",
+        "content": "omoshiroi ‘interesting’: omoshiroi desu ka ‘Is it interesting?’ omoshiroi desu kara terebi o mimasu ‘It is interesting so I’ll watch television’; omoshiroi desu kara ashita eiga o mimasu ‘It’s interesting therefore I’ll watch a / the film tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 5",
+        "content": "oishii ‘delicious’: oishii desu ka ‘Is it delicious?’; oishii desu kara konban tabemasu ‘It’s delicious so I’ll eat it tonight’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 6",
+        "content": "do-shite ‘why’: do-shite manga o yomimasu ka ‘Why comic books [marker o] read [question mark]’ = ‘Why do you read comic books?’ omoshiroi desu kara ‘They are interesting therefore’ = ‘Because they are interesting’: kara, the word which we use to give a reason, can also mean ‘because’. do-shite kaimasu ka ‘Why are you going to buy it?’ suki desu kara ‘Because I like it’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 7",
+        "content": "omoshiroi konsa-to ‘an interesting concert’; oishii ko-hı- desu ka ‘Is it (a) delicious coffee?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 8",
+        "content": "zehi ‘certainly’ konban omoshiroi eiga o mimasen ka ‘Tonight interesting film [marker o] not watch [question mark]’ = ‘Won’t you watch an interesting film tonight?’ = ‘Would you like to watch an interesting film tonight?’ hai, zehi ‘Yes, certainly’ = Yes, I would’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 9",
+        "content": "kare ‘he’; kanojo ‘she’ – as ‘he’ and ‘she’ these are needed only for clarification or emphasis. to ‘with’. to is a marker which follows the word it belongs with: kare to ‘he with’ = ‘with him’; kare to eiga o mimasu ‘He with film [marker o] watch’ = ‘I will watch a film with him’; kanojo to konban eiga o mimasu / konban kanojo to eiga o mimasu ‘I will watch a film with her tonight’ (the order of kanojo to and konban can be interchanged)."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 10",
+        "content": "To make a suggestion in Japanese, in English ‘Let’s …’, take off the -masu ending from the verb and replace by -masho-: mimasho- ‘let’s watch’: eiga o mimasho- ‘Film [marker o] let’s watch’ = ‘Let’s watch a film’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 11",
+        "content": "shimasu ‘to do / to play’; gorufu ‘golf’; tokidoki gorufu o shimasu ‘Sometimes golf [marker o] play’ = ‘I sometimes play golf’; konban gorufu o shimasho- ‘Let’s play golf tonight’. tenisu ‘tennis’; konban tenisu o shimasen ka ‘Tonight tennis [marker o] not play [question mark]’ ‘Won’t you play tennis tonight?’ shigoto ‘work’: shigoto o shimasu ‘Work [marker o] do’ = ‘I work’; kanojo to shigoto o shimasu ‘I work with her’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 12",
+        "content": "To say ‘shall we’, we use the question mark word ka with the verb suggestion form -masho-: shigoto o shimasho- ka ‘Work [marker o] let’s do [question mark]’ = ‘Shall we work?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 2",
+        "track": "Track 13",
+        "content": "ashita shigoto o shimasu kara konban gorufu o shimasho- ka ‘Tomorrow we will work therefore shall we play golf tonight?’ rirakkusu o shimasu ‘relax [marker o] do’ = ‘to relax’: rirakkusu o shimasho-"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 1",
+        "content": "ikimasu ‘to go’; ikimasen ‘I don’t / won’t go’; ikimasen ka ‘Won’t you go?’ = ‘Would you like to go?’; ikimasho- ka ‘Shall we go?’; ikimasho- ‘Let’s go’. To-kyo- ‘Tokyo’; Rondon ‘London’; Nyu- Yo-ku ‘New York’; Nihon ‘Japan’ from ni = ‘day, sun’; hon = ‘root, source’ so ‘the root of the sun’, or ‘Land of the Rising Sun’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 2",
+        "content": "Word order in sentences with time expressions and places: either the time expression or the place can come first: mainichi Rondon ni ikimasu / Rondon ni mainichi ikimasu ‘I go to London every day’. Similarly the position of a phrase describing how something happens, e.g. kare to ‘with him’, is flexible. But the markers (ni, to) must be after the words they belong to and the verb must go at the end."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 3",
+        "content": "koko ‘this place’ = ‘here’; soko ‘that place’ = ‘there’; asoko ‘that place over there’ = ‘over there’ ashita soko ni ikimasu ‘Tomorrow there to go’ = ‘I will go there tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 4",
+        "content": "mainichi shigoto ni ikimasu ‘Every day work to go’ = ‘I go to work every day’. nemui ‘sleepy’: nemui desu ‘Sleepy be’ = ‘I am / you are / he is etc. sleepy’; nemui desu ka ‘Sleepy be [question mark]’ = ‘Are you sleepy?’ konban nemui desu kara ashita shigoto ni ikimasen ‘I am sleepy tonight therefore I won’t go to work tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 5",
+        "content": "ga ‘but’. To contrast the ‘but’ – ‘every day … but tomorrow …’ – Japanese uses a marker wa, placed after the contrasting word: mainichi shigoto ni ikimasu ga ashita wa rirakkusu o shimasu ‘Every day I go to work but tomorrow I’ll relax’. nemui also covers sense of English ‘tired’: mainichi shigoto ni ikimasu ga nemui desu kara ashita wa ikimasen ‘I go to work every day but because I am tired I am not going tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 6",
+        "content": "If we want to stress or clarify the person doing the action, the word for the person is followed by the marker wa: kare wa tabemasu ‘He [marker wa] eat’ = ‘He eats’. If we say both a time expression and the person doing the action, the word order is flexible: ashita kare wa / kare wa ashita shigoto ni ikimasu ‘He goes to work tomorrow’. If we have a sentence with two halves, and the same person is doing the action in both halves, we don’t need to repeat the person in the second half of the sentence: kare wa nemui desu kara konban shigoto ni ikimasen ‘He’s sleepy so he’s not going to work tonight’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 7",
+        "content": "doko ni ‘where to’ = ‘to where’: doko ni ikimasu ka ‘Where to go [question mark]’ = ‘Where are you going?’; kare wa doko ni ikimasu ka ‘Where is he going?’ doko desu ka ‘Where be [question mark]’ = ‘Where is it?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 8",
+        "content": "To convey the sense of ‘want’ we put the ending -tai desu (‘want is’) onto the verb, having taken off the -masu ending: tenisu o shitai desu ‘Tennis [marker o] play want is’= ‘I want to play tennis’; nani o nomitai desu ka ‘What do you want to drink?’; dore o kaitai desu ka ‘Which do you want to buy?’ do-shite hoteru ni ikitai desu ka ‘Why do you want to go to a hotel?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 9",
+        "content": "depa-to ‘department store’; sake ‘rice wine’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 10",
+        "content": "manga o kaitai desu kara depa-to ni ikimasu ‘Because I want to buy a comic book / I want to buy a comic book therefore I’m going to the department store’. shimasu also has sense of ‘to make’; denwa ‘phone’; denwa o shimasu ‘Phone [marker o] to make’ = ‘I make a phone call’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 11",
+        "content": "We also use the marker ni about a person: kanojo ni denwa o shimasu ‘She to phone [marker o] make’ = ‘I make a phone call to her’ = ‘I ring /call her’; konban kare ni / kare ni konban denwa o shimasho- ka ‘Shall we ring / call him tonight?’; nemui desu kara kanojo ni denwa o shimasen ‘Because I’m sleepy I won’t phone her tonight / I’m sleepy therefore I won’t phone her tonight’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 3",
+        "track": "Track 12",
+        "content": "kare ni denwa o shitai desu ga nemui desu kara konban (kare ni) denwa o shimasen ‘I want to phone / call him but I’m sleepy so I won’t phone / call him tonight’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 1",
+        "content": "Japanese sentence order: the verb goes at the end; the time expression and the doer of the action, followed by the marker wa (if needed for stress or clarification), are interchangeable, at the beginning of the sentence. The other information is fairly flexible as to order because the markers tell us what function the nouns (people, items or places) carry out in the sentence."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 2",
+        "content": "tomodachi ‘friend’: tomodachi to ikimasu ‘Friend with go’ = ‘I go with my friend’ – we don’t need to say ‘my’ if it’s clear from the context. tomodachi wa nemui desu kara ashita soko ni ikimasen ‘My friend is tired so she’s not going there tomorrow’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 3",
+        "content": "Layers of politeness in Japanese: ryo-shin ‘parents’; to be respectful about someone else’s parents add go-: go-ryo-shin ‘his / her / your parents’. ashita ryo-shin wa / ryo-shin wa ashita soko ni ikimasu ‘My parents will go there tomorrow’; go-ryo-shin wa ashita soko ni ikimasu ka ‘Will your parents go there tomorrow?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 4",
+        "content": "go-ryo-shin wa doko ni ikimasu ka ‘[Respectful go-] parents where to go [question mark]’ = ‘Where are your parents going?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 5",
+        "content": "The marker no is like the ‘apostrophe s’ construction in English, or it has a meaning like that of ‘of’ in English. It links two nouns: koko no sushi ‘Here’s sushi’ = ‘The sushi from here’; koko no sushi wa oishii desu ‘The sushi from here is delicious’. We need the marker wa in this desu sentence because we’re saying more about the sushi, not just sushi desu ‘It is sushi’, and so desu doesn’t immediately follow the noun: oishii comes between the noun and desu. soko no manga o yomitai desu ‘I want to read a comic from there’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 6",
+        "content": "koko no ko-hı- o nomimasho- ka ‘Shall we drink some coffee from here?’ repo-to ‘report’: Suzuki-san no repo-to o yomimasho- ‘Let’s read Miss Suzuki’s report’. koko no hoteru no ko-hı- ‘Here’s hotel’s coffee’ = ‘The coffee from the hotel here’; koko no hoteru no ko-hı- o nomimasho- ‘Let’s drink the coffee from the hotel here’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 7",
+        "content": "hoteru wa doko desu ka ‘Hotel [marker wa] where be [question mark]’ = ‘Where is the hotel?’: wa is used because we’re flagging up that it’s the hotel we’re asking about."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 8",
+        "content": "Nihon no terebi ‘Japan’s TV’ = ‘A Japanese TV’; Rondon no depa-to ‘A London department store’. keitai (denwa) ‘mobile (phone) / cellphone’ – we can leave out denwa: watashi no keitai desu ‘It’s my mobile / cellphone’. arigato- ‘thanks’; arigato- gozaimasu ‘thank you very much’ watashi no keitai wa doko desu ka ‘I of mobile / cellphone [marker wa] where be [question mark]’ = ‘Where’s my mobile phone?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 9",
+        "content": "tasukarimashita ‘you’ve helped me’ = ‘thank you’. This ending -mashita indicates the past tense: tabemasu ‘I eat’; tabemashita ‘I ate’. kino- ‘yesterday’: kino- kanojo wa tomodachi to tenisu o shimashita ‘Yesterday she played tennis with her friend’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 4",
+        "track": "Track 10",
+        "content": "kino- (watashi wa) gorufu o shimashita ga ashita wa shigoto o shimasu ‘Yesterday I played golf but tomorrow I will work’. kyo- ‘today’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 1",
+        "content": "kino- shigoto o shimashita ga kyo- wa rirakkusu o shimasu ‘Yesterday I worked but today I will relax’. nani o shimashita ka ‘What did you do?’; doko ni ikimashita ka ‘Where did you go?’ resutoran ‘restaurant’: asoko no resutoran ni ikimashita ‘I went to the restaurant over there’. suki desu kara kaimashita ‘Likeable it is therefore I bought’ = ‘I bought it because I like it’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 2",
+        "content": "The past tense of desu is deshita: kanojo wa tomodachi deshita ‘She was a friend’. The past negative of -masu verbs is -masen deshita: tabemasen deshita ‘don’t eat was’ = ‘I didn’t eat’: tabemasen ‘I don’t eat’; tabemasen deshita ‘I didn’t eat’. watashi wa kino- terebi o mimasen deshita ‘I didn’t watch TV yesterday’. suki deshita ga kino- sore o kaimasen deshita ‘I liked it but I didn’t buy that yesterday’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 3",
+        "content": "shu- ‘week’; nichi ‘day’; mainichi ‘every day’; maishu- ‘every week’; maishu-"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 4",
+        "content": "maishu- Rondon ni ikimasu ga kyo- wa ikimasen ‘Every week I go to London but today I’m not going’. senshu- ‘last week’: senshu- soko no hoteru ni ikimashita ‘Last week there [linking marker no] hotel to go’ = ‘Last week I went to a/the hotel there’. raishu- ‘next week’: raishu- kanojo wa kare to soko ni ikimasu ‘Next week she will go there with him’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 5",
+        "content": "suki desu kara raishu- Rondon ni ikitai desu ‘Likeable it is therefore next week London to go want is’ = ‘I want to go to London next week because I like it’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 6",
+        "content": "kino- To-kyo- ni ikimashita ga kyo- wa Fuji-san ni ikimasu ‘I went to Tokyo yesterday but today I will go to Mount Fuji’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 7",
+        "content": "Japanese word order: watashi wa terebi o tomodachi to / tomodachi to terebi o mimasu ‘I watch television with a friend’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 8",
+        "content": "The marker de is used to indicate the place where something happens, e.g. hoteru de ‘in the hotel’: hoteru de yomimasu ‘I read in the hotel’. uchi ‘home’; uchi de ‘in the home; at home’: uchi de tabemasu ‘I eat at home’; resutoran de tabemasu ‘I eat at a restaurant’; soko de tabemasu ‘There at I eat’ = ‘I eat there’; soko de tabemashita ‘I ate there’. kare wa Rondon no depa-to de kamera o kaimasu ‘He buys / will buy a camera in a London department store’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 5",
+        "track": "Track 9",
+        "content": "kare wa Nihon no hoteru de sushi o tomodachi to tabemasu ‘He eats sushi with a friend at a Japanese hotel’. densha ‘train’: densha de yomimasu ‘She reads on the train’. hon ‘book’: densha de Nihon no hon o yomimasu ‘She reads a Japanese book on the train’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 1",
+        "content": "doko desu ka ‘Where is it?’; doko de kaimashita ka ‘Where at bought [question mark]’ = ‘Where did you buy it?’; doko ni ikimashita ka ‘Where to went [question mark]’ = ‘Where did you go?’ dokonimo ‘to nowhere’. This is always used with the verb in the negative: dokonimo ikimasen deshita ‘To nowhere not went’ = ‘I went nowhere; I didn’t go anywhere’; do-shite konban dokonimo ikimasen ka ‘Why tonight to nowhere not go [question mark]’ = ‘Why are you not going anywhere tonight?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 2",
+        "content": "nanimo ‘nothing’: used with the verb in the negative: nanimo shimasen ‘Nothing not do’ = ‘I do nothing, I don’t do anything’. nanimo doesn’t need the o marker because the -mo at the end of nanimo has replaced it."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 3",
+        "content": "kino- dokonimo ikimasen deshita ga ashita wa Rondon ni ikimasu ‘Yesterday he didn’t go anywhere but tomorrow he will go to London’; kino- nanimo tabemasen deshita ga kyo- wa sushi o tabetai desu ‘Yesterday I didn’t eat anything but today I want to eat sushi’; senshu- Rondon ni ikimashita ga kyo- wa nemui desu kara dokonimo ikimasen ‘Last week I went to London but today I’m tired so I’m not going anywhere’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 4",
+        "content": "uchi de ‘at home’. The marker de also means ‘by, with, by means of’, as in ‘with a pen’, ‘by train’. This is a different ‘with’ from the marker to, which means ‘in the company of’: kare to ‘with him’. hashi ‘chopsticks’; hashi de tabemasu ‘I eat with chopsticks’. naifu ‘knife’; fo-ku ‘fork’; naifu to fo-ku; ‘knife and fork’; naifu to fo-ku de ‘with a knife and fork’. We use the marker to to mean ‘and’ when we want to link two nouns. If we want to say ‘and’ to link two sentences, we use soshite: sushi o tabemasu. Soshite bı-ru o nomimasu. ‘I eat sushi. And I drink beer’. hashi de uchi de tabemasu ‘I eat with chopsticks at home’; kare wa naifu to fo-ku de tabemasu ‘He eats with a knife and fork’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 5",
+        "content": "In polite company, the Japanese sometimes use o before certain words: ohashi ‘chopsticks’; osushi ‘sushi’; kanojo wa osushi o ohashi de tabemasu ‘She eats sushi with chopsticks’; osake ‘sake’. densha de ‘by train’: watashi wa densha de Rondon ni ikimasu ‘I go to London by train’; basu ‘bus’; basu de ‘by bus’. kimasu ‘to come’: kare wa resutoran ni kimasu ‘He comes to the restaurant’. takushı- ‘taxi’: kanojo wa tomodachı- to takushı- de hoteru ni kimasu ‘She comes to the hotel by taxi with a friend’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 6",
+        "content": "hanashimasu ‘to speak’: kanojo wa denwa de hanashimasu ‘She by means of the phone speak’ = ‘She speaks on the phone’; kare wa denwa de tomodachi to hanashimasu ‘He speaks with his friend on the phone’; watashi to ‘with me’: ryo-shin wa watashi to denwa de hanashimasu ‘My parents speak with me on the phone’. We can add o to denwa to show more politeness: kanojo wa odenwa de hanashimasu ‘She speaks on the phone’. denwa de hanashimasu ‘to speak on the phone’; (o)denwa o shimasu ‘to make a phone call’: kare wa odenwa o shimashita ‘He made a phone call’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 7",
+        "content": "We convey the concept of ‘while’ by replacing the -masu ending of the verb with -nagara: yominagara tabemasu ‘I read while I eat’; tabenagara terebi o mimasu ‘I eat while I watch TV, I eat while watching TV’; hanashinagara gorufu o shimasu ‘I talk while I play golf’. The -nagara ending is added to the first verb."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 8",
+        "content": "wain ‘wine’: wain o nominagara hanashimasu ‘I drink wine while I talk’. The -nagara ending can only be used if the same person is doing both actions: nominagara shigoto o shimashita ‘I drank while I worked, I drank while working’; shigoto o shinagara nomimashita ‘I worked while I drank, I worked while drinking’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 9",
+        "content": "-go ‘language’. We add this to the name of the country to get the language: Nihongo ‘Japanese (language)’. Furansu ‘France’: Furansugo ‘French (language)’. Nihongo o hanashimasu ‘Japanese language [marker o] speak’ = ‘He speaks Japanese’. Eigo ‘English (language)’: Eigo o hanashimasu ‘He speaks English’. Nihongo o hanashimasen ‘He doesn’t speak Japanese’; (o)denwa de Nihongo o hanashimasu ‘I speak Japanese on the phone’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 6",
+        "track": "Track 10",
+        "content": "Eigo de ‘by means of English, in English’. Nihongo o hanashimasu ‘I speak Japanese’; Nihongo de hanashimasu ‘I speak in Japanese’. Eigo o hanashimasu ga Tanaka-san to Nihongo de hanashimasu ‘I speak English but with Mr Tanaka I speak in Japanese’; Nihongo de hanashimasho-"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 1",
+        "content": "To specify what we like, or what is likeable (using suki desu), we use the marker ga. This is a different use of ga from when it means ‘but’. Nihon ga suki desu ‘Japan [marker ga] likeable is’ = ‘I like Japan’; Nihongo ga suki desu ‘I like Japanese (language)’; osushi ga suki desu ‘I like sushi’. When we say the person who does the liking, or for whom the item is likeable, we put the marker wa after the person: kare wa gorufu ga suki desu ‘He [marker wa] golf [marker ga] likeable is’ = ‘He likes golf’. kirai desu ‘hateful is’ = ‘I (etc.) hate, dislike’. (This is a very strong expression, which shouldn’t be used about people.) watashi wa sushi ga kirai desu ‘I [marker wa] sushi [marker ga] hateful is’ = ‘As for me, sushi is hateful’ = ‘I don’t like sushi’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 2",
+        "content": "tenisu ga suki desu kara soko ni ikitai desu ‘I like tennis so I want to go there’. When we say ‘I like’ or ‘I dislike’ in Japanese we’re not using -masu verbs: suki desu and kirai desu mean ‘likeable (it) is’ and ‘hateful (it) is’. So we don’t use the marker o to indicate what it is we like or hate; instead we use the marker ga: kore ga kirai desu kara sore o tabetai desu ‘I dislike this so I want to eat that’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 3",
+        "content": "terebi ga kirai desu kara manga o yominagara kore o tabemasu ‘I dislike TV so I’ll read a comic book while I eat this’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 4",
+        "content": "koko no resutoran ga suki desu kara shigoto o shinagara koko de tabemashita ‘Because I like the restaurants round here I ate here while I worked’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 5",
+        "content": "jo-zu desu ‘to be good at’: kanojo wa Nihongo ga jo-zu desu ‘She [marker wa] Japanese language [marker ga] good at be’ = ‘As for her, at Japanese she is good’ = ‘She is good at Japanese’. heta desu ‘to be bad at’: tenisu ga heta desu ‘I’m bad at tennis’. When we contrast two things we use wa as a highlighter: kino- soko ni ikimashita ga ashita wa To-kyo- ni ikimasu ‘Yesterday I went there but tomorrow I will go to Tokyo’. Similarly, when we contrast something that someone is good at with what they are bad at, or something that someone likes with what they dislike, we change the ga marker to wa for the second item: gorufu ga jo-zu desu ga tenisu wa heta desu ‘Golf [marker ga] good be but tennis [marker wa] bad be’ = ‘At golf he’s good but as for tennis he’s bad’ = ‘He’s good at golf but he’s bad at tennis’; kanojo wa Furansugo ga heta desu ga Nihongo wa jo-zu desu ‘She’s bad at French but she’s good at Japanese’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 6",
+        "content": "imasu ‘to be, exist’, referring to people or animals; arimasu ‘to be, exist’, referring to inanimate objects, i.e. things that don’t breathe. These verbs also convey the sense of ‘to have’: ‘Does a mobile phone / cellphone exist (for you)?’ = ‘Do you have a mobile phone?’ The item that we’re talking about is followed by the marker ga: tomodachi ga imasu ‘Friends exist’ = ‘I have friends’; keitai ga arimasu ‘Mobile phone exists’ = ‘I have a mobile phone’; shigoto ga arimasu ‘I have work’. When we specify who has the item, or for whom an item exists, we follow the person with the marker wa: watashi wa shigoto ga arimasu ‘As for me, work exists’ = ‘I have work’; kare wa tomodachi ga imasu ‘He has friends’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 7",
+        "content": "kanojo wa shigoto ga arimasu ka ‘Does she have work?’; kanojo wa Nihon no tomodachi ga imasu ka ‘Does she have Japanese friends?’ yo-yaku ‘reservation’: hoteru no yo-yaku ‘hotel reservation’; kare wa hoteru no yo-yaku ga arimasu ‘He has a hotel reservation’; yo-yaku ga arimasu kara koko de tabetai desu ‘Because I have a reservation I want to eat here’ = ‘I want to eat here because I have a reservation’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 8",
+        "content": "kare wa keitai ga arimasu kara watashi wa denwa o shimasu ‘I will phone / call him because he has a mobile / cellphone’: because the two parts of the sentence are about different people doing the actions (having the phone and phoning) we have to state both kare (‘he’) and watashi (‘I’). To make it clear who it is that I will phone we can add kare ni (‘to him’): kare wa keitai ga arimasu kara watashi wa kare ni denwa o shimasu. Nihon no tomodachi ga imasu kara Nihongo de hanashimasu ‘I will speak in Japanese because I have Japanese friends’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 9",
+        "content": "kyo- watashi wa shigoto ga arimasu ga ashita wa arimasen ‘Today, as for me, work exists but tomorrow does not exist’ = ‘I have work today but not tomorrow’. konshu- ‘this week’: konshu- shigoto ga arimasu ga raishu- wa arimasen ‘I have work this week but not next week’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 7",
+        "track": "Track 10",
+        "content": "When we specify where someone or something exists, using imasu or arimasu, the place is followed by the marker ni: watashi wa Rondon ni tomodachi ga imasu ‘As for me in London friends exist’ = ‘I have friends in London’. (In this context ni has a different function from before, when it meant ‘to’ in the sense of direction towards.) With imasu and arimasu, when we specify the place, we have to say it before the item: hoteru ni denwa ga arimasu ‘There is a phone in the hotel’; kare wa uchi ni denwa ga arimasu ‘He has a phone at home’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 1",
+        "content": "-jin ‘person / people’: we add this to the name of a country to say the nationality of a person or people: Rondon ni Nihonjin ga imasu ‘There are Japanese people in London’. Nihon no tomodachi / Nihonjin no tomodachi ‘Japanese friends’; Nihongo no hon ‘A Japanese (language) book’; Furansugo ‘French (language)’; Furansujin ‘French (person / people)’; Furansu no ‘French (origin)’. Amerika ‘America’; Amerikajin ‘American (person / people)’; Igirisu ‘England’; Igirisujin ‘English (person / people)’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 2",
+        "content": "koko ni denwa ga arimasu ka ‘Is there a phone here ?’ hai, arimasu ‘Yes, there is’. hoteru no resutoran ni naifu to fo-ku ga arimasu ka ‘Are there knives and forks in the hotel restaurant?’ iie, arimasen ga ohashi ga arimasu ‘No, but there are chopsticks’. If we said iie, arimasen ga ohashi wa arimasu we would be emphasising the fact that there are chopsticks: ‘as for chopsticks, they exist’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 3",
+        "content": "Tanaka-san wa imasu ka ‘Is Mr Tanaka in / here?’ Suzuki-san wa imasu ka ‘Is Mrs Suzuki there?’ hai, imasu ‘Yes, she is’; iie, imasen ‘No, she isn’t in’. sumimasen ‘sorry, excuse me’ jikan ‘time’: (watashi wa) jikan ga arimasu ‘I have time’; (watashi wa) jikan ga arimasen ‘I don’t have time’. okane ‘money’ – the o at the beginning of the word is the polite addition, and this is how it is usually said. okane ga arimasen ‘I have no money’; jikan ga arimasu ga okane ga arimasen ‘I have the time but I don’t have the money’. If we say jikan ga arimasu ga okane wa arimasen we are making the contrast between having time and not having money. jikan to okane ga arimasen ‘I don’t have money and time’ = ‘I don’t have the money or the time’; Nihon ni ikitai desu ga jikan to okane ga arimasen ‘I want to go to Japan but I don’t have the money or the time’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 4",
+        "content": "denwa wa doko desu ka – or, more politely, odenwa wa doko desu ka – ‘Where is the telephone?’ We use the marker wa to specify who or what we’re asking about. doko ni arimasu ka ‘Where is it?’ The difference between doko desu ka and doko ni arimasu ka to say ‘Where is it?’ is that the form with arimasu (and imasu) stresses the location more than the form with desu: doko ni imasu ka ‘Where is he (located)?’ doko ni arimasu ka ‘Where is it (located)?’; Tanaka-san wa doko ni imasu ka ‘Where is Mr Tanaka (located)?’; hoteru wa doko ni arimasu ka ‘Where is the hotel (located)?’ dare ‘who’: dare desu ka ‘Who is it?’; dare to shigoto o shimasu ka ‘Who with work [marker o] do [question mark]’ = ‘Whom do you work with?’"
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 5",
+        "content": "konban sushi o resutoran de tabenagara Nihon no tomodachi to hanashimasu ‘Tonight I will eat sushi in a Japanese restaurant while I talk with my Japanese friend’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 6",
+        "content": "watashi wa gorufu ga heta desu kara ryo-shin to shimasen ‘I am bad at golf so I won’t play it with my parents’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 7",
+        "content": "senshu- Nihon no tomodachi to To-kyo- ni ikimashita ‘Last week I went to Tokyo with my Japanese friend’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 8",
+        "content": "ohashi de oishii resutoran de sushi o tabemashita ‘We ate sushi with chopsticks in a delicious restaurant’ – in Japanese, if the food at a restaurant is delicious, we can describe the restaurant as ‘delicious’. kino- ryo-shin to takushı- de koko ni kimashita. Soshite keitai de tomodachi to hanashimashita ‘Yesterday I came here with my parents by taxi. And I talked with my friend on a mobile / cellphone’."
+      },
+      {
+        "course": "Foundation Course",
+        "cd": "CD 8",
+        "track": "Track 9",
+        "content": "jikan desu ‘It’s time; time’s up’; Nihon ni ikitai desu kara Nihongo o hanashimasho- ‘I want to go to Japan so let’s speak Japanese’; Nihongo o hanashitaidesu kara Nihon ni ikimasho- ‘I want to speak Japanese so let’s go to Japan’. arigato- gozaimasu ‘You have helped me. Thank you’. Conclusion"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 1",
+        "content": "Use of desu: hoteru desu ‘it is a hotel’; okane desu ‘it is money’. No marker is needed immediately before desu or other forms of desu. Use of no and wa markers: kore wa watashi no okane desu ‘this [marker wa] I [marker no] money it is’ = ‘this is my money’: the marker wa is used like a highlighter pen to flag up an item, and the marker no is used to connect two items, like the English ‘apostrophe s’ or ‘of’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 2",
+        "content": "ja arimasen ‘isn’t; it isn’t’ (negative form of desu ‘is’): okane ja arimasen ‘it isn’t money’. As ja arimasen is a form of desu, no marker is needed immediately before it."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 3",
+        "content": "koko desu ‘it is here’; koko ja arimasen ‘it isn’t here’; resutoran wa soko desu ‘restaurant [wa] there is’ = ‘the restaurant is there’: resutoran wa soko ja arimasen ‘the restaurant isn’t there’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 4",
+        "content": "ja arimasen deshita ‘wasn’t; it wasn’t’; wain ja arimasen deshita ‘it wasn’t wine’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 5",
+        "content": "suki desu ‘like/s; is /are likeable’: suki ja arimasen ‘don’t /doesn’t like; isn’t /aren’t likeable’. The marker ga is used with suki: sushi ga suki desu ‘sushi [marker ga] likeable is’ = ‘I like sushi’. In negative sentences, it often sounds more natural to use the marker wa instead of ga: sandoicchi wa suki ja arimasen ‘sandwiches [marker wa] likeable aren’t’ = ‘I don’t like sandwiches’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 6",
+        "content": "-masen deshita ka ‘didn’t you?’; do-shite densha de ikimasen deshita ka ‘why train [marker de] go didn’t?’ = ‘why didn’t you go by train?’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 7",
+        "content": "terebi wa / ga suki ja arimasen deshita kara … ‘I didn’t like TV therefore …’ or ‘…because I didn’t like TV’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 8",
+        "content": "tokui desu ‘my strong point is; I am good at’: gorufu ga tokui desu ‘golf [marker ga] my strong point is’ = ‘I am good at golf’. To specify who is good at something, use the name of the person or a pronoun (‘I’, ‘he’ etc.) followed by the highlighter marker wa. When a negative sentence has the highlighter wa for the person who is good at something, the marker ga is used to mark the item that we are good at, rather than wa: watashi wa gorufu ga tokui ja arimasen deshita ‘I wasn’t good at golf’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 9",
+        "content": "kirei ‘clean, beautiful’; kantan ‘easy’; shinsetsu ‘kind’; benri ‘convenient’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 10",
+        "content": "15 densha wa benri ja arimasen kara takushı- de ikimasho-ka ‘because the train isn’t convenient, shall we go by taxi?’; kanojo wa shinsetsu desu ga suki ja arimasen ‘she [marker wa, highlighting ‘she’] kind is but likeable isn’t’ = ‘she is kind but I don’t like her’. Use of markers de and ni: the marker de is used to specify the place where something happens: resutoran de tabemasu ‘I eat at the restaurant’. The marker ni is used with the verbs imasu and arimasu ‘is existing; is, there is’ to indicate where something exists: densha ni kare ga imasu ‘he is (existing) at train’ = ‘he is on the train’. ni is also used with verbs of motion to mark a destination: to-kyo- ni kimasu ‘I come to Tokyo’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 11",
+        "content": "kakimasu ‘I etc. write / will write’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 12",
+        "content": "-takunai desu ‘don’t want to’: tabetakunai desu ‘I don’t want to eat’. (o)hana ‘flower’. The marker to ‘and’ means ‘with’ in sentences such as kare to furansu no eiga o mitakunai desu ‘he [marker to] and France [marker no] film [marker o] don’t want to watch’ = ‘I don’t want to watch a French film with him’. The Japanese don’t say ‘you’ as often as do English-speakers: anata ‘you’ is more often used as a term of endearment."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 13",
+        "content": "ro-maji ‘Roman alphabet’; hiragana ‘hiragana alphabet’; katakana ‘katakana alphabet’; kanji (Chinese character); (ı-)me-ru ‘e-mail’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 1",
+        "track": "Track 14",
+        "content": "Use of the -nagara ending meaning ‘while’: minagara tabemasu ‘while I watch, I eat’. Only the final verb is put into the past tense: minagara kakimashita ‘watch while wrote’ = ‘I watched while I wrote.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 1",
+        "content": "sono aida ‘while, during, during that time’: kare wa gorufu o shimasu. sono aida watashi wa shigoto o shimasu ‘he [marker wa] golf [marker o] play, during that time I [marker wa] work [marker o] do’ = ‘He plays golf. During that time, I work.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 2",
+        "content": "In the -te form of verbs, -masu is replaced with -te: mimasu ‘I watch’ ➝-te form mite; hanashimasu ‘I speak’ ➝hanashite; tabemasu ‘I eat’ ➝tabete: tabete, mimasu ‘I eat and I watch’. The final verb is in the -masu form. kaimasu ‘I buy’ ➝katte; ikimasu ‘I go’ ➝itte; nomimasu ‘I drink’ ➝ nonde; yomimasu ‘I read’ ➝yonde; kakimasu ‘I write’ ➝kaite. itte kimasu ‘I go and come’ = ‘I am going now (but I will return)’ (said on departure from home, like ‘goodbye!’)."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 3",
+        "content": "watashi wa mite, nomimasu ‘I watch and I (also) drink’. When two verbs are linked with the -te/-de form, the implication is that the actions are done in sequence."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 4",
+        "content": "When a sentence with the verb in the -te/-de form is put in the past tense, the -masu verb changes to -mashita: itte kaimashita ‘I went and I bought’; nihon ni itte fujisan o mimashita ‘I went to Japan and saw Mount Fuji’. The -te/-de form also indicates ‘and then’ to show a sequence of actions: 17 watashi wa osushi o tabete, ko-hı- o nonde, repo-to o kakimasu ‘I eat sushi, drink coffee and then I write the report.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 5",
+        "content": "chizu ‘map’; pen ‘pen’. Verbs in the -te/-de form can be used with kudasai to express a request: nonde kudasai ‘please drink’; mite kudasai ‘please look’; depa-to de ohana o katte kudasai ‘department store [marker de] flowers [marker o] buy please’ = ‘Please buy flowers at the department store.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 6",
+        "content": "When kara is used after a verb in the -te/-de form, the meaning is that of one action immediately followed by another: shigoto ni itte kara repo-to o kakimashita ‘work [marker ni] go after report [marker o] I wrote’ = ‘After I went to work, I (immediately) wrote a report’. But kara after -masu, -mashita, -masen and -masen deshita ending verbs means ‘because, therefore’: terebi o mimashita kara, hon o yomimasen deshita ‘Because I watched TV, I didn’t read a book.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 7",
+        "content": "The -mono ending turns some verbs into nouns: tabemono ‘thing to eat’ = ‘food’; nomimono ‘thing to drink’ = ‘drink(s)’; kaimono ‘thing to buy’ = ‘shopping’: kaimono o shimasu ‘I do shopping’; kaimono ni ikimasu ‘I go to shopping’ = ‘I go shopping’; kaimono ni itte, tabemono to nomimono o kaimashita ‘I went shopping and bought food and drinks.’ kimasu ‘wear’: kimono o kimasu ‘I wear a kimono’; kanojo wa t-shatsu o kimasu ‘She wears a T-shirt.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 8",
+        "content": "You can ask someone to do two actions by adding kudasai ‘please’ to the final verb: itte kite kudasai ‘Please go and come (return).’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 9",
+        "content": "kaimono ni itte ko-hı- o nomimasho-ka ‘Shall we go shopping and then drink (have) a coffee?’ sushi o tabete gorufu o shimasho- ‘Let’s eat sushi and play golf.’ osake o nonde kara, soko ni ikimasho- ‘After we drink sake, let’s go there’ = ‘After we’ve drunk sake, let’s go there.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 10",
+        "content": "When a -te/-de form is used with imasu, the meaning is that of being right now in the process of doing something, rather like the ‘-ing’ form of the verb in English: tabete imasu ‘I am eating’; mite imasu ‘I am watching’; nonde imasu ‘I am drinking’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 2",
+        "track": "Track 11",
+        "content": "hairimasu ‘I enter, I will enter’; demasu ‘I leave, I will leave’: hoteru ni hairimasu ‘hotel [marker ni] enter’ = ‘I enter the hotel’; uchi o demasu ‘house [marker o] I leave’ = ‘I leave the house’; dete kudasai ‘please leave’. The -te ending of hairimasu is haitte: haitte kudasai ‘please enter’: uchi ni haitte terebi o mimasu ‘I enter the house and watch TV.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 1",
+        "content": "When a -te/-de form is used with imashita the sense is that of ‘was -ing’: tabete imashita ‘I was eating’; nonde imashita ‘I was drinking.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 2",
+        "content": "19 Using the -te/-de form + imasen gives the sense of ‘isn’t -ing’: ‘I am not reading (at the moment)’; ima ‘now’: ima kanojo wa repo-to o kaite imasu ga kare wa shigoto o shite imasen ‘She is writing a report now but he is not working.’ Using the -te/-de form + imasen deshita gives the sense of ‘wasn’t -ing’: nonde imasen deshita ‘I wasn’t drinking’; suki ja arimasen kara nanimo tabete imasen ‘I am not eating anything because I don’t like it.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 3",
+        "content": "Using the -te/-de form + mimasu gives the sense of ‘try and’ or ‘try to’: sushi o tabete mimasu ‘I will try and eat sushi.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 4",
+        "content": "nihongo de denwa o shite mimashita ‘I tried to make a phone call in Japanese;’ shite mimasho- ‘let’s try to do’; shite mimasho- ka ‘shall we try and do?’; tabete mimasen ka ‘won’t you try and eat?’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 5",
+        "content": "tenisu o shite mite kudasai ‘please try and play tennis’; ashita kore o katte mitai desu ‘I want to try and buy this tomorrow.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 6",
+        "content": "Using the -te/-de form + mo gives the sense of ‘even if, even though’: shitemo ‘even if I do’; tabetemo ‘even if I eat’; nondemo ‘even though I drink’. When -mo is attached to the question words doko and nani, it means ‘nowhere’ or ‘nothing’: dokonimo ikimasen ‘I don’t go anywhere’; nanimo tabemasen deshita ‘I didn’t eat anything.’ The verb will be in the negative."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 7",
+        "content": "tabete mimasu ‘I will try and eat’; tabete mite kudasai ‘please try and eat’; tabete mitemo ‘even if I try to eat’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 8",
+        "content": "When we use the -te/-de form + mo with nani o (‘what + marker o)’, we express the meaning of ‘no matter what / whatever’: nani o tabetemo oishii desu ‘No matter what I eat, it is delicious.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 9",
+        "content": "Similarly, the -te/-de form + mo with doko ni gives the idea of ‘no matter where, wherever’: doko ni ittemo ‘no matter where / wherever I go’; doko ni ittemo mainichi shigoto ni denwa o shimasu ‘Wherever I go, I phone (to) work every day.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 10",
+        "content": "dare ‘who’; dare to ‘with who(m)’: dare to hanashimasu ka ‘who(m) do you speak with?’; dare ni ‘to who(m)’: dare ni denwa o shimasu ka ‘who(m) do you phone (to)?’ Again, use of the -te/-de form + mo with dare to gives the idea of ‘who(m)ever, no matter who(m)’: dare ni hanashitemo nihongo de hanashite mimasu ‘Whoever I speak to, I try to speak in Japanese.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 11",
+        "content": "ii desu ‘it is good, OK, fine’; ko-hı- wa? (with voice rising) ‘How about coffee?’ – ii desu ‘I am fine as I am / No, thank you.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 3",
+        "track": "Track 12",
+        "content": "21 Using the -te/-de form + mo + ii desu expresses the idea ‘even if you do X, it is OK’ so ‘you may do X, it is OK for you to do X, you are allowed to do X’: ittemo ii desu ‘even if you go, it is OK’ = ‘you may go, you are allowed to go’; konban tomodachi no uchi ni ittemo ii desu ‘You may go to your friend’s house tonight.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 1",
+        "content": "In order to ask permission, add ka to the -te/-de form + mo + ii desu construction: kore o tabetemo ii desu ka ‘If I eat this, is it OK?’ = ‘Is it OK if I eat this? / Please may I eat this?’ hai, ii desu ‘Yes, you may / can’; iie, ikemasen ‘No, you may not.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 2",
+        "content": "Summary of the use of the -te/-de form."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 3",
+        "content": "If you replace the -te/-de ending of the -te/-de form by -ta/-da you obtain the ‘casual’ (‘plain’) past tense form of the verb: tabete ➝tabeta, nonde ➝nonda, shite ➝shita, etc. This casual -ta/-da form, when used on its own, has the same meaning, though not social level, as the polite -mashita ending of the verb: tabemashita and tabeta both mean ‘I ate’. To express the sense of ‘when X, Y’, e.g. ‘When I went to Japan, I saw Mount Fuji’, the -ta/-da form is combined with toki ‘when’: repo-to o kaita toki, nihongo de kakimashita ‘When I wrote the report, I wrote it in Japanese’; kamera o katta toki, nihon ni imashita ‘When I bought the camera, I was in Japan.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 4",
+        "content": "koto ‘thing, fact’. The -ta/-da form can be used with koto ga arimasu to convey the sense of having done something in the near past or to have had that experience: to-kyo- ni itta koto ga arimasu ‘Tokyo [marker ni] I went a fact exists’ = ‘I have been to Tokyo.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 5",
+        "content": "hanami ‘cherry blossom viewing’; sake o nomi nagara, hanami o shita koto ga arimasu ‘While drinking sake, I have done / have had the experience of cherry blossom viewing’; to-kyo- de hanami o shita koto ga / wa arimasen ‘Tokyo [marker de] cherry blossom viewing I haven’t done’ = ‘I haven’t done cherry blossom viewing in Tokyo’; nihon ni itta koto ga arimasu ka ‘Have you (ever) gone to Japan?’ – hai, arimasu ‘Yes, that exists’ = ‘Yes, I have.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 6",
+        "content": "ho- ga ii desu ‘it is good to’ is combined with the -ta/-da ending to convey ‘it is better to, you should’: resutoran ni takushı- de itta ho- ga ii desu ‘You should go to the restaurant by taxi.’ kusuri ‘medicine’: mainichi kusuri o nonda ho- ga ii desu ‘You should drink (take) medicine every day’; ringo ‘apple’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 7",
+        "content": "ashita jikan ga arimasu kara, tenisu o shita ho- ga ii desu ‘You have time tomorrow, therefore you should play tennis.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 8",
+        "content": "When the -ta/-da form is combined with ra, the meaning is ‘if’: nondara ‘if I drink’; tabetara ‘if he eats’; nihon ni ittara, fujisan o mitai desu ‘Japan I went if Mount Fuji [o] I want to see’ = ‘If I go to Japan, I want to see 23 Mount Fuji’; nihon ni ittara, fujisan o mite mimasu ‘If I go to Japan, I will try and see Mount Fuji’; nihon ni ittara, fujisan o mite mitai desu ‘if I go to Japan, I want to try and see Mount Fuji.’"
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 9",
+        "content": "nihon ni ittara, ohashi de tabete mimasu ‘If I go to Japan, I will try and eat with chopsticks’; nihon ni ittara, ohashi de tabete mitai desu ‘If I go to Japan, I want to try and eat with chopsticks’; nihon ni ittara, ohashi de tabetakunai desu ‘if I go to Japan, I don’t want to eat with chopsticks’; nihon ni ittara, ro-maji de kakitakunai desu ‘if I go to Japan, I don’t want to write in Ro-maji.’ nihon ni ittara, nihongo o hanashita ho- ga ii desu ‘If you go to Japan, you should speak Japanese’; nihon ni ittara, nihongo o hanashite mita ho- ga ii desu ‘If you go to Japan, you should try and speak Japanese’."
+      },
+      {
+        "course": "Advanced Course",
+        "cd": "CD 4",
+        "track": "Track 10",
+        "content": "If you use the -ta/-da form with ri, and then follow with shimasu / shimashita, the sense is that of ‘I do / did such things as…’ This expression is used to give a sample of things you do and is not in any particular order: eiga o mitari, kaimono o shitari shimasu ‘I do such things as watching a film and doing shopping’; konsa-to ni ittari, kaimono o shitari shimashita ‘I did such things as going to a concert and doing shopping.’ Your guide to the Michel Thomas Method courses 2525 • No books • No writing • Just confidence Introductory course (2 CDs) • First 2 hours of the Foundation course • A taster of the Michel Thomas Method • £14.99 Foundation course (8 CDs) • 8-hour course for beginners • Track listing • £70.00 French, German, Italian, Spanish Language Builders (2 CDs) • Increase word power and learn colloquial phrases • Track listing • £20.00 Advanced course (4 CDs) • 5-hour follow-on to Foundation course • Track listing • £50.00 French, German, Italian, Spanish ‘New’ languages Vocabulary course (5 CDs) Vocabulary course (4 CDs) • Learn 1,000 words – painlessly • Learn hundreds of words – – in 6 hours painlessly – in 5 hours • Track listing • Track listing • £30.00 • £35.00 2626 The Michel Thomas Method product range Introductory course (2 CDs*) £14.99 Arabic ISBN: 978 0340 95728 8 Dutch ISBN: 978 0340 97170 3 French ISBN: 978 0340 78064 0 German ISBN: 978 0340 78066 4 Italian ISBN: 978 0340 78070 1 Japanese ISBN: 978 0340 97458 2 Mandarin ISBN: 978 0340 95722 6 Polish ISBN: 978 0340 97518 3 Portuguese ISBN: 978 0340 97166 6 Russian ISBN: 978 0340 94842 2 Spanish ISBN: 978 0340 78068 8 *These are the first 2 hours of the Foundation course. Foundation course (8 CDs) £70 Arabic ISBN: 978 0340 95727 1 Dutch ISBN: 978 0340 97169 7 French ISBN: 978 0340 93891 1 German ISBN: 978 0340 93892 8 Italian ISBN: 978 0340 93894 2 Japanese ISBN: 978 0340 97457 5 Mandarin ISBN: 978 0340 95726 4 Polish ISBN: 978 0340 97517 6 Portuguese ISBN: 978 0340 97167 3 Russian ISBN: 978 0340 94841 5 Spanish ISBN: 978 0340 93893 5 Advanced course (4 CDs) £50 Arabic ISBN: 978 0340 95729 5 Dutch ISBN: 978 0340 97171 0 French ISBN: 978 0340 93898 0 German ISBN: 978 0340 93913 0 Italian ISBN: 978 0340 93900 0 Japanese ISBN: 978 0340 97459 9 Mandarin ISBN: 978 0340 95723 3 Polish ISBN: 978 0340 97517 6 Portuguese ISBN: 978 0340 97168 0 Russian ISBN: 978 0340 94843 9 Spanish ISBN: 978 0340 93899 7 In the Review courses you will hear only the voice of the teacher giving the English prompts and the foreign language responses. As there are no students, there is no teaching of the language structures, and so these courses are ideal for the learner at home to check for areas causing difficulty and to revisit the relevant teaching point in the Foundation or Advanced course. Foundation Review course (2 CDs) £20 27 French ISBN: 978 0 340 92937 7 German ISBN: 978 0 340 93895 9 Italian ISBN: 978 0 340 93897 3 Spanish ISBN: 978 0 340 93896 6 Advanced Review course (1 CD) £10 French ISBN: 978 0 340 93901 7 German ISBN: 978 0 340 93902 4 Italian ISBN: 978 0 340 93904 8 Spanish ISBN: 978 0 340 93903 1 The Language Builders take the form of a ‘one-to-one’ lecture with Michel Thomas, building on the words and phrases in the Foundation and Advanced courses. The courses provide confidence in pronunciation, increase your word-power and consolidate your knowledge in just two hours. Language Builders (2 CDs) £20 French ISBN: 978 0 340 78969 8 German ISBN: 978 0 340 78973 5 Italian ISBN: 978 0 340 78975 9 Spanish ISBN: 978 0 340 78971 1 The Vocabulary courses carry forward the Michel Thomas Method teaching tradition and faithfully follow this unique approach to foreign language learning, with the all-audio and ‘building-block’ approach. Vocabulary courses: French, German, Italian, Spanish (5 CDs) £30 French ISBN: 978 0 340 93982 6 German ISBN: 978 0 340 93984 0 Italian ISBN: 978 0 340 93983 3 Spanish ISBN: 978 0 340 93973 4 Vocabulary courses: ‘new’ languages (4 CDs) £40 Arabic ISBN: 978 0 340 98323 2 Mandarin ISBN: 978 0 340 98358 4 Russian ISBN: 978 0 340 98324 9 Background reading The Test of Courage is Michel Thomas’s thrilling biography. Written by acclaimed journalist Christopher Robbins, it tells the story of the world’s greatest language teacher and of how his experience at the hands of the Gestapo fuelled his passion for language teaching. ISBN: 978 0340 81245 7; paperback; £9.99 In The Learning Revolution renowned instructional psychologist Dr Jonathan Solity draws on professional experience and lengthy discussions with Michel Thomas to explain how and why the Michel Thomas Method of language teaching works where so many others fail. ISBN: 978 0340 92833 2; hardback; £19.99 The Michel Thomas Method Special Editions comprise: 29 • The Foundation course on CD • The Language Builder CD • Sample hours from 2 other languages • A CD wallet to store the course in • Michel Thomas’ biography The Test of Courage Special Editions £99 French ISBN: 978 0 340 81402 4 Italian ISBN: 978 0 340 81403 1 Spanish ISBN: 978 0 340 88289 4 These Michel Thomas Method products are available from all good bookshops and online booksellers. To find out more, please get in touch with us For general enquiries and for information about the Michel Thomas Method: Call: 020 7873 6354 Fax: 020 7873 6325 Email: mt-enquiries@hodder.co.uk To place an order: Call: 01235 400414 Fax: 01235 400454 Email: uk.orders@bookpoint.co.uk www.michelthomas.co.uk You can write to us at: Hodder Education, 338 Euston Road, London NW1 3BH Visit our forum at: www.michelthomas.co.uk Download and learn a new language anywhere Download the Michel Thomas language courses straight to your PC or Mac. Listen as you travel, while you drive, or any time your ears are free but your hands are busy. For more information, visit www.audible.co.uk/michelthomas ✁ Have your say! Listener response form 1. What is your name? 2. Are you ■male or ■female? 3. What is your age? 4. What is your occupation? 5. What is your address (email and/or postal)? 6. How did you hear about the Michel Thomas Method? 7. Why are you learning a language? 8. Which language are you studying? 9. Which of the Michel Thomas Method courses have you done? 10. Where did you buy/borrow them from? 11. Have you tried another method before? If so, which product? 12. What’s the best thing about learning with the Michel Thomas Method? Please send this form to our FREEPOST address: Hodder Education Consumer Marketing, 338 Euston Road, FREEPOST NW6148, London NW1 3BH If you would like to be put on the Michel Thomas Method mailing list to be kept up to date with the latest offers and new products, please tick the box ■ The Michel Thomas Method aims to offer a great learning experience. If you have any comments or suggestions please email us at mtenquiries@hodder.co.uk Learn another language the way you learnt your own Press reviews for the Michel Thomas Method language courses The Times ‘the nearest thing to painless learning’ The Daily Telegraph ‘works like a dream’ Sunday Business ‘…ideal for any business traveller who needs to be able to get around confidently’ Time Out ‘…five minutes into the first CD, you already feel like you’re winning’ Red ‘Hugely inspiring’ Daily Star ‘Michel’s methods will teach you effectively and easily’ The Daily Telegraph ‘a great way to learn; it’s fast and it lasts’ www.michelthomas.co.uk"
+      }
+    ],
+    "writing": [
+      "これをください",
+      "すしをたべます",
+      "テレビをみます",
+      "まんがをよみます",
+      "あしたいきます",
+      "にほんごをはなします",
+      "でんしゃでいきます",
+      "なにもたべません",
+      "どこですか",
+      "じかんがあります",
+      "かってください",
+      "たべています",
+      "はなしてみます",
+      "いってもいいです",
+      "いったことがあります",
+      "たべたほうがいいです"
+    ],
+    "routine": [
+      {
+        "title": "Audio day",
+        "text": "Listen with full pause-button participation. Do not write during the lesson. After the lesson, mark the CD “started” mentally, not complete."
+      },
+      {
+        "title": "Supplement days",
+        "text": "Do 10 minutes of phrase recall. Read 6–10 kana phrase cards. Write 4 phrases from memory. At the end of the week, mark the CD complete."
+      }
+    ],
+    "intro": {
+      "kickers": [
+        "Unofficial companion",
+        "Foundation + Advanced",
+        "Local progress saved"
+      ],
+      "description": "This page does the “extra” things the original method intentionally avoids: memorization reinforcement, kana reading, handwriting practice, phrase recall, and a calendar/syllabus tracker. Use the audio as the main lesson, then use this page after listening so the material survives contact with real reading and writing.",
+      "note": "Important: This is a fan-made study companion for people who already have access to the Michel Thomas Japanese audio/booklets. It does not include audio and is not a replacement for the course."
+    }
   },
   "games": [
     {
